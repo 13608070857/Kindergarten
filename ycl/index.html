@@ -8,6 +8,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
     <!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -48,30 +49,125 @@
     </nav>
 </div>
 <!--左侧导航-->
-<div class="row">
-    <div class="col-xs-2 my_padding">
-        <div class="navbar-header my_header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                1
-            </button>
+<div class="jq22-container">
+    <header class="jq22-header">
+    </header>
+    <div class="demo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-2">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">基础管理</a></h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <p><a href="main.html" target="iframepage">首页</a></p>
+                                    <p><a href="test.html" target="iframepage">测试</a></p>
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">权限管理</a></h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">出勤管理</a></h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">公告通知</a></h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">邮件中心</a> </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">照片墙</a></h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                    <p>菜单1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-10">
+                <iframe src="main.html" name="iframepage" id="iframepage" width="100%" frameborder="0" onload="iframeHeight()"></iframe>
+                </div>
+            </div>
         </div>
-        <div class="collapse navbar-collapse my_padding" id="bs-example-navbar-collapse-1">
-            <ul class="cnav_ul" id="cnav_ul">
-                <li>橄榄树后台管理系统</li>
-                <li><a href="main.html" target="iframepage">首页</a></li>
-                <li>基础管理</li>
-                <li>权限管理</li>
-                <li>出勤管理</li>
-                <li>公告通知</li>
-                <li>邮件中心</li>
-                <li>照片墙</li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-xs-10">
-        <iframe src="main.html" name="iframepage" id="iframepage" width="100%" frameborder="0" onload="iframeHeight()"></iframe>
     </div>
 </div>
+<!--<div class="row">-->
+    <!--<div class="col-xs-2 my_padding">-->
+        <!--<div class="navbar-header my_header">-->
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+                <!--1-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse my_padding" id="bs-example-navbar-collapse-1">-->
+            <!--<ul class="cnav_ul" id="cnav_ul">-->
+                <!--<li>橄榄树后台管理系统</li>-->
+                <!--<li><a href="main.html" target="iframepage">首页</a></li>-->
+                <!--<li>基础管理</li>-->
+                <!--<li>权限管理</li>-->
+                <!--<li>出勤管理</li>-->
+                <!--<li>公告通知</li>-->
+                <!--<li>邮件中心</li>-->
+                <!--<li>照片墙</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-xs-10">-->
+        <!--<iframe src="main.html" name="iframepage" id="iframepage" width="100%" frameborder="0" onload="iframeHeight()"></iframe>-->
+    <!--</div>-->
+<!--</div>-->
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/bootstrap.js"></script>
 <script>
