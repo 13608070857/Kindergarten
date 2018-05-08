@@ -39,7 +39,7 @@
                 <input class="center-block" id="my_phone" placeholder="手机号码" maxlength="11" name="username" value="" type="text">
                 <div class="row vil">
                 	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                		<input type="text" id="code_input" value="" placeholder="请输入验证码"/>
+                		<input type="text" class="center-block" id="code_input" value="" placeholder="请输入验证码"/>
                 	</div>
                 	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
                 		<span id="v_container" style="display:inline-block;width: 100%;height: 40px;"></span>
@@ -54,16 +54,24 @@
     <script src="js/login.js"></script>
     <script src="js/gVerify.js"></script>
 	<script>
+        var my_phone,re;
 		$("#my_phone").blur(function() {
-			
-			var my_phone = $("#my_phone").val();
-			var re = /^1\d{10}$/;
-			if(re.test(my_phone)) {
+            setInterval(function() {
+                my_phone = $("#my_phone").val();
+                console.log(my_phone);
+                re = /^1\d{10}$/;
+                if(re.test(my_phone)) {
+                    $("#my_phone").get(0).style.color = "#333";
+                    if($("#my_button").attr(disabled)) {
+                        console.log(1);
+                    }
+                    $("#my_button").get(0).removeAttribute(disabled);
+                }else {
+                    // alert("请输入正确的手机号码");
+                }
 
-			}else {
-				$("#my_phone").get(0).style.color = "#f00";
-				$("#my_button").get(0).disabled = "disabled";
-			}
+            },1000);
+			
 		});
 
 
@@ -71,8 +79,9 @@
 
 		document.getElementById("my_button").onclick = function(){
 			var res = verifyCode.validate(document.getElementById("code_input").value);
-			if(res){
-				alert("验证正确");
+			if(res && re.test(my_phone)){
+				// alert("验证正确");
+                $(".forgetF").get(0).style.display = "none";
 			}else{
 				alert("验证码错误");
 			}
