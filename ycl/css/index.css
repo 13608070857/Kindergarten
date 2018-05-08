@@ -126,3 +126,6 @@ p {
 .panel-body{
     padding: 0;
 }
+html{
+    min-width:740px;
+}
