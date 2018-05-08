@@ -98,7 +98,7 @@ a:hover, a:focus { text-decoration: none; outline: none; }
 #accordion .panel-heading { padding: 0; border-radius: 0; border: none; }
 #accordion .panel-title { padding: 0; }
 #accordion .panel-title a { display: block; font-size: 16px; font-weight: bold; background: #009789; color: #ffffff; padding: 15px 25px; position: relative; margin-left: -24px; transition: all 0.3s ease 0s; }
-#accordion .panel-title a.collapsed { background: #5eb978; color: #fffff; margin-left: 0; transition: all 0.3s ease 0s; }
+#accordion .panel-title a.collapsed { background: #5eb978; color: #ffffff; margin-left: 0; transition: all 0.3s ease 0s; }
 #accordion .panel-title a:before { content: ""; border-left: 24px solid #009789; border-top: 24px solid transparent; border-bottom: 24px solid transparent; position: absolute; top: 0; right: -24px; transition: all 0.3s ease 0s; }
 #accordion .panel-title a.collapsed:before { border-left-color: #5eb978; }
 #accordion .panel-title a:after { content: "\f106"; font-family: 'FontAwesome'; position: absolute; top: 30%; right: 15px; font-size: 18px; color: #f7c59f; }
@@ -118,4 +118,11 @@ a:hover, a:focus { text-decoration: none; outline: none; }
 }
 .jq22-container{
     margin-top: 20px;
+}
+p {
+    margin: 0 0 0;
+    line-height: 36px;
+}
+.panel-body{
+    padding: 0;
 }
