@@ -1,0 +1,43 @@
+form {
+	width: 40%;
+	padding: 5% 0;
+}
+.forgetF input {
+	width: 80%;
+	height: 40px;
+    margin-bottom: 8%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.order {  
+   height: 60px;  
+   line-height: 60px;  
+   text-align: center;  
+}  
+ .order .line {  
+   display: inline-block;  
+   width: 100%;  
+   border-top: 1px solid #ccc ;  
+}  
+.order .txt {  
+   vertical-align: middle;  
+}  
+.txtBg {
+	width: 80px;
+	line-height: 2.5em;
+	background:rgb(94,185,122);
+	text-align: center;
+	border-right: 1px solid #fff;
+	color: #fff;
+}
+.txtBgActive {
+	background: rgb(0,151,137);
+}
+.vil {
+	width: 80%;
+	margin: 0 auto;
+	line-height: 40px;
+}
+#code_input {
+	width: 100%;
+}
