@@ -16,23 +16,37 @@
     <![endif]-->
   </head>
   <body>
-    <div class="navBg">
-        <img src="images/top.png" class="center-block" alt="">
-    </div>
+    <div class="container-fluid">
+    <!--导航-->
+    <nav class="navbar navbar-default my_nav" role="navigation">
+        <div class="row">
+            <div class="col-xs-8">
+                <div class="navbar-header">
+                    <a class="navbar-brand hidden-xs" href="#">
+                        <img src="images/logo.png" class="logo_img center-block">
+                    </a>
+                    <a class="navbar-brand visible-xs" href="#">
+                        <img src="images/logo.png" class="logo_img2 center-block">
+                    </a>
+                    <span class="logo_title hidden-xs">橄榄树幼儿园</span>
+                    <span class="logo_title2 visible-xs">橄榄树幼儿园</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
     <div class="container">      
         <div class="row">
-            <div class="col-lg-5 loginBg">
-                <img src="images/bg.png" alt="">
+            <div class="col-lg-5 col-md-6 col-sm-6 hidden-xs loginBg">
+                <img src="images/bg.png" class="img-circle" alt="">
             </div>
-            <div class="col-lg-7 line login">
+            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 login">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-1 line">
+                    <div class="col-lg-8 col-lg-offset-1">
                         <form action="" method="post">
-                            <h3 class="text-center loginTitle">登陆界面</h3>
-                            <select name="zg" id="" class="center-block">
-                                <option value="0">园长</option>
-                                <option value="1">教师</option>
-                            </select>
+                            <h3 class="text-center loginTitle">
+                                <img src="images/logo.png" class="logo_img alt="">
+                            </h3>
                             <input class="center-block" placeholder="用户名" name="username" type="text">
                             <input class="center-block" placeholder="密码" name="passwd" type="text">
                             <input type="button" class="btn center-block" value="提交"> 
@@ -44,5 +58,6 @@
     </div>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>

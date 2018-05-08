@@ -1,20 +1,70 @@
-.navBg {
-    height: 86px;
-    background: #00a0d8;
+html,body {
+    height: 100%
+}
+iframe{
+    display: block;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.my_padding{
+    padding: 0;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand{
+    height: 85px;
+    padding: 0;
+}
+.logo_img{
+    width: 100px;
+    padding: 0.5rem 2rem 1.5rem 2rem;
+}
+.logo_img2{
+    width: 60px;
+    padding: 1rem 1rem 1.5rem 0;
+}
+.logo_title{
+    font-size: 25px;
+}
+.logo_title2{
+    font-size: 18px;
+}
+.navbar{
+    height: 85px;
+    line-height: 85px;
+    margin: 0;
+}
+.navbar-default {
+    background-color: #f8f8f8;
+    border: none;
 }
 .container {
-    margin-top: 10%;
+    margin-top: 8%;
 }
 .loginBg {
     padding-top: 2%;
+}
+@media screen and (max-width: 980px) {
+    .loginBg {
+        padding-top: 8%;
+    }
 }
 .loginBg img {
     max-width: 100%;
 }
 .login {
     border-radius: 3px;
-    border-left: 1px solid #eee;
+    border-left: 1px solid #ccc;
     color: #333;
+}
+@media screen and (max-width: 768px) {
+    .login {
+        border: none;
+    }
 }
 input,select {
     width: 80%;
