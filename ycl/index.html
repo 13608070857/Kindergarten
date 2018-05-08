@@ -50,7 +50,7 @@
 <!--左侧导航-->
 <div class="row">
     <div class="col-xs-2 my_padding">
-        <div class="navbar-header">
+        <div class="navbar-header my_header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 1
             </button>
@@ -75,13 +75,13 @@
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/bootstrap.js"></script>
 <script>
+    var ifHeight = document.documentElement.clientHeight-89;
     function iframeHeight() {
         var ifm= document.getElementById("iframepage");
-        ifm.height = document.documentElement.clientHeight+"px";
+        ifm.style.height = ifHeight+"px";
     }
     var nav= document.getElementById("cnav_ul");
-    nav.style.height = document.documentElement.clientHeight+"px";
-
+    nav.style.height = ifHeight+"px";
 </script>
 </body>
 </html>

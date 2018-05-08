@@ -1,10 +1,19 @@
+body{
+    overflow-x:hidden;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
 .my_Col{
     height: 85px;
     line-height: 85px;
     margin-top: 20px;
-    margin-bottom: 20px;
     cursor: pointer;
     transition: all .3s linear;
+}
+.my_Col:not(:last-child){
+    margin-bottom: 20px;
 }
 .my_Col:hover{
     opacity: 0.8;
@@ -39,7 +48,4 @@
 }
 .my_R{
     background-color: #f8f8f8;
-}
-.lie{
-    border: 1px solid red;
 }
