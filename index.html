@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>橄榄树幼儿园后台管理系统</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+    <!--导航-->
+    <nav class="navbar navbar-default my_nav" role="navigation">
+        <div class="row">
+            <div class="col-xs-8">
+                <div class="navbar-header">
+                    <a class="navbar-brand hidden-xs" href="#">
+                        <img src="images/logo.png" class="logo_img center-block">
+                    </a>
+                    <a class="navbar-brand visible-xs" href="#">
+                        <img src="images/logo.png" class="logo_img2 center-block">
+                    </a>
+                    <span class="logo_title hidden-xs">橄榄树幼儿园</span>
+                    <span class="logo_title2 visible-xs">橄榄树幼儿园</span>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="dropdown pull-right">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        admin
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu my_menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">设置</a></li>
+                        <li><a href="#">个人资料</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--左侧导航-->
+<div class="row">
+    <div class="col-xs-2 my_padding">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                1
+            </button>
+        </div>
+        <div class="collapse navbar-collapse my_padding" id="bs-example-navbar-collapse-1">
+            <ul class="cnav_ul" id="cnav_ul">
+                <li><a href="main.html" target="iframepage">1</a></li>
+                <li><a href="test.html" target="iframepage">2</a></li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-10">
+        <iframe src="main.html" name="iframepage" id="iframepage" width="100%" frameborder="0" onload="iframeHeight()"></iframe>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+    function iframeHeight() {
+        var ifm= document.getElementById("iframepage");
+        ifm.height = document.documentElement.clientHeight+"px";
+    }
+    var nav= document.getElementById("cnav_ul");
+    nav.style.height = document.documentElement.clientHeight+"px";
+
+</script>
+</body>
+</html>

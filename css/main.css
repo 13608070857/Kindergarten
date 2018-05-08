@@ -1,0 +1,45 @@
+.my_Col{
+    height: 85px;
+    line-height: 85px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.my_Col:hover{
+    opacity: 0.8;
+}
+.my_La{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #ffffff;
+}
+.my_Ra{
+    border-top-right-radius:  5px;
+    border-bottom-right-radius: 5px;
+    color: #333333;
+}
+.my_L{
+    background-color: #54ADE9;
+}
+.my_L2{
+    background-color: #F85421;
+}
+.my_L3{
+    background-color: #009789;
+}
+.my_L4{
+    background-color: #5EB978;
+}
+.my_L5{
+    background-color: #F7B924;
+}
+.my_L6{
+    background-color: #2E4056;
+}
+.my_R{
+    background-color: #f8f8f8;
+}
+.lie{
+    border: 1px solid red;
+}
