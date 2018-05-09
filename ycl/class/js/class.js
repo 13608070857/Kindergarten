@@ -1,3 +1,7 @@
+$( function() {
+    $( '#cd-dropdown1' ).dropdown();
+    $( '#cd-dropdown2' ).dropdown();
+});
 $.get("js/classList.js",function (data,status) {
     //执行加载数据的方法
     linksList();
@@ -15,20 +19,21 @@ function linksList(that){
             dataHtml += '<tr>'
                 +'<td>'+currData[i].id+'</td>'
                 +'<td>'+currData[i].c_name+'</a></td>'
+                +'<td>'+currData[i].c_address+'</td>'
                 +'<td>'+currData[i].c_num+'</td>'
                 +'<td>'+currData[i].c_teacher+'</td>'
-                +'<td>'+currData[i].c_address+'</td>'
                 +'<td class="operation">'+
-                "<a class='query iconfont' id='"+currData[i].id+"' data-toggle='modal' data-target='#myModal3'>&#xe62c;</a>"+
-                "<a class='alter iconfont' id='"+currData[i].id+"' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
-                "<a class='delete iconfont' id='"+currData[i].id+"' data-toggle='modal' data-target='#myModal'>&#xe61c;</a>"
+                "<a class='query iconfont' id='"+currData[i].id+"' title='查看' data-toggle='modal' data-target='#myModal3'>&#xe62c;</a>"+
+                "<a class='alter iconfont' id='"+currData[i].id+"' title='修改' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
+                "<a class='delete iconfont' id='"+currData[i].id+"' title='删除' data-toggle='modal' data-target='#myModal'>&#xe61c;</a>"+
+                "<a class='go_up iconfont' id='"+currData[i].id+"' title='升班' data-toggle='modal' data-target='#myModa4'>升班</a>"
                 +'</td>'
                 +'</tr>';
         }
         return dataHtml;
     }
     //分页
-    nums = 5; //每页出现的数据量
+    nums = 10; //每页出现的数据量
     pages = Math.ceil(myclass.length/nums);//页总数
     $(".links_content").html(renderDate(myclass));
     $(function(){
@@ -111,5 +116,87 @@ $('body').on('click','#btn_que', function () {
             myclass.splice(i,1);
             linksList(myclass);
         }
+    }
+});
+/*班级提升*/
+$('body').on('click','.go_up', function () {
+    go_upId=$(this).attr("id");
+});
+$('body').on('click','#btn_que4', function () {
+    for(var i=0;i<myclass.length;i++){
+        if(myclass[i].id == go_upId){
+            if (myclass[i].c_address=="大班"){
+                myclass[i].c_address="已毕业";
+            }
+            if (myclass[i].c_address=="中班"){
+                myclass[i].c_address="大班";
+            }
+            if (myclass[i].c_address=="小班"){
+                myclass[i].c_address="中班";
+            }
+            linksList(myclass);
+        }
+    }
+});
+//查询
+$('body').on('click','#search_btn', function () {
+    var my_seleteOp=$(".cd-dropdown>span>span").get(0).innerHTML;
+    var dataHtml2="";
+    for (var i=0;i<myclass.length;i++){
+        if (myclass[i].c_name==my_seleteOp){
+            dataHtml2 += '<tr>'
+                +'<td>'+myclass[i].id+'</td>'
+                +'<td>'+myclass[i].c_name+'</a></td>'
+                +'<td>'+myclass[i].c_address+'</td>'
+                +'<td>'+myclass[i].c_num+'</td>'
+                +'<td>'+myclass[i].c_teacher+'</td>'
+                +'<td class="operation">'+
+                "<a class='query iconfont' id='"+myclass[i].id+"' title='查看' data-toggle='modal' data-target='#myModal3'>&#xe62c;</a>"+
+                "<a class='alter iconfont' id='"+myclass[i].id+"' title='修改' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
+                "<a class='delete iconfont' id='"+myclass[i].id+"' title='删除' data-toggle='modal' data-target='#myModal'>&#xe61c;</a>"+
+                "<a class='go_up iconfont' id='"+myclass[i].id+"' title='升班' data-toggle='modal' data-target='#myModa4'>升班</a>"
+                +'</td>'
+                +'</tr>';
+            $(".links_content").html(dataHtml2);
+        }
+    }
+});
+//添加
+$('body').on('click','#add_btn', function () {
+    addId=$(this).attr("id");
+    for(var i=0;i<myclass.length;i++){
+        if (myclass[i].id==addId){
+            $("#exampleInputName77").val(myclass[i].id);
+            $("#exampleInputName88").val(myclass[i].c_name);
+            $("#exampleInputName99").val(myclass[i].c_num);
+            $("#exampleInputName100").val(myclass[i].c_address);
+            $("#exampleInputName111").val(myclass[i].c_teacher);
+            $("#exampleInputName122").val(myclass[i].c_teacher2);
+        }
+    }
+});
+$('body').on('click','#btn_que5', function () {
+    var dataHtml3="";
+    for(var i=0;i<myclass.length;i++){
+        myclass[i].c_name=$("#exampleInputName77").val();
+        myclass[i].c_name=$("#exampleInputName88").val();
+        myclass[i].c_num=$("#exampleInputName99").val();
+        myclass[i].c_address=$("#exampleInputName100").val();
+        myclass[i].c_teacher=$("#exampleInputName111").val();
+        myclass[i].c_teacher2=$("#exampleInputName122").val();
+        dataHtml3 += '<tr>'
+            +'<td>'+myclass[i].id+'</td>'
+            +'<td>'+myclass[i].c_name+'</a></td>'
+            +'<td>'+myclass[i].c_address+'</td>'
+            +'<td>'+myclass[i].c_num+'</td>'
+            +'<td>'+myclass[i].c_teacher+'</td>'
+            +'<td class="operation">'+
+            "<a class='query iconfont' id='"+myclass[i].id+"' title='查看' data-toggle='modal' data-target='#myModal3'>&#xe62c;</a>"+
+            "<a class='alter iconfont' id='"+myclass[i].id+"' title='修改' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
+            "<a class='delete iconfont' id='"+myclass[i].id+"' title='删除' data-toggle='modal' data-target='#myModal'>&#xe61c;</a>"+
+            "<a class='go_up iconfont' id='"+myclass[i].id+"' title='升班' data-toggle='modal' data-target='#myModa4'>升班</a>"
+            +'</td>'
+            +'</tr>';
+        $(".links_content").html(dataHtml3);
     }
 });

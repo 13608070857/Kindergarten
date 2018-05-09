@@ -23,7 +23,8 @@
     <!--数据表格-->
     <table class="table table-striped text-center">
         <caption class="my_title">
-            <select id="cd-dropdown" class="cd-select">
+            <div class="pull-left my_clname">班级名称：</div>
+            <select id="cd-dropdown1" class="cd-select">
                 <option value="-1" selected>请选择班级</option>
                 <option value="1" class="icon-tux">喵喵班</option>
                 <option value="2" class="icon-finder">丫丫班</option>
@@ -31,16 +32,16 @@
                 <option value="4" class="icon-android">朵朵班</option>
                 <option value="5" class="icon-android">花花班</option>
             </select>
-            <button type="button" class="btn btn-success my_btn">查询</button>
-            <button type="button" class="btn btn-success my_btn2">添加</button>
+            <button type="button" class="btn btn-success my_btn" id="search_btn">查询</button>
+            <button type="button" class="btn btn-success my_btn2" id="add_btn" data-toggle='modal' data-target='#myModal5'>添加</button>
         </caption>
         <thead>
         <tr>
             <th>ID</th>
             <th>班级名称</th>
+            <th>班级类别</th>
             <th>班级人数</th>
             <th>班级老师</th>
-            <th>班级类别</th>
             <th>操作</th>
         </tr>
         </thead>
@@ -50,6 +51,53 @@
     <nav aria-label="Page navigation" class="text-center">
         <ul class="pagination" id="pagination"></ul>
     </nav>
+</div>
+<!-- 添加按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    添加班级信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <table class="table">
+                        <tr>
+                            <td><label for="exampleInputName77">ID</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName77"></td>
+                            <td><label for="exampleInputName88">班级名称</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName88"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName99">班级人数</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName99"></td>
+                            <td><label for="exampleInputName100">班级类别</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName100"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName111">生活老师</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName111"></td>
+                            <td><label for="exampleInputName122">主管老师</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName122"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-success my_btn2" id="btn_que5" data-dismiss="modal">
+                    添加
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
 </div>
 <!-- 查看按钮的模态框 -->
 <div class="modal fade bs-example-modal-sm" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -171,15 +219,36 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
 </div>
+<!-- 升班按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModa4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    班级提升信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                确定要将该班级提升吗？
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-success my_btn2" id="btn_que4" data-dismiss="modal">
+                    确定
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
 <script src="../js/jquery-3.3.1.js"></script>
 <script src="../js/bootstrap.js"></script>
 <script src="js/bootstrap-paginator.js"></script>
-<script src="js/class.js"></script>
 <script type="text/javascript" src="js/jquery.dropdown.js"></script>
-<script type="text/javascript">
-    $( function() {
-        $( '#cd-dropdown' ).dropdown();
-    });
-</script>
+<script src="js/class.js"></script>
 </body>
 </html>
