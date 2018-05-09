@@ -1,25 +1,131 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login</title>
-
+    <title>workerMangement</title>
     <!-- Bootstrap -->
     <link href="../ycl/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/mainTop.css">
-    <link rel="stylesheet" href="css/inputStyle.css">
-    <link rel="stylesheet" href="css/login.css">
-
+    <link rel="stylesheet" href="../ycl/class/css/class.css">
     <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-	
-	<script src="../ycl/js/jquery-3.3.1.js"></script>
-    <script src="../ycl/js/bootstrap.js"></script>
-  </body>
+</head>
+<body>
+<div class="table-responsive my_tableDiv">
+    <!--数据表格-->
+    <table class="table table-striped text-center">
+        <caption class="my_title">
+            <select class="my_select">
+                <option>---请选择班级---</option>
+                <option>教务部</option>
+                <option>校办部</option>
+                <option>财务部</option>
+                <option>后勤部</option>
+            </select>
+            <button type="button" class="btn btn-success my_btn">查询</button>
+            <button type="button" class="btn btn-success my_btn2">添加</button>
+        </caption>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>班级名称</th>
+            <th>班级人数</th>
+            <th>班级老师</th>
+            <th>班级地址</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody class="links_content"></tbody>
+    </table>
+    <!--分页-->
+    <nav aria-label="Page navigation" class="text-center">
+        <ul class="pagination" id="pagination"></ul>
+    </nav>
+</div>
+<!-- 查看按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    查看信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                查看信息
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-danger" id="btn_que3" data-dismiss="modal">
+                    确定
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 修改按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    修改信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                确定要修改吗？
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-danger" id="btn_que2" data-dismiss="modal">
+                    确定
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 删除按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    删除
+                </h4>
+            </div>
+            <div class="modal-body">
+                确定要删除吗？
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-danger" id="btn_que" data-dismiss="modal">
+                    确定
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<script src="../ycl/js/jquery-3.3.1.js"></script>
+<script src="../ycl/js/bootstrap.js"></script>
+<script src="../ycl/class/js/bootstrap-paginator.js"></script>
+<script src="../ycl/class/js/class.js"></script>
+</body>
 </html>
