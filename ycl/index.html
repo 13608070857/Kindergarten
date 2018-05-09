@@ -141,6 +141,10 @@
                         </div>
                     </div>
                 </div>
+                <!--浏览记录-->
+                <div class="col-xs-10" id="historyBox">
+                        <div style="float: left"><i class="glyphicon glyphicon-time"></i>历史记录</div>
+                </div>
                 <!--主体内容-->
                 <div class="col-xs-10 separate">
                     <iframe src="main.html" name="iframepage" id="iframepage" width="100%" frameborder="0" onload="iframeHeight()"></iframe>
@@ -177,6 +181,25 @@
     }
     var nav= document.getElementById("cnav_ul");
     nav.style.height = ifHeight+"px";
+    var historyBox = $("#historyBox");
+    $(".panel-body p").click(function () {
+        var history = ($(this).get(0).innerText);
+        var a;
+        if (history=="学生管理"){
+            a="main.html";
+        }
+        if (history=="班级管理"){
+            a="class/class.html";
+        }
+        if (history=="职工管理"){
+            a="../ljh/staff/staff.html";
+        }
+        if (history=="部门管理"){
+            a="test.html";
+        }
+        var historyDiv = '<a href='+'"'+a+'"'+'target="iframepage"><div class="historyT">'+'<i class="glyphicon glyphicon-menu-right">'+'</i>'+history+'</div></a>';
+        historyBox.append(historyDiv);
+    });
 </script>
 </body>
 </html>
