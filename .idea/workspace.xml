@@ -5,8 +5,18 @@
     <list default="true" id="02821ab6-da91-43e9-b704-3c1045766610" name="Default" comment="" />
 =======
     <list default="true" readonly="true" id="02821ab6-da91-43e9-b704-3c1045766610" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/ycl/class/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ycl/class/css/fonts/icomoon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ycl/class/css/fonts/icomoon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ycl/class/css/fonts/icomoon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ycl/class/css/fonts/icomoon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ycl/class/css/fonts/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ycl/class/css/style4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ycl/class/js/index4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ycl/class/js/jquery.dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ycl/class/js/modernizr.custom.63321.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ycl/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ycl/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ycl/class/class.html" beforeDir="false" afterPath="$PROJECT_DIR$/ycl/class/class.html" afterDir="false" />
     </list>
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -68,12 +78,44 @@
               <folding />
 =======
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ycl/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="3849">
+              <caret line="175" column="39" selection-start-line="175" selection-start-column="39" selection-end-line="175" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style4.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ycl/class/css/style4.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ycl/class/class.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-186">
+              <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ycl/class/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+=======
             <state relative-caret-position="391">
               <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
+>>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
             </state>
           </provider>
         </entry>
@@ -87,6 +129,10 @@
       <find>transition</find>
       <find>margin</find>
       <find>panel-body</find>
+      <find>icon-windows</find>
+      <find>fleft</find>
+      <find>cd-dropdown</find>
+      <find>text-align: center</find>
     </findStrings>
     <replaceStrings>
       <replace>Six</replace>
@@ -98,14 +144,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ycl/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/ycl/css/index.css" />
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/sxm/login.html" />
 =======
         <option value="$PROJECT_DIR$/ycl/index.html" />
         <option value="$PROJECT_DIR$/ljh/staff/class.html" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/ycl/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/ycl/class/class.html" />
+        <option value="$PROJECT_DIR$/ycl/class/css/style4.css" />
+        <option value="$PROJECT_DIR$/ycl/class/css/common.css" />
+=======
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
+>>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
       </list>
     </option>
   </component>
@@ -135,8 +187,8 @@
     <ConfirmationsSetting value="0" id="Remove" />
 =======
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="190" />
-    <option name="y" value="77" />
+    <option name="x" value="322" />
+    <option name="y" value="247" />
     <option name="width" value="1600" />
     <option name="height" value="925" />
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
@@ -154,9 +206,45 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+<<<<<<< HEAD
+          <expand>
+            <path>
+              <item name="Kindergarten" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kindergarten" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kindergarten" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kindergarten" type="462c0819:PsiDirectoryNode" />
+              <item name="ycl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kindergarten" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kindergarten" type="462c0819:PsiDirectoryNode" />
+              <item name="ycl" type="462c0819:PsiDirectoryNode" />
+              <item name="class" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kindergarten" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kindergarten" type="462c0819:PsiDirectoryNode" />
+              <item name="ycl" type="462c0819:PsiDirectoryNode" />
+              <item name="class" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kindergarten" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kindergarten" type="462c0819:PsiDirectoryNode" />
+              <item name="ycl" type="462c0819:PsiDirectoryNode" />
+              <item name="class" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+=======
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Kindergarten" />
@@ -194,6 +282,7 @@
       <pane id="Scratches" />
 =======
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
+>>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,6 +298,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\html\Kindergarten\ycl\class\css" />
+      <recent name="D:\html\Kindergarten\ycl\class\js" />
       <recent name="D:\html\Kindergarten\ljh" />
       <recent name="D:\html\Kindergarten\ycl\images" />
       <recent name="D:\html\Kindergarten\ycl\css" />
@@ -290,11 +381,13 @@
       <workItem from="1525779334196" duration="637000" />
       <workItem from="1525826076168" duration="1000" />
       <workItem from="1525829693749" duration="616000" />
+      <workItem from="1525833824433" duration="126000" />
+      <workItem from="1525834429804" duration="1880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18512000" />
+    <option name="totallyTimeSpent" value="20518000" />
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
@@ -321,16 +414,16 @@
 =======
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12044271" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.16796875" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info id="Structure" order="1" sideWeight="0.50136983" side_tool="true" weight="0.16796875" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -362,6 +455,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ycl/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="1519">
+          <caret line="49" column="72" lean-forward="true" selection-start-line="49" selection-start-column="72" selection-end-line="49" selection-end-column="72" />
+=======
         <state vertical-scroll-proportion="0.0">
           <caret line="132" column="110" selection-start-line="132" selection-start-column="110" selection-end-line="132" selection-end-column="110" />
           <folding />
@@ -389,11 +486,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding />
+>>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ycl/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="1829">
+          <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+=======
         <state vertical-scroll-proportion="0.0">
           <caret line="132" column="110" selection-start-line="132" selection-start-column="110" selection-end-line="132" selection-end-column="110" />
           <folding />
@@ -421,12 +523,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding />
+>>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ycl/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="4836">
+=======
         <state vertical-scroll-proportion="0.0">
+>>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
           <caret line="156" column="45" selection-start-line="156" selection-start-column="45" selection-end-line="156" selection-end-column="45" />
           <folding />
         </state>
@@ -656,6 +763,10 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$USER_HOME$/Desktop/分页/index.html" />
+=======
+>>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/aria.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -670,9 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ljh/staff/js/class.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/ycl/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -680,15 +788,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ycl/class/class.html">
+    <entry file="file://$PROJECT_DIR$/ljh/staff/class.html" />
+    <entry file="file://$PROJECT_DIR$/ycl/class/js/index4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+        <state relative-caret-position="31">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ycl/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/ycl/class/css/class.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="141">
+          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+=======
 <<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="1286" column="18" selection-start-line="1286" selection-start-column="18" selection-end-line="1286" selection-end-column="18" />
@@ -705,11 +818,16 @@
         <state relative-caret-position="31">
           <caret line="5940" column="1" selection-start-line="5940" selection-start-column="1" selection-end-line="5940" selection-end-column="1" />
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
+>>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ljh/staff/class.html">
+    <entry file="file://$PROJECT_DIR$/ycl/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="1860">
+          <caret line="6512" column="1" lean-forward="true" selection-start-line="6512" selection-start-column="1" selection-end-line="6512" selection-end-column="1" />
+=======
 <<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="132" column="110" selection-start-line="132" selection-start-column="110" selection-end-line="132" selection-end-column="110" />
@@ -725,14 +843,44 @@
 =======
         <state relative-caret-position="682">
           <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+>>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/class/js/class.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/ycl/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="3849">
+          <caret line="175" column="39" selection-start-line="175" selection-start-column="39" selection-end-line="175" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/class/css/style4.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/class/class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186">
+          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/class/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+=======
         <state relative-caret-position="391">
           <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
+>>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
         </state>
       </provider>
     </entry>

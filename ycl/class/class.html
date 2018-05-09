@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>橄榄树幼儿园后台管理系统</title>
+    <meta name="description" content="Simple Effects for Drop-Down Lists" />
+    <meta name="keywords" content="drop-down, select, jquery, plugin, fallback, transition, transform, 3d, css3" />
+    <meta name="author" content="Codrops" />
     <!-- Bootstrap -->
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/class.css">
+    <link rel="stylesheet" type="text/css" href="css/style4.css" />
+    <script src="js/modernizr.custom.63321.js"></script>
     <!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -18,12 +23,12 @@
     <!--数据表格-->
     <table class="table table-striped text-center">
         <caption class="my_title">
-            <select class="my_select">
-                <option>---请选择班级---</option>
-                <option>喵喵班</option>
-                <option>丫丫班</option>
-                <option>臭臭班</option>
-                <option>朵朵班</option>
+            <select id="cd-dropdown" class="cd-select">
+                <option value="-1" selected>Pick an </option>
+                <option value="1" class="icon-tux">Linux</option>
+                <option value="2" class="icon-finder">Mac</option>
+                <option value="3" class="icon-windows">Windows</option>
+                <option value="4" class="icon-android">Android</option>
             </select>
             <button type="button" class="btn btn-success my_btn">查询</button>
             <button type="button" class="btn btn-success my_btn2">添加</button>
@@ -127,5 +132,11 @@
 <script src="../js/bootstrap.js"></script>
 <script src="js/bootstrap-paginator.js"></script>
 <script src="js/class.js"></script>
+<script type="text/javascript" src="js/jquery.dropdown.js"></script>
+<script type="text/javascript">
+    $( function() {
+        $( '#cd-dropdown' ).dropdown();
+    });
+</script>
 </body>
 </html>
