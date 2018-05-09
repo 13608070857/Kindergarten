@@ -40,7 +40,7 @@
             <th>班级名称</th>
             <th>班级人数</th>
             <th>班级老师</th>
-            <th>班级地址</th>
+            <th>班级类别</th>
             <th>操作</th>
         </tr>
         </thead>
@@ -60,17 +60,38 @@
                     &times;
                 </button>
                 <h4 class="modal-title">
-                    查看信息
+                    查看班级信息
                 </h4>
             </div>
             <div class="modal-body">
-                查看信息
+                <form class="form-inline">
+                    <table class="table" id="modal_table">
+                        <tr>
+                            <td><label for="exampleInputName1">ID</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName1" disabled></td>
+                            <td><label for="exampleInputName2">班级名称</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName2" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName3">班级人数</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName3" disabled></td>
+                            <td><label for="exampleInputName4">班级类别</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName4" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName5">生活老师</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName5" disabled></td>
+                            <td><label for="exampleInputName6">主管老师</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName6" disabled></td>
+                        </tr>
+                    </table>
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
                     取消
                 </button>
-                <button type="button" class="btn btn-danger" id="btn_que3" data-dismiss="modal">
+                <button type="button" class="btn btn-success my_btn2" id="btn_que3" data-dismiss="modal">
                     确定
                 </button>
             </div>
@@ -86,18 +107,39 @@
                     &times;
                 </button>
                 <h4 class="modal-title">
-                    修改信息
+                    修改班级信息
                 </h4>
             </div>
             <div class="modal-body">
-                确定要修改吗？
+                <form class="form-inline">
+                    <table class="table">
+                        <tr>
+                            <td><label for="exampleInputName7">ID</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName7" disabled></td>
+                            <td><label for="exampleInputName8">班级名称</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName8"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName9">班级人数</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName9"></td>
+                            <td><label for="exampleInputName10">班级类别</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName10"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName11">生活老师</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName11"></td>
+                            <td><label for="exampleInputName12">主管老师</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName12"></td>
+                        </tr>
+                    </table>
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
                     取消
                 </button>
-                <button type="button" class="btn btn-danger" id="btn_que2" data-dismiss="modal">
-                    确定
+                <button type="button" class="btn btn-success my_btn2" id="btn_que2" data-dismiss="modal">
+                    保存
                 </button>
             </div>
         </div><!-- /.modal-content -->
@@ -112,17 +154,17 @@
                     &times;
                 </button>
                 <h4 class="modal-title" id="myModalLabel">
-                    删除
+                    删除班级信息
                 </h4>
             </div>
             <div class="modal-body">
                 确定要删除吗？
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
                     取消
                 </button>
-                <button type="button" class="btn btn-danger" id="btn_que" data-dismiss="modal">
+                <button type="button" class="btn btn-success my_btn2" id="btn_que" data-dismiss="modal">
                     确定
                 </button>
             </div>

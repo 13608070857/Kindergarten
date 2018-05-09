@@ -19,8 +19,8 @@ function linksList(that){
                 +'<td>'+currData[i].c_teacher+'</td>'
                 +'<td>'+currData[i].c_address+'</td>'
                 +'<td class="operation">'+
-                "<a class='query iconfont' data-toggle='modal' data-target='#myModal3'>&#xe62c;</a>"+
-                "<a class='alter iconfont' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
+                "<a class='query iconfont' id='"+currData[i].id+"' data-toggle='modal' data-target='#myModal3'>&#xe62c;</a>"+
+                "<a class='alter iconfont' id='"+currData[i].id+"' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
                 "<a class='delete iconfont' id='"+currData[i].id+"' data-toggle='modal' data-target='#myModal'>&#xe61c;</a>"
                 +'</td>'
                 +'</tr>';
@@ -61,14 +61,53 @@ function linksList(that){
         element.bootstrapPaginator(options);
     });
 }
-//获取ID
-$('body').on('click','.delete', function () {
-    tableId=$(this).attr("id");
+/*查看*/
+$('body').on('click','.query', function () {
+    queryId=$(this).attr("id");
+    for(var i=0;i<myclass.length;i++){
+        if(myclass[i].id == queryId){
+            $("#exampleInputName1").val(myclass[i].id);
+            $("#exampleInputName2").val(myclass[i].c_name);
+            $("#exampleInputName3").val(myclass[i].c_num);
+            $("#exampleInputName4").val(myclass[i].c_address);
+            $("#exampleInputName5").val(myclass[i].c_teacher);
+            $("#exampleInputName6").val(myclass[i].c_teacher2);
+        }
+    }
 });
-//删除
+/*修改*/
+$('body').on('click','.alter', function () {
+    alterId=$(this).attr("id");
+    for(var i=0;i<myclass.length;i++){
+        if (myclass[i].id==alterId){
+            $("#exampleInputName7").val(myclass[i].id);
+            $("#exampleInputName8").val(myclass[i].c_name);
+            $("#exampleInputName9").val(myclass[i].c_num);
+            $("#exampleInputName10").val(myclass[i].c_address);
+            $("#exampleInputName11").val(myclass[i].c_teacher);
+            $("#exampleInputName12").val(myclass[i].c_teacher2);
+        }
+    }
+});
+$('body').on('click','#btn_que2', function () {
+    for(var i=0;i<myclass.length;i++){
+        if (myclass[i].id==alterId){
+            myclass[i].c_name=$("#exampleInputName8").val();
+            myclass[i].c_num=$("#exampleInputName9").val();
+            myclass[i].c_address=$("#exampleInputName10").val();
+            myclass[i].c_teacher=$("#exampleInputName11").val();
+            myclass[i].c_teacher2=$("#exampleInputName12").val();
+            linksList(myclass);
+        }
+    }
+});
+/*删除*/
+$('body').on('click','.delete', function () {
+    deleteId=$(this).attr("id");
+});
 $('body').on('click','#btn_que', function () {
     for(var i=0;i<myclass.length;i++){
-        if(myclass[i].id == tableId){
+        if(myclass[i].id == deleteId){
             myclass.splice(i,1);
             linksList(myclass);
         }
