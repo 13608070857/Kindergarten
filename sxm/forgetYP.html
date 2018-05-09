@@ -1,10 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>forget Your Password</title>
-</head>
-<body>
-	
-</body>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>forget Your Password</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainTop.css">
+    <link rel="stylesheet" href="css/inputStyle.css">
+    <link rel="stylesheet" href="css/forget.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+        <iframe src="mainTop.html" name="iframepage" id="iframepage" width="100%" frameborder="0"></iframe>
+    </div>
+    <div class="container">  
+    	<div class="row">
+    		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 txtBg txtBgActive">第一步</div>
+    		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 txtBg">第二步</div>
+    	</div> 
+    	<h3 class="text-center loginTitle order row">
+    		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><span class="line"></span>
+    		</div>
+		    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><span class="txt"><img src="images/logo.png" class="logo_img alt=""></span>  
+		    </div>
+		    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><span class="line"></span>
+		    </div>
+        </h3>  
+        <div class="row">
+            <form action="" method="post" class="center-block forgetF">
+                <input class="center-block" id="my_phone" placeholder="手机号码" maxlength="11" name="username" value="" type="text">
+                <div class="row vil">
+                	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                		<input type="text" class="center-block" id="code_input" value="" placeholder="请输入验证码"/>
+                	</div>
+                	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                		<span id="v_container" style="display:inline-block;width: 100%;height: 40px;"></span>
+                	</div>
+                </div>
+                <input type="button" id="my_button" class="btn center-block" value="提交"> 
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/gVerify.js"></script>
+	<script>
+        var my_phone,re;
+		$("#my_phone").blur(function() {
+            setInterval(function() {
+                my_phone = $("#my_phone").val();
+                console.log(my_phone);
+                re = /^1\d{10}$/;
+                if(re.test(my_phone)) {
+                    $("#my_phone").get(0).style.color = "#333";
+                    if($("#my_button").attr(disabled)) {
+                        console.log(1);
+                    }
+                    $("#my_button").get(0).removeAttribute(disabled);
+                }else {
+                    // alert("请输入正确的手机号码");
+                }
+
+            },1000);
+			
+		});
+
+
+		var verifyCode = new GVerify("v_container");
+
+		document.getElementById("my_button").onclick = function(){
+			var res = verifyCode.validate(document.getElementById("code_input").value);
+			if(res && re.test(my_phone)){
+				// alert("验证正确");
+                $(".forgetF").get(0).style.display = "none";
+			}else{
+				alert("验证码错误");
+			}
+		}
+	</script>
+  </body>
 </html>

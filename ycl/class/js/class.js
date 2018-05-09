@@ -12,7 +12,7 @@ function linksList(that){
             currData = that.concat().splice(curr*nums-nums, nums);
         }
         for(var i=0;i<currData.length;i++){
-            dataHtml += '<tr class="num">'
+            dataHtml += '<tr>'
                 +'<td>'+currData[i].id+'</td>'
                 +'<td>'+currData[i].c_name+'</a></td>'
                 +'<td>'+currData[i].c_num+'</td>'
@@ -65,9 +65,9 @@ $('#myModal').on('click','#btn_que', function () {
     console.log()
     for(var i=0;i<myclass.length;i++){
         console.log($(".delete").attr("id"));
-        // if(myclass[i].id == $(".delete").attr("id")){
-        //     myclass.splice(i,1);
-        //     linksList(myclass);
-        // }
+        if(myclass[i].id == $(".delete").attr("id")){
+            myclass.splice(i,1);
+            linksList(myclass);
+        }
     }
 });
