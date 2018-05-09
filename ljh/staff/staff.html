@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>橄榄树幼儿园后台管理系统</title>
+    <meta name="description" content="Simple Effects for Drop-Down Lists" />
+    <meta name="keywords" content="drop-down, select, jquery, plugin, fallback, transition, transform, 3d, css3" />
+    <meta name="author" content="Codrops" />
+    <!-- Bootstrap -->
+    <link href="../../ycl/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/class.css">
+    <link rel="stylesheet" type="text/css" href="css/style4.css" />
+    <script src="js/modernizr.custom.63321.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="table-responsive my_tableDiv">
+    <!--数据表格-->
+    <table class="table table-striped text-center">
+        <caption class="my_title">
+            <select id="cd-dropdown" class="cd-select">
+                <option value="-1" selected>请选择班级</option>
+                <option value="1" class="icon-tux">喵喵班</option>
+                <option value="2" class="icon-finder">丫丫班</option>
+                <option value="3" class="icon-windows">臭臭班</option>
+                <option value="4" class="icon-android">朵朵班</option>
+                <option value="5" class="icon-android">花花班</option>
+            </select>
+            <button type="button" class="btn btn-success my_btn">查询</button>
+            <button type="button" class="btn btn-success my_btn2">添加</button>
+        </caption>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>班级名称</th>
+            <th>班级人数</th>
+            <th>班级老师</th>
+            <th>班级类别</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody class="links_content"></tbody>
+    </table>
+    <!--分页-->
+    <nav aria-label="Page navigation" class="text-center">
+        <ul class="pagination" id="pagination"></ul>
+    </nav>
+</div>
+<!-- 查看按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    查看班级信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <table class="table" id="modal_table">
+                        <tr>
+                            <td><label for="exampleInputName1">ID</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName1" disabled></td>
+                            <td><label for="exampleInputName2">班级名称</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName2" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName3">班级人数</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName3" disabled></td>
+                            <td><label for="exampleInputName4">班级类别</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName4" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName5">生活老师</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName5" disabled></td>
+                            <td><label for="exampleInputName6">主管老师</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName6" disabled></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-success my_btn2" id="btn_que3" data-dismiss="modal">
+                    确定
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 修改按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    修改班级信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <table class="table">
+                        <tr>
+                            <td><label for="exampleInputName7">ID</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName7" disabled></td>
+                            <td><label for="exampleInputName8">班级名称</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName8"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName9">班级人数</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName9"></td>
+                            <td><label for="exampleInputName10">班级类别</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName10"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName11">生活老师</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName11"></td>
+                            <td><label for="exampleInputName12">主管老师</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName12"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-success my_btn2" id="btn_que2" data-dismiss="modal">
+                    保存
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 删除按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    删除班级信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                确定要删除吗？
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-success my_btn2" id="btn_que" data-dismiss="modal">
+                    确定
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<script src="../../ycl/js/jquery-3.3.1.js"></script>
+<script src="../../ycl/js/bootstrap.js"></script>
+<script src="js/bootstrap-paginator.js"></script>
+<script src="js/class.js"></script>
+<script type="text/javascript" src="js/jquery.dropdown.js"></script>
+<script type="text/javascript">
+    $( function() {
+        $( '#cd-dropdown' ).dropdown();
+    });
+</script>
+</body>
+</html>
