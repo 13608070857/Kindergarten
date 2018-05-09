@@ -19,8 +19,8 @@ function linksList(that){
                 +'<td>'+currData[i].c_teacher+'</td>'
                 +'<td>'+currData[i].c_address+'</td>'
                 +'<td class="operation">'+
-                "<a class='query iconfont'>&#xe62c;</a>"+
-                "<a class='alter iconfont'>&#xe608;</a>"+
+                "<a class='query iconfont' data-toggle='modal' data-target='#myModal3'>&#xe62c;</a>"+
+                "<a class='alter iconfont' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
                 "<a class='delete iconfont' id='"+currData[i].id+"' data-toggle='modal' data-target='#myModal'>&#xe61c;</a>"
                 +'</td>'
                 +'</tr>';
@@ -61,11 +61,14 @@ function linksList(that){
         element.bootstrapPaginator(options);
     });
 }
-$('#myModal').on('click','#btn_que', function () {
-    console.log()
+//获取ID
+$('body').on('click','.delete', function () {
+    tableId=$(this).attr("id");
+});
+//删除
+$('body').on('click','#btn_que', function () {
     for(var i=0;i<myclass.length;i++){
-        console.log($(".delete").attr("id"));
-        if(myclass[i].id == $(".delete").attr("id")){
+        if(myclass[i].id == tableId){
             myclass.splice(i,1);
             linksList(myclass);
         }

@@ -40,18 +40,26 @@ th{
 }
 .my_btn{
     font-size: 16px;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 10px 5px 10px;
     background-color: #26BB75;
     margin-left: 20px;
 }
+.my_btn:hover{
+    background-color: #27cc7c;
+    border-color: #27cc7c;
+}
+.my_btn2:hover{
+    background-color: #07a792;
+    border-color: #07a792;
+}
 .my_btn2{
     font-size: 16px;
-    padding: 10px 20px 10px 20px;
-    background-color: #FF4501;
+    padding: 5px 10px 5px 10px;
+    background-color: #079783;
 }
 .my_select{
     font-size: 16px;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 10px 5px 10px;
     margin-left: 20px;
 }
 /*fonts*/
