@@ -1,0 +1,29 @@
+.order {  
+   height: 60px;  
+   line-height: 60px;  
+   text-align: center;  
+}  
+ .order .line {  
+   display: inline-block;  
+   width: 100%;  
+   border-top: 1px solid #ccc ;  
+}  
+.order .txt {  
+   vertical-align: middle;  
+}  
+.infoBox {
+	padding: 5% 0;
+	border-bottom: 1px solid rgb(94,185,122);
+	border-radius: 50%;
+}
+.infoBox a {
+	font-size: 1.2em;
+	color: #999;
+	display: inline-block;
+	width: 60%;
+}
+.info {
+	font-size: 1.8em;
+	color: rgb(94,185,122);
+	padding: 2% 0;
+}
