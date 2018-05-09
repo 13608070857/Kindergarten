@@ -1,6 +1,6 @@
 form {
-	width: 40%;
-	padding: 5% 0;
+	width: 60%;
+	/*padding: 5% 0;*/
 }
 .forgetF input {
 	width: 80%;
@@ -38,6 +38,6 @@ form {
 	margin: 0 auto;
 	line-height: 40px;
 }
-#code_input {
+.vil input {
 	width: 100%;
 }
