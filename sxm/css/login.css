@@ -34,3 +34,8 @@ html,body {
 .loginTitle {
     margin-bottom: 5%;
 }
+.errorInfo {
+    color: rgb(94,185,122);
+    font-size: 1.3em;
+    opacity: 0;
+}
