@@ -1,3 +1,4 @@
+//-----------颜春林   班级管理数据
 var myclass=[{
     "id" : "c_001",
     "c_name" : "喵喵班",
@@ -134,6 +135,15 @@ var myclass=[{
 },{
     "id" : "c_020",
     "c_name" : "丫丫班",
+    "c_num" : "25",
+    "c_teacher" : "皮十",
+    "c_teacher2" : "麻小二",
+    "c_address" : "小班"
+}];
+//-----------颜春林   学生管理数据
+var my_stuList=[{
+    "id" : "s_001",
+    "s_name" : "丫丫班",
     "c_num" : "25",
     "c_teacher" : "皮十",
     "c_teacher2" : "麻小二",
