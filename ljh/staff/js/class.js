@@ -120,39 +120,40 @@ $('body').on('click','#btn_que', function () {
     }
 });
 /*查询*/
-// $("#search_btn").click(function() {
-//     $(".links_content").empty();
-//     for(var i=0;i<myTeacher.length;i++) {
-//         if(myTeacher[i].c_teacher == $(".cd-dropdown>span>span").get(0).innerHTML) {
-//
-//             for(var j=0;j<$(dataHtml).length;j++) {
-//                 if(myTeacher[i].id == $($(dataHtml)[j]).children().html()) {
-//
-//                     $(".links_content").append($(dataHtml)[j]);
-//                 }
-//             }
-//
-//         }
-//     }
-// });
 $("#search_btn").click(function () {
-    var my_Teacher = $(".cd-dropdown>span>span").get(0).innerHTML;
-    var my_data = "";
-    for (i=0;i<myTeacher.length;i++){
-        if (myTeacher[i].c_teacher == my_Teacher) {
-            my_data += '<tr>'
-                +'<td>'+myTeacher[i].id+'</td>'
-                +'<td>'+myTeacher[i].c_name+'</a></td>'
-                +'<td>'+myTeacher[i].c_num+'</td>'
-                +'<td>'+myTeacher[i].c_teacher+'</td>'
-                +'<td>'+myTeacher[i].c_address+'</td>'
-                +'<td class="operation">'+
-                "<a class='query iconfont' id='"+myTeacher[i].id+"' data-toggle='modal' data-target='#myModal3'>&#xe62c;</a>"+
-                "<a class='alter iconfont' id='"+myTeacher[i].id+"' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
-                "<a class='delete iconfont' id='"+myTeacher[i].id+"' data-toggle='modal' data-target='#myModal'>&#xe61c;</a>"
-                +'</td>'
-                +'</tr>';
-            $(".links_content").html(my_data);
+    if ($(".cd-dropdown>span>span").get(0)!=undefined){
+        var my_seleteOp=$(".cd-dropdown>span>span").get(0).innerHTML;
+    }
+    var newArry=[];
+    for (var i=0;i<myTeacher.length;i++){
+        if (myTeacher[i].c_teacher==my_seleteOp){
+            newArry.push(myTeacher[i]);
+        }
+        if (newArry.indexOf({c_teacher:my_seleteOp})==-1){
+            linksList(newArry)
         }
     }
+    if (newArry.length>10){
+        $('#pagination').css("display","block");
+    } else {
+        $('#pagination').css("display","none");
+    }
+});
+//添加
+var idNum=0;
+var addList;
+$('body').on('click','#btn_que4', function () {
+    idNum=idNum+1;
+    myTeacher.id="c_0"+(myTeacher.length+idNum);
+    myTeacher.c_name=$("#exampleInputName13").val();
+    myTeacher.c_num=$("#exampleInputName14").val();
+    myTeacher.c_address=$("#exampleInputName15").val();
+    myTeacher.c_teacher=$("#exampleInputName16").val();
+    addList='{"id":"'+ myTeacher.id +'",';
+    addList+= '"c_name":"'+ myTeacher.c_name +'",';
+    addList+= '"c_num":"'+ myTeacher.c_num +'",';
+    addList+= '"c_address":"'+ myTeacher.c_address +'",';
+    addList += '"c_teacher":"'+ myTeacher.c_teacher +'"}';
+    myTeacher.push(JSON.parse(addList));
+    linksList(myTeacher);
 });
