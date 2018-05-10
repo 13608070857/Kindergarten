@@ -18,6 +18,7 @@ th{
 .operation>a{
     text-decoration: none;
     margin-left: 10px;
+    cursor: pointer;
 }
 .query{
     color: #079783;
@@ -28,12 +29,18 @@ th{
 .delete{
     color: #FF4501;
 }
+.go_up{
+    color: #2C4351;
+}
 .my_title{
     height: 80px;
     line-height: 70px;
     background-color: #F2F2F2;
     border-left: 5px solid #079783;
     margin-bottom: 10px;
+}
+.my_table{
+    background-color: #F2F2F2;
 }
 .my_tableDiv{
     margin: 10px;
@@ -57,10 +64,23 @@ th{
     padding: 5px 10px 5px 10px;
     background-color: #079783;
 }
-.my_select{
+.my_clname{
     font-size: 16px;
-    padding: 5px 10px 5px 10px;
+    font-weight: bold;
     margin-left: 20px;
+}
+.my_input{
+    box-shadow: 1px 1px 1px #888888;
+    border-radius: 0;
+}
+.my_cd{
+    margin-top: 15px;
+}
+.my_smana{
+    font-size: 25px;
+    border-bottom: 2px solid #079783;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /*fonts*/
 @font-face {

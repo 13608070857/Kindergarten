@@ -128,5 +128,11 @@ p {
 }
 html{
     min-width:740px;
-
+}
+#historyBox div{
+    line-height: 15px;
+    float: left;
+}
+.historyT{
+    cursor: pointer
 }
