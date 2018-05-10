@@ -27,7 +27,7 @@
                 <option value="2" class="icon-finder">教学部</option>
             </select>
             <button type="button" class="btn btn-success my_btn">查询</button>
-            <button type="button" class="btn btn-success my_btn2">添加</button>
+            <button type="button" class="btn btn-success my_btn2" data-toggle='modal' data-target='#myModal5'>添加</button>
         </caption>
         <thead>
         <tr>
@@ -45,6 +45,53 @@
     <nav aria-label="Page navigation" class="text-center">
         <ul class="pagination" id="pagination"></ul>
     </nav>
+</div>
+<!-- 添加按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    添加班级信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <table class="table">
+                        <tr>
+                            <td><label for="dutiesName">部门名字</label></td>
+                            <td>
+                                <input type="text" id="dutiesName">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="dutiesDes">部门描述</label></td>
+                            <td><input type="text" class="form-control" id="dutiesDes"></td>
+                            <td><label for="dutiesNum">部门人数</label></td>
+                            <td>
+                                <input type="text" id="dutiesNum">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="dutiesAdmin">负责主管</label></td>
+                            <td><input type="text" class="form-control" id="dutiesAdmin"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-success my_btn2" id="btn_que5" data-dismiss="modal">
+                    添加
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
 </div>
 <!-- 查看按钮的模态框 -->
 <div class="modal fade bs-example-modal-sm" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
