@@ -144,7 +144,9 @@ $('body').on('click','#btn_que4', function () {
 });
 //查询
 $('body').on('click','#search_btn', function () {
-    var my_seleteOp=$(".cd-dropdown>span>span").get(0).innerHTML;
+    if ($(".cd-dropdown>span>span").get(0)!=undefined){
+        var my_seleteOp=$(".cd-dropdown>span>span").get(0).innerHTML;
+    }
     var newArry=[];
     for (var i=0;i<myclass.length;i++){
         if (myclass[i].c_name==my_seleteOp){

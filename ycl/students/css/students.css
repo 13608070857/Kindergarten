@@ -1,0 +1,18 @@
+.cd-dropdown,
+.cd-select {
+    position: relative;
+    width: 210px;
+    display: block;
+    float: left;
+    margin-top: 0;
+    margin-left: 20px;
+}
+.my_addbtn{
+    margin-left: 20px;
+}
+.my_smana{
+    font-size: 25px;
+    border-bottom: 2px solid #079783;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
