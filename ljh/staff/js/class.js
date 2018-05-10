@@ -28,7 +28,7 @@ function linksList(that){
         return dataHtml;
     }
     //分页
-    nums = 5; //每页出现的数据量
+    nums = 9; //每页出现的数据量
     pages = Math.ceil(myTeacher.length/nums);//页总数
     $(".links_content").html(renderDate(myTeacher));
     $(function(){
@@ -58,7 +58,11 @@ function linksList(that){
                 $(".links_content").html(renderDate(page));
             }
         };
-        element.bootstrapPaginator(options);
+        if (myTeacher.length>5){
+            element.bootstrapPaginator(options);
+        } else {
+            element.css("display","none")
+        }
     });
 }
 /*查看*/
@@ -101,6 +105,8 @@ $('body').on('click','#btn_que2', function () {
         }
     }
 });
+/*添加*/
+
 /*删除*/
 $('body').on('click','.delete', function () {
     deleteId=$(this).attr("id");
