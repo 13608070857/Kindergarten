@@ -1,0 +1,27 @@
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #4EC88E;
+}
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+.btn1{
+    margin-top: 20px;
+    line-height: 50px;
+}
+.btn-primary{
+    background-color: rgba(168, 168, 168, 0.91);
+    color: white;
+    width: 10%;
+    border: 0;
+}
+#B{
+    display:none;
+}
+#time{
+    float: right;
+}
+/*
+th{
+    text-align: center;
+}*/
