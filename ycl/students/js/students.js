@@ -2,7 +2,7 @@ $( function() {
     $( '#cd-dropdown1' ).dropdown();
     $( '#cd-dropdown2' ).dropdown();
 });
-$.get("js/classList.js",function (data,status) {
+$.get("../class/js/classList.js",function (data,status) {
     //执行加载数据的方法
     linksList();
 });
