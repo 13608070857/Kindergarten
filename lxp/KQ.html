@@ -63,6 +63,128 @@
         <tbody class="links_content"></tbody>
     </table>
 </div>
+<nav aria-label="Page navigation" class="text-center">
+    <ul class="pagination">
+        <li>
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+<!----------------------------------------------------模态框------------------------------------------------------------>
+<!--查看学生-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">详细信息</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <table class="table" id="modal_table">
+                        <tr>
+                            <td><label for="exampleInputName1">班级名称</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName1" disabled></td>
+                            <td><label for="exampleInputName2">班级类别</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName2" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName3">班级人数</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName3" disabled></td>
+                            <td><label for="exampleInputName4">班级地址</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName4" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName5">学生姓名</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName5" disabled></td>
+                            <td><label for="exampleInputName6">性别</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName6" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName5">班主老师</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName7" disabled></td>
+                            <td><label for="exampleInputName6">生活老师</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName8" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName5">请假时间</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName9" disabled></td>
+                            <td><label for="exampleInputName6">备注</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName10" disabled></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--查看老师-->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel3">详细信息</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <table class="table" id="modal_table1">
+                        <tr>
+                            <td><label for="exampleInputName1">ID</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName11" disabled></td>
+                            <td><label for="exampleInputName2">用户名</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName12" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName3">性别</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName13" disabled></td>
+                            <td><label for="exampleInputName4">毕业院校</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName14" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName5">上班时间</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName15" disabled></td>
+                            <td><label for="exampleInputName6">下班时间</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName16" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName5">请假时间</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName17" disabled></td>
+                            <td><label for="exampleInputName6">备注</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName18" disabled></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--编辑-->
+
+<!--删除-->
+
 <script src="JS/jquery-3.1.1.js"></script>
 <script src="JS/bootstrap.js"></script>
 <script src="JS/KQ.js"></script>
