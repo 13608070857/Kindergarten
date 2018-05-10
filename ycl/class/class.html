@@ -20,11 +20,12 @@
 </head>
 <body>
 <div class="table-responsive my_tableDiv">
+    <div class="my_smana">班级管理</div>
     <!--数据表格-->
     <table class="table table-striped text-center">
         <caption class="my_title">
             <div class="pull-left my_clname">班级名称：</div>
-            <select id="cd-dropdown1" class="cd-select">
+            <select id="cd-dropdown1" class="cd-select my_cd">
                 <option value="-1" selected>请选择班级</option>
                 <option value="1" class="icon-tux">喵喵班</option>
                 <option value="2" class="icon-finder">丫丫班</option>
@@ -177,13 +178,27 @@
                             <td><label for="exampleInputName7">ID</label></td>
                             <td><input type="text" class="form-control" id="exampleInputName7" disabled></td>
                             <td><label for="exampleInputName8">班级名称</label></td>
-                            <td><input type="text" class="form-control" id="exampleInputName8"></td>
+                            <td>
+                                <select class="form-control" id="exampleInputName8">
+                                    <option value="喵喵班" class="icon-tux">喵喵班</option>
+                                    <option value="丫丫班" class="icon-finder">丫丫班</option>
+                                    <option value="臭臭班" class="icon-windows">臭臭班</option>
+                                    <option value="臭臭班" class="icon-android">臭臭班</option>
+                                    <option value="花花班" class="icon-android">花花班</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="exampleInputName9">班级人数</label></td>
                             <td><input type="text" class="form-control" id="exampleInputName9"></td>
                             <td><label for="exampleInputName10">班级类别</label></td>
-                            <td><input type="text" class="form-control" id="exampleInputName10"></td>
+                            <td>
+                                <select class="form-control" id="exampleInputName10">
+                                    <option value="大班">大班</option>
+                                    <option value="小班">小班</option>
+                                    <option value="中班">中班</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td><label for="exampleInputName11">生活老师</label></td>

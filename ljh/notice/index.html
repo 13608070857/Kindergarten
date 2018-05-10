@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
 	<link href="css/froala_editor.min.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
+    <title>发布公告</title>
     <style>
         body {
             text-align: center;
@@ -78,7 +79,7 @@
       $("#cs").click(function () {
           localStorage.titleVal = $(".titleDiv").get(0).value;
           localStorage.bodyVal = $("#edit>div:nth-of-type(2)").get(0).innerHTML;
-          console.log(localStorage.titleVal+localStorage.bodyVal)
+          console.log(localStorage.titleVal);
       })
   </script>
 </body>
