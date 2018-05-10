@@ -10,8 +10,8 @@ $(function() {
 	    	// 登录
 			for(var i=0;i<userInfo.length;i++) {
 				if(userName.val() == userInfo[i].name && passWd.val() == userInfo[i].password) {
-					$.cookie = "username = " + userName;
-					$.cookie = "password = " + passWd;
+					localStorage.userName = userName.val();
+					localStorage.passWd = passWd.val();
 					location.href = "../ycl/index.html";
 					break;
 				}else {

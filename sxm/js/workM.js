@@ -2,10 +2,12 @@ $.get("js/workDuty.js",function (data,status) {
     //执行加载数据的方法
     linksList();
 });
+var dataHtml;
+var element;
 function linksList(that){
     //渲染数据
     function renderDate(curr){
-        var dataHtml = '';
+        dataHtml = '';
         if(!that){
             currData = duties.concat().splice(curr*nums-nums, nums);
         }else{
@@ -32,36 +34,46 @@ function linksList(that){
     pages = Math.ceil(duties.length/nums);//页总数
     $(".links_content").html(renderDate(duties));
     $(function(){
-        // var element = $('#pagination');
+        element = $('#pagination');
         options = {
             bootstrapMajorVersion:3, //对应的bootstrap版本
             currentPage: 1, //当前页数
             numberOfPages: duties.length, //每页页数
             totalPages: pages, //总页数
-
             // shouldShowPage:true,//是否显示该按钮
-            // itemTexts: function (type, page, current) {//设置显示的样式，默认是箭头
-            //     switch (type) {
-            //         case "first":
-            //             return "首页";
-            //         case "prev":
-            //             return "上一页";
-            //         case "next":
-            //             return "下一页";
-            //         case "last":
-            //             return "末页";
-            //         case "page":
-            //             return page;
-            //     }
-            // },
+            itemTexts: function (type, page, current) {//设置显示的样式，默认是箭头
+                switch (type) {
+                    case "first":
+                        return "首页";
+                    case "prev":
+                        return "上一页";
+                    case "next":
+                        return "下一页";
+                    case "last":
+                        return "末页";
+                    case "page":
+                        return page;
+                }
+            },
             //点击事件
-            // onPageClicked: function (event, originalEvent, type, page) {
-            //     $(".links_content").html(renderDate(page));
-            // }
+            onPageClicked: function (event, originalEvent, type, page) {
+                $(".links_content").html(renderDate(page));
+            }
         };
-        // element.bootstrapPaginator(options);
+        if (duties.length>5){
+            element.bootstrapPaginator(options);
+        } else {
+            element.get(0).style.display = "none";
+        }
     });
+    for(var i=0;i<$(".links_content tr").length;i++) {
+        $($(".links_content tr td:nth-of-type(5)")[i]).click(function() {
+            
+        })
+    }
+     
 }
+
 /*查看*/
 $('body').on('click','.query', function () {
     queryId=$(this).attr("id");
@@ -80,7 +92,7 @@ $('body').on('click','.alter', function () {
     alterId=$(this).attr("id");
     for(var i=0;i<duties.length;i++){
         if (duties[i].id==alterId){
-            console.log(duties[i])
+            // console.log(duties[i])
             $("#exampleInputName6").val(duties[i].id);
             $("#exampleInputName7").val(duties[i].w_name);
             $("#exampleInputName8").val(duties[i].w_describe);
@@ -121,15 +133,22 @@ $('body').on('click','#btn_que', function () {
     }
     
 });
-
 // 查询
-$(".my_btn").click(function() {
-    for(var i=0;i<duties.length;i++) {
-        if(duties[i].w_name == $(".cd-dropdown>span>span").get(0).innerHTML) {
-            console.log(currData);
-            for(var j=0;j<currData.length;j++) {
-                console.log(currData[j])
-            }
+$('body').on('click','.my_btn', function () {
+    var my_seleteOp=$(".cd-dropdown>span>span").get(0).innerHTML;
+    var newArry=[];
+    for (var i=0;i<duties.length;i++){
+        if (duties[i].w_name==my_seleteOp){
+            newArry.push(duties[i]);
+        }
+        if (newArry.indexOf({w_name:my_seleteOp})==-1){
+            linksList(newArry);
         }
     }
-})
+    if (newArry.length>5){
+        $('#pagination').attr("class","text-center");
+    } else {
+        $('#pagination').css("display","none");
+    }
+    
+});

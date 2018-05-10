@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>查看公告</title>
+		<link rel="stylesheet" href="css/flowChart.css" />
+	</head>
+
+	<body>
+		<!--事件时间轴-->
+		<div class="flowChart">
+			<!--左侧轴-->
+			<div class="flowChart-left">
+				<!--虚线-->
+				<div class="dashed"></div>
+			</div>
+			<!--右侧内容-->
+			<div class="flowChart-right">
+				<!--一个节点-->
+				<div class="oneNode">
+					<!--左侧小球-->
+					<div class="check check-danger">
+						1月2日
+					</div>
+					<div class="tag-boder">
+						<div class="tag">
+						</div>
+					</div>
+					<!--右侧内容-->
+					<div class="NodeDetail">
+						<!--上-->
+						<div class="NodeDetail-title">
+							<!--头像-->
+							<img class="headImg" src="img/headImg.jpg" />
+							<!--内容-->
+							<div class="details">
+								<h4>橄榄树幼儿园-赵丹</h4>
+								<p class="release">发布公告</p>
+								<p class="deleteNotice">删除</p>
+							</div>
+						</div>
+						<!--中-->
+						<div class="NodeDetail-content">
+							<span class="badge">公告:</span>
+							<h3>我校关于开展师德师风专项治理活动的实施意见</h3>
+							<p>根据2017年10月27日中共绵阳市委宣传部和2017年11月3日绵阳市教育和体育局召开的“师德师风专项治理活动”工作会议精神，按照《贯彻落实十九大精神，办好人民满意的幸福教育，开展师德师风专项治理活动的通知》（绵教体函〔2017〕437号）文件的要求，为了进一步加强我校师德师风建设，打造高素质的教师队伍，提升学校的办学品位，学校召开了党委会、党委扩大会和行政会，结合学校实际，特拟定我校关于开展师德师风专项治理活动的实施意见。</p>
+						</div>
+						<!--下-->
+						<div class="NodeDetail-footer">
+							<span>2017-1-2 22:22:31</span>
+
+						</div>
+					</div>
+				</div>
+				<div class="oneNode">
+					<!--左侧小球-->
+					<div class="check check-success">
+						1月1日
+					</div>
+					<div class="tag-boder">
+						<div class="tag">
+						</div>
+					</div>
+					<!--右侧内容-->
+					<div class="NodeDetail">
+						<!--上-->
+						<div class="NodeDetail-title">
+							<!--头像-->
+							<img class="headImg" src="img/headImg.jpg" />
+							<!--内容-->
+							<div class="details">
+								<h4>橄榄树幼儿园-赵丹</h4>
+								<p class="release">发布公告</p>
+								<p class="deleteNotice">删除</p>
+							</div>
+						</div>
+						<!--中-->
+						<div class="NodeDetail-content">
+							<span class="badge">公告:</span>
+							<h3>进一步加强教师队伍建设，使学校良性健康发展</h3>
+							<p>深入贯彻落实党的十九大精神，坚持以“办好人民满意的幸福教育”为宗旨，按照绵阳市委及教体局的要求，以实施依法治教、强化队伍管理、优化师德师风为核心，以思想教育、制度建设、集中整顿、严明纪律为抓手，进一步加强教师队伍建设，使学校良性健康发展。 </p>
+						</div>
+						<!--下-->
+						<div class="NodeDetail-footer">
+							<span>2017-1-1 22:22:31</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../ycl/js/jquery-3.3.1.js"></script>
+	<script src="../../ycl/js/bootstrap.js"></script>
+	<script>
+		function del(data){
+		    var a = document.getElementsByClassName("oneNode");
+		    var b = a[0].parentNode;
+		    b.removeChild(a[0]);
+		}
+		$(".deleteNotice").click(function () {
+		    var a = $(this).parent().parent().parent().parent();
+			a.remove();
+        });
+		$(function () {
+			if(localStorage.titleVal.length > 1) {
+			    var newDiv = "<div class=\"oneNode\">\n" +
+                    "\t\t\t\t\t<!--左侧小球-->\n" +
+                    "\t\t\t\t\t<div class=\"check check-danger\">\n" +
+                    "\t\t\t\t\t\t5月10日\n" +
+                    "\t\t\t\t\t</div>\n" +
+                    "\t\t\t\t\t<div class=\"tag-boder\">\n" +
+                    "\t\t\t\t\t\t<div class=\"tag\">\n" +
+                    "\t\t\t\t\t\t</div>\n" +
+                    "\t\t\t\t\t</div>\n" +
+                    "\t\t\t\t\t<!--右侧内容-->\n" +
+                    "\t\t\t\t\t<div class=\"NodeDetail\">\n" +
+                    "\t\t\t\t\t\t<!--上-->\n" +
+                    "\t\t\t\t\t\t<div class=\"NodeDetail-title\">\n" +
+                    "\t\t\t\t\t\t\t<!--头像-->\n" +
+                    "\t\t\t\t\t\t\t<img class=\"headImg\" src=\"img/headImg.jpg\" />\n" +
+                    "\t\t\t\t\t\t\t<!--内容-->\n" +
+                    "\t\t\t\t\t\t\t<div class=\"details\">\n" +
+                    "\t\t\t\t\t\t\t\t<h4>橄榄树幼儿园-赵丹</h4>\n" +
+                    "\t\t\t\t\t\t\t\t<p class=\"release\">发布公告</p>\n" +
+                    "\t\t\t\t\t\t\t\t<p class=\"deleteNotice\" onclick=\"del(this)\">删除</p>\n" +
+                    "\t\t\t\t\t\t\t</div>\n" +
+                    "\t\t\t\t\t\t</div>\n" +
+                    "\t\t\t\t\t\t<!--中-->\n" +
+                    "\t\t\t\t\t\t<div class=\"NodeDetail-content\">\n" +
+                    "\t\t\t\t\t\t\t<span class=\"badge\">公告:</span>\n" +
+                    "\t\t\t\t\t\t\t<h3>"+localStorage.titleVal+"</h3>\n" +
+                    "\t\t\t\t\t\t\t<p>"+localStorage.bodyVal+"</p>\n" +
+                    "\t\t\t\t\t\t</div>\n" +
+                    "\t\t\t\t\t\t<!--下-->\n" +
+                    "\t\t\t\t\t\t<div class=\"NodeDetail-footer\">\n" +
+                    "\t\t\t\t\t\t\t<span>2018-5-10 17:10:31</span>\n" +
+                    "\n" +
+                    "\t\t\t\t\t\t</div>\n" +
+                    "\t\t\t\t\t</div>\n" +
+                    "\t\t\t\t</div>";
+			    $(".flowChart-right").prepend(newDiv);
+			}
+        })
+	</script>
+</html>

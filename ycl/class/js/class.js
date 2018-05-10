@@ -9,12 +9,12 @@ $.get("js/classList.js",function (data,status) {
 function linksList(that){
     //渲染数据
     function renderDate(curr){
-        var dataHtml = '';
         if(!that){
             currData = myclass.concat().splice(curr*nums-nums, nums);
         }else{
             currData = that.concat().splice(curr*nums-nums, nums);
         }
+        var dataHtml = '';
         for(var i=0;i<currData.length;i++){
             dataHtml += '<tr>'
                 +'<td>'+currData[i].id+'</td>'
@@ -144,41 +144,41 @@ $('body').on('click','#btn_que4', function () {
 });
 //查询
 $('body').on('click','#search_btn', function () {
-    var my_seleteOp=$(".cd-dropdown>span>span").get(0).innerHTML;
+    if ($(".cd-dropdown>span>span").get(0)!=undefined){
+        var my_seleteOp=$(".cd-dropdown>span>span").get(0).innerHTML;
+    }
     var newArry=[];
     for (var i=0;i<myclass.length;i++){
         if (myclass[i].c_name==my_seleteOp){
             newArry.push(myclass[i]);
         }
+        if (newArry.indexOf({c_name:my_seleteOp})==-1){
+            linksList(newArry)
+        }
     }
-    myclass=newArry;
-    linksList(myclass);
+    if (newArry.length>10){
+        $('#pagination').css("display","block");
+    } else {
+        $('#pagination').css("display","none");
+    }
 });
 //添加
-var dataHtml3="";
-var idNum=1;
+var idNum=0;
+var addList;
 $('body').on('click','#btn_que5', function () {
     idNum=idNum+1;
-    for (var i=0;i<myclass.length;i++){
-        myclass.id="c_0"+(i+idNum);
-    }
+    myclass.id="c_0"+(myclass.length+idNum);
     myclass.c_name=$("#exampleInputName88").val();
     myclass.c_num=$("#exampleInputName99").val();
     myclass.c_address=$("#exampleInputName100").val();
     myclass.c_teacher=$("#exampleInputName111").val();
     myclass.c_teacher2=$("#exampleInputName122").val();
-    dataHtml3 += '<tr>'
-        +'<td>'+myclass.id+'</td>'
-        +'<td>'+myclass.c_name+'</a></td>'
-        +'<td>'+myclass.c_address+'</td>'
-        +'<td>'+myclass.c_num+'</td>'
-        +'<td>'+myclass.c_teacher+'</td>'
-        +'<td class="operation">'+
-        "<a class='query iconfont' id='"+myclass.id+"' title='查看' data-toggle='modal' data-target='#myModal3'>&#xe62c;</a>"+
-        "<a class='alter iconfont' id='"+myclass.id+"' title='修改' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
-        "<a class='delete iconfont' id='"+myclass.id+"' title='删除' data-toggle='modal' data-target='#myModal'>&#xe61c;</a>"+
-        "<a class='go_up iconfont' id='"+myclass.id+"' title='升班' data-toggle='modal' data-target='#myModa4'>升班</a>"
-        +'</td>'
-        +'</tr>';
-    $(".links_content").html(dataHtml3);
+    addList='{"id":"'+ myclass.id +'",';
+    addList+= '"c_name":"'+ myclass.c_name +'",';
+    addList+= '"c_num":"'+ myclass.c_num +'",';
+    addList+= '"c_address":"'+ myclass.c_address +'",';
+    addList+= '"c_teacher":"'+ myclass.c_teacher +'",';
+    addList += '"c_teacher2":"'+ myclass.c_teacher2 +'"}';
+    myclass.push(JSON.parse(addList));
+    linksList(myclass);
 });

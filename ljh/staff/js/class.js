@@ -58,7 +58,11 @@ function linksList(that){
                 $(".links_content").html(renderDate(page));
             }
         };
-        element.bootstrapPaginator(options);
+        if (myTeacher.length>5){
+            element.bootstrapPaginator(options);
+        } else {
+            element.css("display","none")
+        }
     });
 }
 /*查看*/
@@ -101,6 +105,8 @@ $('body').on('click','#btn_que2', function () {
         }
     }
 });
+/*添加*/
+
 /*删除*/
 $('body').on('click','.delete', function () {
     deleteId=$(this).attr("id");
@@ -114,12 +120,26 @@ $('body').on('click','#btn_que', function () {
     }
 });
 /*查询*/
+// $("#search_btn").click(function() {
+//     $(".links_content").empty();
+//     for(var i=0;i<myTeacher.length;i++) {
+//         if(myTeacher[i].c_teacher == $(".cd-dropdown>span>span").get(0).innerHTML) {
+//
+//             for(var j=0;j<$(dataHtml).length;j++) {
+//                 if(myTeacher[i].id == $($(dataHtml)[j]).children().html()) {
+//
+//                     $(".links_content").append($(dataHtml)[j]);
+//                 }
+//             }
+//
+//         }
+//     }
+// });
 $("#search_btn").click(function () {
     var my_Teacher = $(".cd-dropdown>span>span").get(0).innerHTML;
     var my_data = "";
     for (i=0;i<myTeacher.length;i++){
         if (myTeacher[i].c_teacher == my_Teacher) {
-            console.log(myTeacher[i].c_teacher);
             my_data += '<tr>'
                 +'<td>'+myTeacher[i].id+'</td>'
                 +'<td>'+myTeacher[i].c_name+'</a></td>'

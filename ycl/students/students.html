@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>橄榄树幼儿园后台管理系统</title>
+    <meta name="description" content="Simple Effects for Drop-Down Lists" />
+    <meta name="keywords" content="drop-down, select, jquery, plugin, fallback, transition, transform, 3d, css3" />
+    <meta name="author" content="Codrops" />
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../class/css/class.css">
+    <link rel="stylesheet" type="text/css" href="../class/css/style4.css" />
+    <link rel="stylesheet" href="css/students.css">
+    <script src="../class/js/modernizr.custom.63321.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="table-responsive my_tableDiv">
+    <div class="my_smana">学生管理</div>
+    <!--数据表格-->
+    <table class="table table-striped text-center">
+        <caption class="my_title">
+            <table class="text-center">
+                <tr>
+                    <td><label for="sno" class="my_clname">学生编号：</label></td>
+                    <td><input type="text" class="form-control my_input" id="sno" size="12" placeholder="学生编号"></td>
+                    <td><label for="s_name" class="my_clname">学生姓名：</label></td>
+                    <td><input type="text" class="form-control my_input" id="s_name" size="12" placeholder="学生姓名"></td>
+                    <td><label class="my_clname">学生状态：</label></td>
+                    <td>
+                        <select id="cd-dropdown1" class="cd-select">
+                            <option value="-1" selected>请选择状态</option>
+                            <option value="正常" class="icon-tux">正常</option>
+                            <option value="请假" class="icon-finder">请假</option>
+                            <option value="休学" class="icon-windows">休学</option>
+                            <option value="转园" class="icon-android">转园</option>
+                        </select>
+                    </td>
+                    <td><button type="button" class="btn btn-success my_btn" id="search_btn">查询</button></td>
+                    <td><button type="button" class="btn btn-success my_btn2 my_addbtn" id="add_btn" data-toggle='modal' data-target='#myModal5'>添加</button></td>
+                </tr>
+            </table>
+            <!--<div class="pull-left my_clname">学生状态：</div>-->
+        </caption>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>所属班级</th>
+            <th>学生状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody class="links_content"></tbody>
+    </table>
+    <!--分页-->
+    <nav aria-label="Page navigation" class="text-center">
+        <ul class="pagination" id="pagination"></ul>
+    </nav>
+</div>
+<!-- 添加按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    添加学生信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <table class="table">
+                        <tr>
+                            <td><label for="exampleInputName77">学生姓名</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName77"></td>
+                            <td><label for="exampleInputName88">学生状态</label></td>
+                            <td>
+                                <select class="form-control" id="exampleInputName88">
+                                    <option value="正常">正常</option>
+                                    <option value="请假">请假</option>
+                                    <option value="休学">休学</option>
+                                    <option value="转园">转园</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName99">性别</label></td>
+                            <td>
+                                <select class="form-control" id="exampleInputName99">
+                                    <option value="男">男</option>
+                                    <option value="女">女</option>
+                                </select>
+                            </td>
+                            <td><label for="exampleInputName100">所属班级</label></td>
+                            <td>
+                                <select class="form-control" id="exampleInputName100">
+                                    <option value="喵喵班">喵喵班</option>
+                                    <option value="丫丫班">丫丫班</option>
+                                    <option value="臭臭班">臭臭班</option>
+                                    <option value="朵朵班">朵朵班</option>
+                                    <option value="花花班">花花班</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName111">紧急联系人1</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName111"></td>
+                            <td><label for="exampleInputName122">紧急联系人1电话</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName122"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName1111">紧急联系人2</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName1111"></td>
+                            <td><label for="exampleInputName1122">紧急联系人2电话</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName1122"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName133">家庭住址</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName133"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-success my_btn2" id="btn_que5" data-dismiss="modal">
+                    添加
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 查看按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    查看学生信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <table class="table" id="modal_table">
+                        <tr>
+                            <td><label for="exampleInputName022">ID</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName022" disabled></td>
+                            <td><label for="exampleInputName22">学生姓名</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName22" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName44">性别</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName44" disabled></td>
+                            <td><label for="exampleInputName55">所属班级</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName55" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName66">紧急联系人1</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName66" disabled></td>
+                            <td><label for="exampleInputName011">紧急联系人1电话</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName011" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName0166">紧急联系人2</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName0166" disabled></td>
+                            <td><label for="exampleInputName00111">紧急联系人2电话</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName00111" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName00">家庭住址</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName00" disabled></td>
+                            <td><label for="exampleInputName33">学生状态</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName33" disabled></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-success my_btn2" id="btn_que3" data-dismiss="modal">
+                    确定
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 修改按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    修改学生信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <table class="table">
+                        <tr>
+                            <td><label for="exampleInputName0022">ID</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName0022" disabled></td>
+                            <td><label for="exampleInputName0122">学生姓名</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName0122"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName044">性别</label></td>
+                            <td>
+                                <select class="form-control" id="exampleInputName044">
+                                    <option value="男">男</option>
+                                    <option value="女">女</option>
+                                </select>
+                            </td>
+                            <td><label for="exampleInputName055">所属班级</label></td>
+                            <td>
+                                <select class="form-control" id="exampleInputName055">
+                                    <option value="喵喵班">喵喵班</option>
+                                    <option value="丫丫班">丫丫班</option>
+                                    <option value="臭臭班">臭臭班</option>
+                                    <option value="朵朵班">朵朵班</option>
+                                    <option value="花花班">花花班</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName066">紧急联系人1</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName066"></td>
+                            <td><label for="exampleInputName0011">紧急联系人1电话</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName0011"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName01666">紧急联系人2</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName01666"></td>
+                            <td><label for="exampleInputName001611">紧急联系人2电话</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName001611"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exampleInputName000">家庭住址</label></td>
+                            <td><input type="text" class="form-control" id="exampleInputName000"></td>
+                            <td><label for="exampleInputName033">学生状态</label></td>
+                            <td>
+                                <select class="form-control" id="exampleInputName033">
+                                    <option value="正常">正常</option>
+                                    <option value="请假">请假</option>
+                                    <option value="休学">休学</option>
+                                    <option value="转园">转园</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-success my_btn2" id="btn_que2" data-dismiss="modal">
+                    保存
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 删除按钮的模态框 -->
+<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    删除学生信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                确定要删除吗？
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success my_btn" data-dismiss="modal">
+                    取消
+                </button>
+                <button type="button" class="btn btn-success my_btn2" id="btn_que" data-dismiss="modal">
+                    确定
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../class/js/bootstrap-paginator.js"></script>
+<script type="text/javascript" src="../class/js/jquery.dropdown.js"></script>
+<script src="js/students.js"></script>
+</body>
+</html>
