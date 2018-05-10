@@ -35,14 +35,34 @@ function linksListL(){
                 +'<td>'+myclass[i].c_March+'</td>'
                 +'<td>'+myclass[i].c_timeR+'</td>'
                 +'<td>'+myclass[i].c_timeX+'</td>'
-                +'<td>'+"查看"+'</td>'
-                +'<td>'+"<input>"+'</td>'
+                +'<td class="operation">'+
+                "<a class='query1 iconfont' id='"+myclass[i].id+"'  title='查看' data-toggle='modal' data-target='#myModal3'>&#xe62c;</a>"+
+                "<a class='alter iconfont'  title='修改' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
+                "<a class='delete iconfont'  title='删除' data-toggle='modal' data-target='#myModal'>&#xe61c;</a>"
+                + '</td>'
+                +'<td>'+myclass[i].c_Option+'</td>'
                 +'</tr>';
         }
         return dataHtml;
     }
     $(".links_content").html(renderDate());
 }
+/*老师查看*/
+$('body').on('click','.query1', function () {
+    queryId1=$(this).attr("id");
+    for(var i=0;i<myclass.length;i++){
+        if(myclass[i].id == queryId1){
+            $("#exampleInputName11").val(myclass[i].id);
+            $("#exampleInputName12").val(myclass[i].c_teacher);
+            $("#exampleInputName13").val(myclass[i].c_sex);
+            $("#exampleInputName14").val(myclass[i].c_school);
+            $("#exampleInputName15").val(myclass[i].c_timeR);
+            $("#exampleInputName16").val(myclass[i].c_timeL);
+            $("#exampleInputName17").val(myclass[i].c_OptionTimeL);
+            $("#exampleInputName18").val(myclass[i].c_OptionYL);
+        }
+    }
+});
 //--------------------------学生---------------------
 $.get("js/myClass.js",function (data,status) {
     //执行加载数据的方法
@@ -60,15 +80,36 @@ function linksList(){
                 +'<td>'+myclass[i].c_address+'</td>'
                 +'<td>'+myclass[i].c_timeR+'</td>'
                 +'<td>'+myclass[i].c_timeL+'</td>'
-                +'<td>'+"查看"+'</td>'
-                +'<td>'+"<input>"+'</td>'
+                +'<td class="operation">'+
+                "<a class='query iconfont' title='查看' id='"+myclass[i].id+"' data-toggle='modal' data-target='#myModal'>&#xe62c;</a>"+
+                "<a class='alter iconfont'  title='修改' data-toggle='modal' data-target='#myModa2'>&#xe608;</a>"+
+                "<a class='delete iconfont'  title='删除' data-toggle='modal' data-target='#myModa3'>&#xe61c;</a>"
+                + '</td>'
+                +'<td>'+myclass[i].c_OptionX+'</td>'
                 +'</tr>';
         }
         return dataHtml;
     }
     $(".links_content").html(renderDate());
 }
-
+/*学生查看*/
+$('body').on('click','.query', function () {
+    queryId=$(this).attr("id");
+    for(var i=0;i<myclass.length;i++){
+        if(myclass[i].id == queryId){
+            $("#exampleInputName1").val(myclass[i].c_name);
+            $("#exampleInputName2").val(myclass[i].c_nameL);
+            $("#exampleInputName3").val(myclass[i].c_num);
+            $("#exampleInputName4").val(myclass[i].c_address);
+            $("#exampleInputName5").val(myclass[i].c_student);
+            $("#exampleInputName6").val(myclass[i].c_sex);
+            $("#exampleInputName7").val(myclass[i].c_teacher);
+            $("#exampleInputName8").val(myclass[i].c_teacher1);
+            $("#exampleInputName9").val(myclass[i].c_OptionTime);
+            $("#exampleInputName10").val(myclass[i].c_OptionY);
+        }
+    }
+});
 
 //--------------------------时间---------------------
 window.onload=function(){
