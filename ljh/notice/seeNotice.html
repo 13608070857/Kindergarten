@@ -33,7 +33,7 @@
 						<!--上-->
 						<div class="NodeDetail-title">
 							<!--头像-->
-							<img src="img/headImg.jpg" />
+							<img class="headImg" src="img/headImg.jpg" />
 							<!--内容-->
 							<div class="details">
 								<h4>橄榄树幼儿园-赵丹</h4>
@@ -68,7 +68,7 @@
 						<!--上-->
 						<div class="NodeDetail-title">
 							<!--头像-->
-							<img src="img/headImg.jpg" />
+							<img class="headImg" src="img/headImg.jpg" />
 							<!--内容-->
 							<div class="details">
 								<h4>橄榄树幼儿园-赵丹</h4>
@@ -94,10 +94,15 @@
 	<script src="../../ycl/js/jquery-3.3.1.js"></script>
 	<script src="../../ycl/js/bootstrap.js"></script>
 	<script>
+		function del(data){
+		    var a = document.getElementsByClassName("oneNode");
+		    var b = a[0].parentNode;
+		    b.removeChild(a[0]);
+		}
 		$(".deleteNotice").click(function () {
 		    var a = $(this).parent().parent().parent().parent();
 			a.remove();
-        })
+        });
 		$(function () {
 			if(localStorage.titleVal.length > 1) {
 			    var newDiv = "<div class=\"oneNode\">\n" +
@@ -114,12 +119,12 @@
                     "\t\t\t\t\t\t<!--上-->\n" +
                     "\t\t\t\t\t\t<div class=\"NodeDetail-title\">\n" +
                     "\t\t\t\t\t\t\t<!--头像-->\n" +
-                    "\t\t\t\t\t\t\t<img src=\"img/headImg.jpg\" />\n" +
+                    "\t\t\t\t\t\t\t<img class=\"headImg\" src=\"img/headImg.jpg\" />\n" +
                     "\t\t\t\t\t\t\t<!--内容-->\n" +
                     "\t\t\t\t\t\t\t<div class=\"details\">\n" +
                     "\t\t\t\t\t\t\t\t<h4>橄榄树幼儿园-赵丹</h4>\n" +
                     "\t\t\t\t\t\t\t\t<p class=\"release\">发布公告</p>\n" +
-                    "\t\t\t\t\t\t\t\t<p class=\"deleteNotice\">删除</p>\n" +
+                    "\t\t\t\t\t\t\t\t<p class=\"deleteNotice\" onclick=\"del(this)\">删除</p>\n" +
                     "\t\t\t\t\t\t\t</div>\n" +
                     "\t\t\t\t\t\t</div>\n" +
                     "\t\t\t\t\t\t<!--中-->\n" +
@@ -138,6 +143,5 @@
 			    $(".flowChart-right").prepend(newDiv);
 			}
         })
-		
 	</script>
 </html>
