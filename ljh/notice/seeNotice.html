@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
 		<title>查看公告</title>
 		<link rel="stylesheet" href="css/flowChart.css" />
+		<link rel="stylesheet" href="../../ycl/css/bootstrap.css">
+		<link rel="stylesheet" href="../../ycl/class/css/class.css">
 	</head>
 
 	<body>
@@ -38,7 +40,7 @@
 							<div class="details">
 								<h4>橄榄树幼儿园-赵丹</h4>
 								<p class="release">发布公告</p>
-								<p class="deleteNotice">删除</p>
+								<p class="deleteKey" data-toggle='modal' data-target='#myModal'>删除</p>
 							</div>
 						</div>
 						<!--中-->
@@ -73,7 +75,7 @@
 							<div class="details">
 								<h4>橄榄树幼儿园-赵丹</h4>
 								<p class="release">发布公告</p>
-								<p class="deleteNotice">删除</p>
+								<p class="deleteKey" data-toggle='modal' data-target='#myModal'>删除</p>
 							</div>
 						</div>
 						<!--中-->
@@ -90,18 +92,49 @@
 				</div>
 			</div>
 		</div>
+		<!-- 删除按钮的模态框 -->
+		<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="myModalLabel">
+							删除此条公告
+						</h4>
+					</div>
+					<div class="modal-body">
+						确定要删除吗？
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success my_btn" data-dismiss="modal">
+							取消
+						</button>
+						<button type="button" class="btn btn-success my_btn2 deleteNotice" id="btn_que" data-dismiss="modal">
+							确定
+						</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal -->
+		</div>
 	</body>
 	<script src="../../ycl/js/jquery-3.3.1.js"></script>
 	<script src="../../ycl/js/bootstrap.js"></script>
 	<script>
 		function del(data){
-		    var a = document.getElementsByClassName("oneNode");
-		    var b = a[0].parentNode;
-		    b.removeChild(a[0]);
+            $(".deleteNotice").click(function () {
+                var a = document.getElementsByClassName("oneNode");
+                var b = a[0].parentNode;
+                b.removeChild(a[0]);
+            });
+
 		}
-		$(".deleteNotice").click(function () {
+		$(".deleteKey").click(function () {
 		    var a = $(this).parent().parent().parent().parent();
-			a.remove();
+            $(".deleteNotice").click(function () {
+                a.remove();
+            });
         });
 		$(function () {
 			if(localStorage.titleVal.length > 1) {
@@ -124,7 +157,7 @@
                     "\t\t\t\t\t\t\t<div class=\"details\">\n" +
                     "\t\t\t\t\t\t\t\t<h4>橄榄树幼儿园-赵丹</h4>\n" +
                     "\t\t\t\t\t\t\t\t<p class=\"release\">发布公告</p>\n" +
-                    "\t\t\t\t\t\t\t\t<p class=\"deleteNotice\" onclick=\"del(this)\">删除</p>\n" +
+                    "\t\t\t\t\t\t\t\t<p class=\"deleteKey\" data-toggle='modal' data-target='#myModal' onclick=\"del()\">删除</p>\n" +
                     "\t\t\t\t\t\t\t</div>\n" +
                     "\t\t\t\t\t\t</div>\n" +
                     "\t\t\t\t\t\t<!--中-->\n" +

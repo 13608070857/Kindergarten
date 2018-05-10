@@ -134,13 +134,13 @@
 .NodeDetail-content p{
 	margin-top: 7px;
 }
-.deleteNotice{
+.deleteKey{
 	float: right;
 	font-size: 14px;
 	color: rgba(136, 136, 136, 0);
 	cursor: pointer;
 	transition: all .2s linear;
 }
-.NodeDetail:hover .deleteNotice{
+.NodeDetail:hover .deleteKey{
 	color: #717171;
 }
