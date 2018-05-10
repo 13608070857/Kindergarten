@@ -2,10 +2,11 @@ $.get("js/workDuty.js",function (data,status) {
     //执行加载数据的方法
     linksList();
 });
+var dataHtml = '';
 function linksList(that){
     //渲染数据
     function renderDate(curr){
-        var dataHtml = '';
+        
         if(!that){
             currData = duties.concat().splice(curr*nums-nums, nums);
         }else{
@@ -32,34 +33,12 @@ function linksList(that){
     pages = Math.ceil(duties.length/nums);//页总数
     $(".links_content").html(renderDate(duties));
     $(function(){
-        // var element = $('#pagination');
         options = {
             bootstrapMajorVersion:3, //对应的bootstrap版本
             currentPage: 1, //当前页数
             numberOfPages: duties.length, //每页页数
             totalPages: pages, //总页数
-
-            // shouldShowPage:true,//是否显示该按钮
-            // itemTexts: function (type, page, current) {//设置显示的样式，默认是箭头
-            //     switch (type) {
-            //         case "first":
-            //             return "首页";
-            //         case "prev":
-            //             return "上一页";
-            //         case "next":
-            //             return "下一页";
-            //         case "last":
-            //             return "末页";
-            //         case "page":
-            //             return page;
-            //     }
-            // },
-            //点击事件
-            // onPageClicked: function (event, originalEvent, type, page) {
-            //     $(".links_content").html(renderDate(page));
-            // }
         };
-        // element.bootstrapPaginator(options);
     });
 }
 /*查看*/
@@ -80,7 +59,7 @@ $('body').on('click','.alter', function () {
     alterId=$(this).attr("id");
     for(var i=0;i<duties.length;i++){
         if (duties[i].id==alterId){
-            console.log(duties[i])
+            // console.log(duties[i])
             $("#exampleInputName6").val(duties[i].id);
             $("#exampleInputName7").val(duties[i].w_name);
             $("#exampleInputName8").val(duties[i].w_describe);
@@ -126,10 +105,13 @@ $('body').on('click','#btn_que', function () {
 $(".my_btn").click(function() {
     for(var i=0;i<duties.length;i++) {
         if(duties[i].w_name == $(".cd-dropdown>span>span").get(0).innerHTML) {
-            console.log(currData);
-            for(var j=0;j<currData.length;j++) {
-                console.log(currData[j])
+            for(var j=0;j<$(dataHtml).length;j++) {
+                if(duties[i].id == $($(dataHtml)[j]).children().html()) {
+                    $(".links_content").empty();
+                    $(".links_content").append($(dataHtml)[j]);
+                }
             }
+            
         }
     }
 })

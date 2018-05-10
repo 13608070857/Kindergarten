@@ -4,6 +4,9 @@
 <<<<<<< HEAD
     <list default="true" id="02821ab6-da91-43e9-b704-3c1045766610" name="Default" comment="" />
 =======
+<<<<<<< HEAD
+    <list default="true" id="02821ab6-da91-43e9-b704-3c1045766610" name="Default" comment="" />
+=======
     <list default="true" readonly="true" id="02821ab6-da91-43e9-b704-3c1045766610" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/ycl/class/css/common.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ycl/class/css/fonts/icomoon.eot" afterDir="false" />
@@ -19,6 +22,7 @@
       <change beforePath="$PROJECT_DIR$/ycl/class/class.html" beforeDir="false" afterPath="$PROJECT_DIR$/ycl/class/class.html" afterDir="false" />
     </list>
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -29,6 +33,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="KQ.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lxp/KQ.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="820">
+              <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+=======
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -66,13 +85,19 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="1286" column="18" selection-start-line="1286" selection-start-column="18" selection-end-line="1286" selection-end-column="18" />
               <folding />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ycl/css/index.css">
+      <file leaf-file-name="KQ.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lxp/css/KQ.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="540">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+=======
             <state vertical-scroll-proportion="0.0">
               <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
               <folding />
@@ -84,28 +109,60 @@
 <<<<<<< HEAD
             <state relative-caret-position="3849">
               <caret line="175" column="39" selection-start-line="175" selection-start-column="39" selection-end-line="175" selection-end-column="39" />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="KQ.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lxp/JS/KQ.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+              <folding>
+                <marker date="1525858174202" expanded="true" signature="2551:2565" ph="..." />
+                <marker date="1525858174202" expanded="true" signature="2615:2629" ph="..." />
+              </folding>
+=======
       <file leaf-file-name="style4.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ycl/class/css/style4.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="491">
               <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="myClass.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lxp/JS/myClass.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#38#0" expanded="false" />
+              </folding>
+=======
       <file leaf-file-name="class.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ycl/class/class.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-186">
               <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="class.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ycl/class/class.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+              <folding />
+=======
       <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ycl/class/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,11 +173,21 @@
               <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
 >>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -149,6 +216,17 @@
         <option value="$PROJECT_DIR$/sxm/login.html" />
 =======
         <option value="$PROJECT_DIR$/ycl/index.html" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/lxp/KQ.css" />
+        <option value="$PROJECT_DIR$/lxp/JS/KQ.html" />
+        <option value="$USER_HOME$/Desktop/jQuery-tgss/index.html" />
+        <option value="$USER_HOME$/Desktop/startEnd-date/index.html" />
+        <option value="$PROJECT_DIR$/lxp/JS/myClass.js" />
+        <option value="$PROJECT_DIR$/lxp/JS/KQ.js" />
+        <option value="$PROJECT_DIR$/lxp/KQ.html" />
+        <option value="$PROJECT_DIR$/lxp/css/KQ.css" />
+        <option value="$PROJECT_DIR$/ycl/class/js/test.js" />
+=======
         <option value="$PROJECT_DIR$/ljh/staff/class.html" />
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/ycl/css/bootstrap.css" />
@@ -158,6 +236,7 @@
 =======
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
 >>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
       </list>
     </option>
   </component>
@@ -166,15 +245,20 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+<<<<<<< HEAD
+=======
   <component name="NamedScopeManager">
     <order />
   </component>
 <<<<<<< HEAD
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+<<<<<<< HEAD
+=======
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -192,6 +276,7 @@
     <option name="width" value="1600" />
     <option name="height" value="925" />
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -204,10 +289,85 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+<<<<<<< HEAD
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+=======
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
     </navigator>
     <panes>
       <pane id="ProjectPane">
         <subPane>
+<<<<<<< HEAD
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ycl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ycl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ycl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kindergarten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+=======
 <<<<<<< HEAD
           <expand>
             <path>
@@ -283,6 +443,7 @@
 =======
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
 >>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,6 +455,17 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+<<<<<<< HEAD
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\奈何丶\Documents\GitHub\Kindergarten\lxp\JS" />
+      <recent name="C:\Users\奈何丶\Documents\GitHub\Kindergarten\lxp\css" />
+      <recent name="C:\Users\奈何丶\Documents\GitHub\Kindergarten\lxp" />
+=======
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -302,7 +474,11 @@
       <recent name="D:\html\Kindergarten\ycl\class\js" />
       <recent name="D:\html\Kindergarten\ljh" />
       <recent name="D:\html\Kindergarten\ycl\images" />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
       <recent name="D:\html\Kindergarten\ycl\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\奈何丶\Documents\GitHub\Kindergarten\lxp\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -321,6 +497,34 @@
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
+<<<<<<< HEAD
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+=======
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
@@ -339,6 +543,7 @@
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
       <method />
     </configuration>
     <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
@@ -348,16 +553,50 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+<<<<<<< HEAD
+      <node-interpreter>project</node-interpreter>
+=======
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
+<<<<<<< HEAD
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+=======
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
   <component name="SvnConfiguration">
     <configuration>C:\Users\LinJiaHui\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
@@ -371,6 +610,11 @@
       <workItem from="1525754894676" duration="3303000" />
       <workItem from="1525758453602" duration="782000" />
       <workItem from="1525759727862" duration="300000" />
+<<<<<<< HEAD
+      <workItem from="1525827565619" duration="14921000" />
+      <workItem from="1525915125427" duration="137000" />
+      <workItem from="1525915280011" duration="294000" />
+=======
       <workItem from="1525760128038" duration="7511000" />
       <workItem from="1525769926468" duration="86000" />
       <workItem from="1525770464296" duration="88000" />
@@ -383,10 +627,36 @@
       <workItem from="1525829693749" duration="616000" />
       <workItem from="1525833824433" duration="126000" />
       <workItem from="1525834429804" duration="1880000" />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="28019000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19345239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
     <option name="totallyTimeSpent" value="20518000" />
   </component>
   <component name="ToolWindowManager">
@@ -432,10 +702,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -453,6 +724,102 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lxp/JS/myClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/KQ.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/css/KQ.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/JS/KQ.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+          <folding>
+            <marker date="1525858174202" expanded="true" signature="2551:2565" ph="..." />
+            <marker date="1525858174202" expanded="true" signature="2615:2629" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/JS/myClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/KQ.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/JS/KQ.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <marker date="1525858174202" expanded="true" signature="2551:2565" ph="..." />
+            <marker date="1525858174202" expanded="true" signature="2615:2629" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/css/KQ.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1600">
+          <caret line="80" column="67" lean-forward="false" selection-start-line="80" selection-start-column="67" selection-end-line="80" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ycl/index.html">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -730,8 +1097,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ycl/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="2821">
+          <caret line="91" column="41" lean-forward="false" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
+=======
         <state vertical-scroll-proportion="0.0">
           <caret line="91" column="41" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
         </state>
       </provider>
     </entry>
@@ -744,22 +1116,37 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/aria.rnc">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="12307">
+          <caret line="397" column="18" lean-forward="false" selection-start-line="397" selection-start-column="18" selection-end-line="397" selection-end-column="18" />
+=======
         <state vertical-scroll-proportion="0.0">
           <caret line="397" column="18" selection-start-line="397" selection-start-column="18" selection-end-line="397" selection-end-column="18" />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ycl/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="49879">
+          <caret line="1609" column="1" lean-forward="false" selection-start-line="1609" selection-start-column="1" selection-end-line="1609" selection-end-column="1" />
+=======
         <state vertical-scroll-proportion="0.0">
           <caret line="1609" column="1" selection-start-line="1609" selection-start-column="1" selection-end-line="1609" selection-end-column="1" />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ycl/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="2821">
+          <caret line="91" column="103" lean-forward="false" selection-start-line="91" selection-start-column="103" selection-end-line="91" selection-end-column="103" />
+=======
         <state vertical-scroll-proportion="0.0">
           <caret line="91" column="103" selection-start-line="91" selection-start-column="103" selection-end-line="91" selection-end-column="103" />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
         </state>
       </provider>
     </entry>
@@ -769,15 +1156,25 @@
 >>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/aria.rnc">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="12307">
+          <caret line="397" column="18" lean-forward="false" selection-start-line="397" selection-start-column="18" selection-end-line="397" selection-end-column="18" />
+=======
         <state vertical-scroll-proportion="0.0">
           <caret line="1138" column="22" selection-start-line="1138" selection-start-column="22" selection-end-line="1138" selection-end-column="22" />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ycl/css/font-awesome-4.7.0/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="49879">
+          <caret line="1609" column="1" lean-forward="false" selection-start-line="1609" selection-start-column="1" selection-end-line="1609" selection-end-column="1" />
+=======
         <state vertical-scroll-proportion="0.0">
           <caret line="366" column="1" selection-start-line="366" selection-start-column="1" selection-end-line="366" selection-end-column="1" />
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
         </state>
       </provider>
     </entry>
@@ -809,8 +1206,146 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/JS/zy.js" />
     <entry file="file://$PROJECT_DIR$/ycl/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="521">
+          <caret line="80" column="67" lean-forward="false" selection-start-line="80" selection-start-column="67" selection-end-line="80" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Web前端/作业/第二阶段/JS/bootstrap/zy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/class/css/class.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/JS/KQ.html" />
+    <entry file="file://$USER_HOME$/Desktop/文件/代码/JS/day3/eventType.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/startEnd-date/plugin/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/startEnd-date/plugin/layui-v1.0.7/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2460">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/class/js/class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/class/js/classList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/flatpickr-gh-pages20160929/index.html" />
+    <entry file="file://$USER_HOME$/Desktop/jQuery-tgss/index.html" />
+    <entry file="file://$USER_HOME$/Desktop/jQueryCalendar20160303/index.html" />
+    <entry file="file://$PROJECT_DIR$/lxp/css/date.css" />
+    <entry file="file://$USER_HOME$/Desktop/startEnd-date/plugin/layui-v1.0.7/layui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/JS/layui.js" />
+    <entry file="file://$USER_HOME$/Desktop/startEnd-date/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/JS/main.js" />
+    <entry file="file://$PROJECT_DIR$/lxp/JS/jQuery.dateLay.js" />
+    <entry file="file://$USER_HOME$/Desktop/startEnd-date/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/css/layui.css" />
+    <entry file="file://$USER_HOME$/Desktop/startEnd-date/css/date.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/JS/KQ.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+          <folding>
+            <marker date="1525858174202" expanded="true" signature="2551:2565" ph="..." />
+            <marker date="1525858174202" expanded="true" signature="2615:2629" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/css/KQ.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/KQ.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+=======
         <state vertical-scroll-proportion="0.0">
           <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding />
@@ -819,6 +1354,7 @@
           <caret line="5940" column="1" selection-start-line="5940" selection-start-column="1" selection-end-line="5940" selection-end-column="1" />
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
 >>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
         </state>
       </provider>
     </entry>
@@ -853,6 +1389,41 @@
     <entry file="file://$PROJECT_DIR$/ycl/index.html">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+        <state relative-caret-position="1121">
+          <caret line="145" column="6" lean-forward="false" selection-start-line="145" selection-start-column="6" selection-end-line="145" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/class/js/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="100" column="6" lean-forward="true" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+          <folding>
+            <marker date="1525764735564" expanded="true" signature="2115:2146" ph="..." />
+            <marker date="1525764735564" expanded="true" signature="2496:2527" ph="..." />
+            <marker date="1525764735564" expanded="true" signature="8205:8213" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lxp/JS/myClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycl/class/class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding />
+=======
+<<<<<<< HEAD
         <state relative-caret-position="3849">
           <caret line="175" column="39" selection-start-line="175" selection-start-column="39" selection-end-line="175" selection-end-column="39" />
         </state>
@@ -881,6 +1452,7 @@
           <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
 >>>>>>> c2b1e2109ca18b2e0f9003d81908f6f2f813bd79
 >>>>>>> f97eafd53608c9da4c0f94df10c2104a61342886
+>>>>>>> 2df783acb523d2d3713a66970760e94d8260b183
         </state>
       </provider>
     </entry>
