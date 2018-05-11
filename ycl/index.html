@@ -150,7 +150,7 @@
                 </div>
                 <!--主体内容-->
                 <div class="col-xs-10 separate">
-                    <iframe src="main.html" name="iframepage" id="iframepage" width="100%" frameborder="0" onload="iframeHeight()"></iframe>
+                    <iframe src="main.html" name="iframepage" id="iframepage" width="100%" frameborder="0"></iframe>
                 </div>
             </div>
         </div>
@@ -179,10 +179,8 @@
         }
     }
     var ifHeight = document.documentElement.clientHeight-89;
-    function iframeHeight() {
-        var ifm= document.getElementById("iframepage");
-        ifm.style.height = ifHeight+"px";
-    }
+    var ifm= document.getElementById("iframepage");
+    ifm.style.height = ifHeight+"px";
     var nav= document.getElementById("cnav_ul");
     nav.style.height = ifHeight+"px";
 
