@@ -37,8 +37,8 @@ function linksListL(){
                 +'<td>'+myclass[i].c_timeX+'</td>'
                 +'<td class="operation">'+
                 "<a class='query1 iconfont' id='"+myclass[i].id+"'  title='查看' data-toggle='modal' data-target='#myModal3'>&#xe62c;</a>"+
-                "<a class='alter iconfont'  title='修改' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
-                "<a class='delete iconfont'  title='删除' data-toggle='modal' data-target='#myModal'>&#xe61c;</a>"
+                "<a class='alter1 iconfont'  id='"+myclass[i].id+"'  title='修改' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
+                "<a class='delete iconfont'  title='删除' data-toggle='modal' data-target='#myModa1'>&#xe61c;</a>"
                 + '</td>'
                 +'<td>'+myclass[i].c_Option+'</td>'
                 +'</tr>';
@@ -57,9 +57,25 @@ $('body').on('click','.query1', function () {
             $("#exampleInputName13").val(myclass[i].c_sex);
             $("#exampleInputName14").val(myclass[i].c_school);
             $("#exampleInputName15").val(myclass[i].c_timeR);
-            $("#exampleInputName16").val(myclass[i].c_timeL);
+            $("#exampleInputName16").val(myclass[i].c_timeX);
             $("#exampleInputName17").val(myclass[i].c_OptionTimeL);
             $("#exampleInputName18").val(myclass[i].c_OptionYL);
+        }
+    }
+});
+/*老师编辑*/
+$('body').on('click','.alter1', function () {
+    alterId1=$(this).attr("id");
+    for(var i=0;i<myclass.length;i++){
+        if(myclass[i].id == alterId1){
+            $("#exampleInputName51").val(myclass[i].id);
+            $("#exampleInputName52").val(myclass[i].c_teacher);
+            $("#exampleInputName53").val(myclass[i].c_sex);
+            $("#exampleInputName54").val(myclass[i].c_school);
+            $("#exampleInputName55").val(myclass[i].c_timeR);
+            $("#exampleInputName56").val(myclass[i].c_timeX);
+            $("#exampleInputName57").val(myclass[i].c_OptionTimeL);
+            $("#exampleInputName58").val(myclass[i].c_OptionYL);
         }
     }
 });
@@ -82,7 +98,7 @@ function linksList(){
                 +'<td>'+myclass[i].c_timeL+'</td>'
                 +'<td class="operation">'+
                 "<a class='query iconfont' title='查看' id='"+myclass[i].id+"' data-toggle='modal' data-target='#myModal'>&#xe62c;</a>"+
-                "<a class='alter iconfont'  title='修改' data-toggle='modal' data-target='#myModa2'>&#xe608;</a>"+
+                "<a class='alter iconfont'  title='修改' id='"+myclass[i].id+"' data-toggle='modal' data-target='#myModa2'>&#xe608;</a>"+
                 "<a class='delete iconfont'  title='删除' data-toggle='modal' data-target='#myModa3'>&#xe61c;</a>"
                 + '</td>'
                 +'<td>'+myclass[i].c_OptionX+'</td>'
@@ -107,6 +123,24 @@ $('body').on('click','.query', function () {
             $("#exampleInputName8").val(myclass[i].c_teacher1);
             $("#exampleInputName9").val(myclass[i].c_OptionTime);
             $("#exampleInputName10").val(myclass[i].c_OptionY);
+        }
+    }
+});
+/*学生编辑*/
+$('body').on('click','.alter', function () {
+    alterId=$(this).attr("id");
+    for(var i=0;i<myclass.length;i++){
+        if(myclass[i].id == alterId){
+            $("#exampleInputName31").val(myclass[i].c_name);
+            $("#exampleInputName32").val(myclass[i].c_nameL);
+            $("#exampleInputName33").val(myclass[i].c_num);
+            $("#exampleInputName34").val(myclass[i].c_address);
+            $("#exampleInputName35").val(myclass[i].c_student);
+            $("#exampleInputName36").val(myclass[i].c_sex);
+            $("#exampleInputName37").val(myclass[i].c_teacher);
+            $("#exampleInputName38").val(myclass[i].c_teacher1);
+            $("#exampleInputName39").val(myclass[i].c_OptionTime);
+            $("#exampleInputName40").val(myclass[i].c_OptionY);
         }
     }
 });
