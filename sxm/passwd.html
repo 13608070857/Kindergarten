@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>橄榄树幼儿园后台管理系统</title>
+    <!-- Bootstrap -->
+    <link href="../ycl/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/personalCenter.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+    <section class="container">
+    	<div class="row line selfCont">
+    		<div class="col-lg-8 col-lg-offset-2 line">
+		    	<div class="row" id="baseInfo">
+		    		<div class="row baseTitle">
+			    		<div class="baseLine">修改密码</div>
+			    		<div class="row inputG">
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4">
+			    				<span class="info">旧密码：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input type="password" id="userP" value="">
+			    			</div>
+			    		</div>
+			    		<div class="row inputG">
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4">
+			    				<span class="info">新密码：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input type="password" id="password" value="">
+			    			</div>
+			    		</div>
+			    		<div class="row inputG">
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4">
+			    				<span class="info">确认密码：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input type="password" id="passwRe" value="">
+			    			</div>
+			    		</div>
+			    		<div class="btnG text-center">
+			    			<input type="button" class="btn save" value="确认">
+			    			<input type="button" class="btn cancel" value="取消">
+			    		</div>
+			    	</div>
+			    </div>
+    		</div>
+    	</div>
+    </section>
+</div>
+
+<script src="../ycl/js/jquery-3.3.1.js"></script>
+<script src="../ycl/js/bootstrap.js"></script>
+<script>
+	$("#userP").blur(function() {
+		if($("#userP").val() == "050808") {
+			$("#password").blur(function() {
+				if($("#password").val() == $("#userP").val()) {
+					alert("您的密码和原密码相同，请重新输入！！");
+				}else {
+					$(".save").click(function() {
+						if($("#passwRe").val() == $("#password").val()) {
+							alert("修改成功！！");
+							location.href = "personalCenter.html";
+						}else {
+							alert("输入错误，请重新输入！！");
+						}
+						
+					});
+				}
+			})
+		}else {
+			alert("旧密码错误！");
+		}
+	})
+</script>
+</body>
+</html>

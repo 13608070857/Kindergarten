@@ -4,7 +4,7 @@
 	border-radius: 50%;
 }
 .line {
-    border: 1px solid #f00;
+    /*border: 1px solid #f00;*/
 }
 .info {
     line-height: 30px;
@@ -20,19 +20,20 @@
 	padding: 10px 0;
 	color: #fff;
 	text-align: center;
+    cursor: pointer;
 }
-.textLi a {
-	color:#fff;
+.textLi span {
+	cursor: pointer;
 }
-#baseTitle {
-	border-bottom: 2px solid #5eb978;
+.baseLine {
+	border-bottom: 1px solid #5eb978;
 	padding: 4% 0 1% 0;
 	margin-bottom: 2%;
 }
 label {
 	font-weight: normal;
 }
-input[type="text"],input[type="password"]{
+input[type="text"],input[type="password"],select{
 	height: 30px;
 	background: #fff;
 	border: 1px solid #ddd;
@@ -43,13 +44,10 @@ input[type="text"]:focus,select:focus,,input[type="password"]:focus {
 }
 .inputG {
     display: block;
-	margin: 5% 0;
+	margin: 3% 0;
 }
 select {
-	background: #fff;
-	border: 1px solid #ddd;
-	padding-left: 1%;
-	height: 30px;
+	width: 82%;
 }
 .sexI {
 	margin-right: 4%;
