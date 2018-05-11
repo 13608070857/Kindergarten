@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>橄榄树幼儿园后台管理系统</title>
+    <!-- Bootstrap -->
+    <link href="../ycl/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/personalCenter.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+    <section class="container">
+    	<div class="row line selfCont">
+    		<div class="col-lg-8 col-lg-offset-2 line">
+		    	<div class="row" id="baseInfo">
+		    		<div class="row baseTitle">
+			    		<div class="baseLine">基本信息</div>
+			    		<div class="row inputG">
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+			    				<span class="info">姓名：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input type="text" id="userN" value="林家辉" disabled>
+			    			</div>
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1
+			    			col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+			    				<span class="info">性别：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<span class="sexI"><input type="radio" name="sex" id="man" checked disabled>男</span>
+			    				<span class="sexI"><input type="radio" name="sex" id="female" disabled>女</span>
+			    			</div>
+			    		</div>
+			    		<div class="row inputG">
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+			    				<span class="info">电话：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input type="text" id="phone" value="">
+			    			</div>
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1
+			    			col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+			    				<span class="info">家庭住址：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input id="address" type="text" value="云华路333号">
+			    			</div>
+			    		</div>
+			    		<div class="row inputG">
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+			    				<span class="info">邮箱：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input type="text" id="email" value="">
+			    			</div>
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1
+			    			col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+			    				<span class="info">QQ：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input id="qq" type="text" value="">
+			    			</div>
+			    		</div>
+			    		<div class="row inputG">
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+			    				<span class="info">婚姻状态：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<select name="" id="">
+		    						<option value="0" selected>未婚</option>
+		    						<option value="1">已婚</option>
+		    					</select>
+			    			</div>
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1
+			    			col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+			    				<span class="info">紧急电话：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input type="text" id="emerCall" value="">
+			    			</div>
+			    		</div>
+			    		<div class="btnG text-right col-lg-10 col-md-11 col-sm-11 col-xs-11">
+			    			<input type="button" class="btn save" value="保存">
+			    			<input type="button" class="btn cancel" value="取消">
+			    		</div>
+			    	</div>
+					<div class="row baseTitle">
+			    		<div class="baseLine">班级信息</div>
+			    		<div class="row inputG">
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+			    				<span class="info">所带班级：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input type="text" id="className" value="喵喵班" disabled>
+			    			</div>
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1
+			    			col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+			    				<span class="info">学生人数：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input type="text" id="classNum" value="20" disabled>
+			    			</div>
+			    		</div>
+			    		<div class="row inputG">
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+			    				<span class="info">权限：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input type="text" id="root" value="所有" disabled>
+			    			</div>
+			    			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1
+			    			col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+			    				<span class="info">职务：</span>
+			    			</div>
+			    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			    				<input id="duty" type="text" value="园长" disabled>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>
+    		</div>
+    	</div>
+    </section>
+</div>
+
+<script src="../ycl/js/jquery-3.3.1.js"></script>
+<script src="../ycl/js/bootstrap.js"></script>
+<script>
+	$(function() {
+		console.log(localStorage.radio)
+		if(localStorage.phone == undefined || localStorage.phone.length == 0) {
+			$("#phone").val("18808050808");
+			$(".phone").html("18808050808");
+		}else {
+			$("#phone").val(localStorage.phone);
+			$(".phone").html(localStorage.phone);
+		}
+		if(localStorage.address == undefined || localStorage.address.length == 0) {
+			$("#address").val("云华路333号");
+		}else {
+			$("#address").val(localStorage.address);
+		}
+		if(localStorage.email == undefined || localStorage.email.length == 0) {
+			$("#email").val("12030490@qq.com");
+		}else {
+			$("#email").val(localStorage.email);
+		}
+		if(localStorage.qq == undefined || localStorage.qq.length == 0) {
+			$("#qq").val("1245522140");
+		}else {
+			$("#qq").val(localStorage.qq);
+		}
+		if(localStorage.emerCall == undefined || localStorage.emerCall.length == 0) {
+			$("#emerCall").val("18165652345");
+		}else {
+			$("#emerCall").val(localStorage.emerCall);
+		}
+		$(".save").click(function() {
+			localStorage.phone = $("#phone").val();
+			localStorage.address = $("#address").val();
+			localStorage.email = $("#email").val();
+			localStorage.qq = $("#qq").val();
+			localStorage.emerCall = $("#emerCall").val();
+			$(".phone").html(localStorage.phone);
+		});
+		$(".cancel").click(function() {
+			localStorage.phone = "18808050808";
+			localStorage.address = "云华路333号";
+			localStorage.email = "12030490@qq.com";
+			localStorage.qq = "1245522140";
+			localStorage.emerCall = "18165652345";
+			$(".phone").html(localStorage.phone);
+		});
+	})
+</script>
+</body>
+</html>

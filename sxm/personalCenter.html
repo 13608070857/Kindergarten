@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>橄榄树幼儿园后台管理系统</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../ycl/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../ycl/css/index.css">
     <link rel="stylesheet" href="css/personalCenter.css">
     <!--[if lt IE 9]>
@@ -16,38 +16,6 @@
 </head>
 <body>
 <div class="container-fluid">
-    <!--导航-->
-    <nav class="navbar navbar-default my_nav" role="navigation">
-        <div class="row">
-            <div class="col-xs-8">
-                <div class="navbar-header">
-                    <a class="navbar-brand hidden-xs" href="index.html">
-                        <img src="images/logo.png" class="logo_img center-block">
-                    </a>
-                    <a class="navbar-brand visible-xs" href="index.html">
-                        <img src="images/logo.png" class="logo_img2 center-block">
-                    </a>
-                    <span class="logo_title hidden-xs">橄榄树幼儿园</span>
-                    <span class="logo_title2 visible-xs">橄榄树幼儿园</span>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="dropdown pull-right">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        <span class="userName"></span>
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu my_menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">设置</a></li>
-                        <li><a href="../sxm/personalCenter.html">个人资料</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">退出</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown pull-right headPhoto"></div>
-            </div>
-        </div>
-    </nav>
     <section class="container">
     	<div class="row line selfCont">
     		<div class="col-lg-8 col-lg-offset-2 line">
@@ -58,103 +26,24 @@
 				</div>
 				<div class="text-center text">
 					电话：
-					<span class="phone">18808050808</span>
+					<span class="phone"></span>
 				</div>
 				<div class="row">
-		    		<div class="col-lg-4 textLi baseInfo">
-		    			<a href="" class="center-block">基本信息</a>
+		    		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 textLi baseInfo">
+		    			<span class="center-block">基本信息</span>
 		    		</div>
-		    		<div class="col-lg-4">
-		    			<div class="col-lg-11 col-lg-offset-1 textLi rePasswd">
-		    				<a href="" class="center-block">修改秘密</a>
+		    		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+		    			<div class="col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-11 col-xs-offset-1 textLi rePasswd">
+		    				<span class="center-block">修改密码</span>
 		    			</div>
 		    		</div>
-		    		<div class="col-lg-4">
-		    			<div class="col-lg-11 col-lg-offset-1 textLi workD">
-		    				<a href="" class="center-block">今日日程</a>
+		    		<div class="col-lg-4  col-md-4 col-sm-4 col-xs-4">
+		    			<div class="col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-11 col-xs-offset-1 textLi workD">
+		    				<span class="center-block">今日日程</span>
 		    			</div>
 		    		</div>
 		    	</div>
-		    	<div class="row baseTitle">
-		    		<div id="baseTitle">基本信息</div>
-		    		<div class="row">
-		    			<div class="col-lg-2">
-		    				<span class="info">姓名：</span>
-		    			</div>
-		    			<div class="col-lg-3">
-		    				<input type="text" id="userN" value="林家辉" disabled>
-		    			</div>
-		    			<div class="col-lg-2 col-lg-offset-1">
-		    				<span class="info">性别：</span>
-		    			</div>
-		    			<div class="col-lg-3">
-		    				<span class="sexI"><input type="radio" name="sex" id="man" checked>男</span>
-		    				<span class="sexI"><input type="radio" name="sex" id="female">女</span>
-		    			</div>
-		    		</div>
-		    			<!-- <div class="col-lg-5">
-		    				<div class="inputG">
-		    					<label for="userN">姓名：</label>
-		    					<input type="text" id="userN" value="林家辉" disabled>
-		    				</div>
-		    				<div class="inputG">
-		    					<label for="userN">电话：</label>
-		    					<input type="text" value="18808050808">
-		    				</div>
-		    				<div class="inputG">
-		    					<label for="userN">邮箱：</label>
-		    					<input type="text" value="12030490@qq.com">
-		    				</div>
-		    				<div class="inputG">
-		    					<label for="userN">婚姻状态：</label>
-		    					<select name="" id="">
-		    						<option value="0" selected>未婚</option>
-		    						<option value="1">已婚</option>
-		    					</select>
-		    				</div>
-		    			</div>
-		    			<div class="col-lg-5 col-lg-offset-1">
-		    				<div class="inputG">
-		    					<label>性别：</label>
-		    					<span class="sexI"><input type="radio" name="sex" id="man" checked>男</span>
-		    					<span class="sexI"><input type="radio" name="sex" id="female">女</span>
-		    				</div>
-		    				<div class="inputG">
-		    					<label>家庭住址：</label>
-		    					<input class="t" type="text" value="云华路333号">
-		    				</div>
-		    				<div class="inputG">
-		    					<label>QQ：</label>
-		    					<input type="text" value="1245522140">
-		    				</div>
-		    				<div class="inputG">
-		    					<label>紧急电话：</label>
-		    					<input class="t" type="text" value="18165652345">
-		    				</div>
-		    			</div> -->
-		    		</div>
-		    		<div class="btnG text-right col-lg-10">
-		    			<input type="button" class="btn" value="保存">
-		    			<input type="button" class="btn" value="取消">
-		    		</div>
-		    	</div>
-		    	<!-- <div class="row">
-		    		<div id="s">修改密码</div>
-		    		<div class="row">
-	    				<div class="inputG">
-	    					<label for="userN">初始密码：</label>
-	    					<input type="password" id="userN" value="" placeholder="请输入密码">
-	    				</div>
-	    				<div class="inputG">
-	    					<label for="userN">重置密码：</label>
-	    					<input type="text" value="" placeholder="请再次输入">
-	    				</div>
-		    		</div>
-		    		<div class="btnG text-right col-lg-10">
-		    			<input type="button" class="btn" value="保存">
-		    			<input type="button" class="btn" value="取消">
-		    		</div>
-		    	</div> -->
+		    	<iframe src="baseInfo.html" width="100%" height="540px" frameborder="0"></iframe>
     		</div>
     	</div>
     </section>
@@ -164,6 +53,15 @@
 <script src="../ycl/js/bootstrap.js"></script>
 <script>
 	$(".userName").html(localStorage.userName);
+	$(".baseInfo").click(function() {
+		$("iframe").attr("src","baseInfo.html");
+	});
+	$(".rePasswd").click(function() {
+		$("iframe").attr("src","passwd.html");
+	});
+	$(".workD").click(function() {
+		$("iframe").attr("src","time.html");
+	})
 </script>
 </body>
 </html>
