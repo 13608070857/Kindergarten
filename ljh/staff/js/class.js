@@ -1,3 +1,6 @@
+var ifHeight = document.documentElement.clientHeight;
+var my_tableDiv = document.getElementById("my_tableDiv");
+my_tableDiv.style.height=ifHeight+"px";
 $.get("../../ycl/class/js/classList.js",function (data,status) {
     //执行加载数据的方法
     linksList();

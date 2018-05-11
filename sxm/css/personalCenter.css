@@ -1,0 +1,67 @@
+.selfCont .headPhoto {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+.line {
+    border: 1px solid #f00;
+}
+.info {
+    line-height: 30px;
+}
+.text {
+	margin: 1% 0;
+}
+.text:nth-of-type(3) {
+	margin-bottom: 2%;
+}
+.textLi {
+	background: #5eb978;
+	padding: 10px 0;
+	color: #fff;
+	text-align: center;
+}
+.textLi a {
+	color:#fff;
+}
+#baseTitle {
+	border-bottom: 2px solid #5eb978;
+	padding: 4% 0 1% 0;
+	margin-bottom: 2%;
+}
+label {
+	font-weight: normal;
+}
+input[type="text"],input[type="password"]{
+	height: 30px;
+	background: #fff;
+	border: 1px solid #ddd;
+	padding-left: 1%;
+}
+input[type="text"]:focus,select:focus,,input[type="password"]:focus {
+	outline-color: #5eb978;
+}
+.inputG {
+    display: block;
+	margin: 5% 0;
+}
+select {
+	background: #fff;
+	border: 1px solid #ddd;
+	padding-left: 1%;
+	height: 30px;
+}
+.sexI {
+	margin-right: 4%;
+}
+input[type="button"] {
+	background: #5eb978;
+	color: #fff;
+	width: 10%;
+}
+input[type="button"]:hover {
+	color: #fff;
+}
+input[type="button"]:focus {
+	color: #fff;
+}
