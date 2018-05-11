@@ -134,8 +134,8 @@ function setAttr() {
     input.setAttribute("value","删除");
     img.setAttribute("src","imgs/xc111.jpg");
     img.setAttribute("alt","");
-    img.setAttribute("width","400px");
-    img.setAttribute("height","300px");
+    img.setAttribute("width","800px");
+    img.setAttribute("height","500px");
     var realWidth ;//原始宽度
     var realHeight ;//原始高度
     var vs ;//图片宽高比
