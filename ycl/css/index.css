@@ -87,6 +87,9 @@ iframe{
     margin-right: 20px;
     cursor:pointer
 }
+.my_historyDiv{
+    height: 30px;
+}
 /*测试*/
 .lie{
     border: 1px solid red;

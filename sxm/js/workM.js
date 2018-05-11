@@ -1,4 +1,4 @@
-var ifHeight = document.documentElement.clientHeight-89;
+var ifHeight = document.documentElement.clientHeight;
 var my_tableDiv = document.getElementById("my_tableDiv");
 my_tableDiv.style.height=ifHeight+"px";
 $.get("js/workDuty.js",function (data,status) {
