@@ -87,9 +87,16 @@ iframe{
     margin-right: 20px;
     cursor:pointer
 }
-/*测试*/
-.lie{
-    border: 1px solid red;
+.my_historyDiv{
+    height: 30px;
+    font-size: 16px;
+    color: #079783;
+    font-weight: 500;
+}
+.historyT{
+    font-size: 15px;
+    color: #07b19b;
+    font-weight: 400;
 }
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 a:hover, a:focus { text-decoration: none; outline: none; }
@@ -129,10 +136,17 @@ p {
 html{
     min-width:740px;
 }
+#historyDiv{
+    margin-top: 18px;
+    margin-left: 10px;
+}
 #historyBox div{
     line-height: 15px;
     float: left;
 }
 .historyT{
     cursor: pointer
+}
+.agreed{
+    color: #5EB978;
 }

@@ -252,6 +252,17 @@ var my_stuList=[{
     "s_adderss" : "四川没库萨克",
     "s_state" : "正常"
 },{
+    "id" : "s_012",
+    "s_name" : "王五",
+    "s_sex" : "女",
+    "s_class" : "喵喵班",
+    "s_father" : "王爸爸",
+    "s_mother" : "哈妈妈",
+    "fatherTel" : "13015424598",
+    "motherTel" : "13045621489",
+    "s_adderss" : "四川没库萨克",
+    "s_state" : "正常"
+},{
     "id" : "s_011",
     "s_name" : "王五",
     "s_sex" : "女",

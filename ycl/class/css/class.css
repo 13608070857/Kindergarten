@@ -43,7 +43,7 @@ th{
     background-color: #F2F2F2;
 }
 .my_tableDiv{
-    margin: 10px;
+    margin: 0 0 0 10px;
 }
 .my_btn{
     font-size: 16px;
@@ -79,7 +79,7 @@ th{
 .my_smana{
     font-size: 25px;
     border-bottom: 2px solid #079783;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     margin-bottom: 20px;
 }
 /*fonts*/

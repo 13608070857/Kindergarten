@@ -1,3 +1,6 @@
+var ifHeight = document.documentElement.clientHeight;
+var my_tableDiv = document.getElementById("my_tableDiv");
+my_tableDiv.style.height=ifHeight+"px";
 $( function() {
     $( '#cd-dropdown1' ).dropdown();
     $( '#cd-dropdown2' ).dropdown();
@@ -14,6 +17,7 @@ function linksList(that){
         }else{
             currData = that.concat().splice(curr*nums-nums, nums);
         }
+        console.log(currData)
         var dataHtml = '';
         for(var i=0;i<currData.length;i++){
             dataHtml += '<tr>'
@@ -108,6 +112,11 @@ $('body').on('click','#btn_que2', function () {
             myclass[i].c_teacher2=$("#exampleInputName12").val();
             linksList(myclass);
         }
+    }
+    if (myclass.length>10){
+        $('#pagination').css("display","inline-block");
+    } else {
+        $('#pagination').css("display","none");
     }
 });
 /*删除*/

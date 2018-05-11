@@ -1,3 +1,6 @@
+var ifHeight = document.documentElement.clientHeight;
+var my_tableDiv = document.getElementById("my_tableDiv");
+my_tableDiv.style.height=ifHeight+"px";
 $.get("js/workDuty.js",function (data,status) {
     //执行加载数据的方法
     linksList();
@@ -68,7 +71,7 @@ function linksList(that){
     });
     for(var i=0;i<$(".links_content tr").length;i++) {
         $($(".links_content tr td:nth-of-type(5)")[i]).click(function() {
-            
+
         })
     }
      
@@ -112,6 +115,11 @@ $('body').on('click','#btn_que2', function () {
             linksList(duties);
         }
     }
+    if (duties.length>5){
+        $('#pagination').css("display","inline-block");
+    } else {
+        $('#pagination').css("display","none");
+    }
 });
 /*删除*/
 $('body').on('click','.delete', function () {
@@ -151,4 +159,24 @@ $('body').on('click','.my_btn', function () {
         $('#pagination').css("display","none");
     }
     
+});
+
+//添加
+var idNum=0;
+var addList;
+$('body').on('click','#btn_que5', function () {
+
+    idNum=idNum+1;
+    duties.id="c_0"+(duties.length+idNum);
+    duties.w_name=$("#dutiesName").val();
+    duties.w_describe=$("#dutiesDes").val();
+    duties.w_num=$("#dutiesNum").val();
+    duties.w_admin=$("#dutiesAdmin").val();
+    addList='{"id":"'+ duties.id +'",';
+    addList+= '"w_name":"'+ duties.w_name +'",';
+    addList+= '"w_describe":"'+ duties.w_describe +'",';
+    addList+= '"w_num":"'+ duties.w_num +'",';
+    addList += '"w_admin":"'+ duties.w_admin +'"}';
+    duties.push(JSON.parse(addList));
+    linksList(duties);
 });

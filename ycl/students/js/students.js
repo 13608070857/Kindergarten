@@ -1,3 +1,6 @@
+var ifHeight = document.documentElement.clientHeight;
+var my_tableDiv = document.getElementById("my_tableDiv");
+my_tableDiv.style.height=ifHeight+"px";
 $( function() {
     $( '#cd-dropdown1' ).dropdown();
 });
@@ -120,6 +123,11 @@ $('body').on('click','#btn_que2', function () {
             linksList(my_stuList);
         }
     }
+    if (my_stuList.length>10){
+        $('#pagination').css("display","inline-block");
+    } else {
+        $('#pagination').css("display","none");
+    }
 });
 /*删除*/
 $('body').on('click','.delete', function () {
@@ -153,7 +161,9 @@ $('body').on('click','#search_btn', function () {
                 newArry.push(my_stuList[i]);
             }
             if (newArry.indexOf(my_sname)==-1 || newArry.indexOf(my_sno)==-1){
-                linksList(newArry)
+                linksList(newArry);
+                $("#s_name").val("")
+                $("#sno").val("")
             }
         }
         if (newArry.length>10){
