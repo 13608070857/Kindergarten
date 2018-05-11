@@ -146,10 +146,10 @@
                 <!--浏览记录-->
                 <div class="col-xs-10" id="historyBox">
                     <div style="width: 100%;height: 20px;background-image: url('images/bianh.png')"></div>
-                    <div style="float: left" id="historyDiv"><i class="glyphicon glyphicon-pushpin"></i>当前位置</div>
+                    <div style="float: left" id="historyDiv" class="my_historyDiv"><i class="glyphicon glyphicon-pushpin"></i>当前位置</div>
                 </div>
                 <!--主体内容-->
-                <div class="col-xs-10 separate">
+                <div class="col-xs-10 separate" id="my_if">
                     <iframe src="main.html" name="iframepage" id="iframepage" width="100%" frameborder="0"></iframe>
                 </div>
             </div>
@@ -180,11 +180,13 @@
     }
     var ifHeight = document.documentElement.clientHeight-89;
     var ifm= document.getElementById("iframepage");
-    ifm.style.height = ifHeight+"px";
+    var ifm2= document.getElementById("my_if");
+    ifm.style.height = (ifHeight-90)+"px";
+    ifm2.style.height = (ifHeight-90)+"px";
     var nav= document.getElementById("cnav_ul");
-    nav.style.height = ifHeight+"px";
+    nav.style.height = (ifHeight-20)+"px";
     var tengTiao = document.getElementById("tengTiao");
-    tengTiao.style.height = ifHeight+40+"px";
+    tengTiao.style.height = (ifHeight-20)+"px";
     var historyBox = $("#historyBox");
     $(".panel-body p").click(function () {
         var history = ($(this).get(0).innerText);
