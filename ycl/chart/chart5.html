@@ -13,27 +13,27 @@
 <div class="data_wrap" style="background: #efeff5; width: 1020px; padding: 10px; overflow: hidden;margin-top: 40px">
     <div class="animsition">
         <div class="qk_wrap">
-            <div class="qk_top">昨日转化潜客<span>0</span><p>历史转化潜客:&nbsp;6&nbsp;(3%)</p></div>
-            <div class="qk_top">昨日新增潜客<span>0</span><p>当前潜客人数:&nbsp;6&nbsp;</p></div>
-            <div class="qk_top">当前<span>0%</span>潜客有联系方式<p>有联系方式潜客:&nbsp;6&nbsp;人</p></div>
+            <div class="qk_top">学生<span>0</span><p>历史学生出勤量:&nbsp;6&nbsp;(3%)</p></div>
+            <div class="qk_top">园长<span>0</span><p>历史园长出勤量:&nbsp;6&nbsp;(3%)</p></div>
+            <div class="qk_top">老师<span>0</span><p>历史老师出勤量:&nbsp;6&nbsp;(3%)</p></div>
         </div>
         <div class="qk_wrap">
             <div>
-                <h3>潜客转化分析</h3>
+                <h3>学生出勤分析</h3>
                 <div id="main1" class="my_main"></div>
             </div>
             <div>
-                <h3>潜客贡献分析</h3>
+                <h3>园长出勤分析</h3>
                 <div id="main2" class="my_main"></div>
             </div>
         </div>
         <div class="qk_wrap">
             <div>
-                <h3>历史潜客活跃情况</h3>
+                <h3>老师出勤</h3>
                 <div id="main3" class="my_main"></div>
             </div>
             <div>
-                <h3>潜客来源分析</h3>
+                <h3>历史出勤分析</h3>
                 <div id="main4" class="my_main"></div>
             </div>
         </div>
@@ -325,7 +325,7 @@
                         orient : 'vertical',
                         x : 'right',
                         y : 'center',
-                        data:['PC端','移动端','微信']
+                        data:['学生','园长','老师']
                     },
                     toolbox: {
                         show : false,
@@ -351,7 +351,7 @@
                     calculable : false,
                     series : [
                         {
-                            name:'访问来源',
+                            name:'出勤量来源',
                             type:'pie',
                             center:['50%','55%'],
                             radius : ['40%', '52%'],
@@ -376,9 +376,9 @@
                                 }
                             },
                             data:[
-                                {value:335, name:'PC端'},
-                                {value:310, name:'移动端'},
-                                {value:234, name:'微信'}
+                                {value:335, name:'学生'},
+                                {value:310, name:'园长'},
+                                {value:234, name:'老师'}
                             ]
                         }
                     ]

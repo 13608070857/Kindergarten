@@ -113,6 +113,11 @@ $('body').on('click','#btn_que2', function () {
             linksList(myclass);
         }
     }
+    if (myclass.length>10){
+        $('#pagination').css("display","inline-block");
+    } else {
+        $('#pagination').css("display","none");
+    }
 });
 /*删除*/
 $('body').on('click','.delete', function () {

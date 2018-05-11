@@ -115,6 +115,11 @@ $('body').on('click','#btn_que2', function () {
             linksList(duties);
         }
     }
+    if (duties.length>5){
+        $('#pagination').css("display","inline-block");
+    } else {
+        $('#pagination').css("display","none");
+    }
 });
 /*删除*/
 $('body').on('click','.delete', function () {

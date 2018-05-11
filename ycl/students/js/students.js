@@ -123,6 +123,11 @@ $('body').on('click','#btn_que2', function () {
             linksList(my_stuList);
         }
     }
+    if (my_stuList.length>10){
+        $('#pagination').css("display","inline-block");
+    } else {
+        $('#pagination').css("display","none");
+    }
 });
 /*删除*/
 $('body').on('click','.delete', function () {
