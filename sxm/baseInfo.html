@@ -133,13 +133,10 @@
 <script src="../ycl/js/bootstrap.js"></script>
 <script>
 	$(function() {
-		console.log(localStorage.radio)
 		if(localStorage.phone == undefined || localStorage.phone.length == 0) {
 			$("#phone").val("18808050808");
-			$(".phone").html("18808050808");
 		}else {
 			$("#phone").val(localStorage.phone);
-			$(".phone").html(localStorage.phone);
 		}
 		if(localStorage.address == undefined || localStorage.address.length == 0) {
 			$("#address").val("云华路333号");

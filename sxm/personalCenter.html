@@ -62,6 +62,12 @@
 	$(".workD").click(function() {
 		$("iframe").attr("src","time.html");
 	})
+	if(localStorage.phone == undefined || localStorage.phone.length == 0) {
+		$(".phone").html("18808050808");
+	}else {
+		$(".phone").html(localStorage.phone);
+	}
+	
 </script>
 </body>
 </html>
