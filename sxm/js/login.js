@@ -4,6 +4,10 @@ $(function() {
 	var passWd = $(".passWd");
 	var errorInfo = $(".errorInfo");
 
+	$(".forget").click(function() {
+		alert("您的密码为您的手机号后六位！！！");
+	})
+
 	$.get("js/user.js",function (data,status) {
 	    //执行加载数据的方法
 	    loginBtn.click(function() {

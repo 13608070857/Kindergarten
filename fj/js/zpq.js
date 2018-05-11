@@ -30,6 +30,7 @@ var tj=document.getElementById("f_j");
 var fz=$("#f_Photo4");
 var xc=document.getElementById("f_xc");
 var div;
+var div1;
 var div2;
 var img;
 var p1;
@@ -41,6 +42,7 @@ var d=new Date();
 var mz=document.getElementsByClassName("mz")[0];
 f_Tj.click(function () {
     div=document.createElement("div");
+    div1=document.createElement("div");
     div2=document.createElement("div");
     img=document.createElement("img");
     p1=document.createElement("p");
@@ -51,8 +53,9 @@ f_Tj.click(function () {
     p3=document.createElement("p");
     input1=document.createElement("input");
     input2=document.createElement("input");
-    div.appendChild(img);
-    div.appendChild(div2);
+    div.appendChild(div1);
+    div1.appendChild(img);
+    div1.appendChild(div2);
     p1.appendChild(text1);
     p2.appendChild(text2);
     p3.appendChild(text3);
@@ -65,8 +68,9 @@ f_Tj.click(function () {
     setAttr();
 });
 function setAttr() {
-    div.setAttribute("class","Photo");
+    div.setAttribute("class","col-xs-3");
     div.setAttribute("id","f_Photo5");
+    div1.setAttribute("class","Photo");
     img.setAttribute("src","imgs/tubiao.jpg");
     img.setAttribute("alt","");
     div2.setAttribute("class","Tc");
@@ -75,8 +79,8 @@ function setAttr() {
     input2.setAttribute("class","btn btn-default but");
     input1.setAttribute("type","button");
     input2.setAttribute("type","button");
-    input1.setAttribute("value","查看相册");
-    input2.setAttribute("value","删除相册");
+    input1.setAttribute("value","查看");
+    input2.setAttribute("value","删除");
     input2.setAttribute("data-toggle","modal");
     input2.setAttribute("data-target","#myModal");
 }

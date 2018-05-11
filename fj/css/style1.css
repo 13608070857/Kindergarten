@@ -8,14 +8,14 @@ img{border:0;vertical-align:bottom;display:block;}
 table{border-collapse:collapse;border-spacing:0;}
 p{word-wrap:break-word;}
 
-.picbox{ width:100%;margin-top:50px ;font-family: "\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",serif;}
+.picbox{ width:100%;margin-top:10px ;font-family: "\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",serif;}
 .picbox h2{font-size:22px;line-height:36px;color:#d13a3e;text-align:center;}
 .picbox #text{font-size:16px;line-height:30px;color:#2a2d39;padding:10px 0 20px 0;text-align:center;}
 .piclist{margin-left:1px}
 .piclist:after{height:0;display:block;clear:both;visibility:hidden;content:'.';font-size:0}
-.piclist ul{ width:1000px;margin:0 auto;position:relative;}
+.piclist ul{ width:100%;padding-left:3%;position:relative;}
 .piclist li{ float:left;text-align:center;cursor:pointer;z-index:0;position:relative;margin:0 10px 10px 0;width:240px;height:200px;margin-bottom:10px;box-shadow:0px 1px 0px #edecec;border: 1px solid #e5e5e5;}
-.piclist li.r{ margin-right:0}
+/*.piclist li.r{ margin-right:0}*/
 .piclist li .in img{*width:240px;*height:auto;}
 .piclist li .in{ position: absolute;left: 0;top: 0;z-index:2;width: 240px;}
 .piclist li .in .imgdiv{display:block;width:230px;height: 142px;margin:0 auto;margin-top:4px;overflow:hidden;}
@@ -69,8 +69,7 @@ li img{
 
 }
 .f_z{
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
     /*float: left;*/
     margin-top: 1%;
 }
