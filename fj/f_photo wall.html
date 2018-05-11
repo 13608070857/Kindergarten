@@ -20,62 +20,91 @@
 		<![endif]-->
 
 		<link rel="stylesheet" href="css/style.css">
+		<style>
+			.container{
+				margin-left: -1.5%;
+				width: 100%;
+			}
+			.row{
+				width: 100%;
+				margin: 0;
+			}
+			.col-xs-4{
+				padding: 0;
+				margin-right: 1%;
+			}
+		</style>
     </head>
     <body>
 	<div class="f_z">
-		<h2>照片墙/<small><a href="#">相册</a></small></h2>
+		<h2><small><a href="#">相册</a></small></h2>
 		<div class="f_x"></div>
 	</div>
 	<div class="container">
-		<div id="f_xc">
-			<div class="Photo" id="f_Photo1">
-				<img src="imgs/xc1.jpg" alt="">&nbsp;
+		<div id="f_xc" class="row">
+			<div class="col-xs-3" id="	f_Photo1">
+				<div class="Photo">
+					<img src="imgs/xc1.jpg" alt="">&nbsp;
 					<div class="Tc">
 						<p>喵喵班</p>
 						<p>创建人：张三</p>
 						<p>2018/5/8 下午4:16:41</p>
-						<input class="btn btn-default but" type="button" value="查看相册" onclick="location.href='f_album.html'" >
-						<input class="btn btn-default but" data-toggle="modal"  data-target="#myModal" type="button" value="删除相册">
+						<input class="btn btn-default but" type="button" value="查看" onclick="location.href='f_album.html'" >
+						<input class="btn btn-default but" data-toggle="modal"  data-target="#myModal" type="button" value="删除">
 					</div>
+				</div>
+
 			</div>
-			<div class="Photo" id="f_Photo2">
-				<img src="imgs/xc110.jpg" alt="">&nbsp;
+			<div class="col-xs-3" id="f_Photo2">
+				<div class="Photo">
+					<img src="imgs/xc110.jpg" alt="">&nbsp;
 					<div class="Tc">
 						<p>丫丫班</p>
 						<p>创建人：李四</p>
 						<p>2018/5/8 下午4:16:41</p>
-						<input class="btn btn-default but" type="button" value="查看相册" onclick="location.href='f_album.html'">
-						<input class="btn btn-default but" type="button" data-toggle="modal"  data-target="#myModal" value="删除相册">
+						<input class="btn btn-default but" type="button" value="查看" onclick="location.href='f_album.html'">
+						<input class="btn btn-default but" type="button" data-toggle="modal"  data-target="#myModal" value="删除">
 					</div>
+				</div>
+
 
 			</div>
-			<div class="Photo" id="f_Photo3">
-				<img src="imgs/xc111.jpg" alt="">&nbsp;
+			<div class="col-xs-3" id="f_Photo3">
+				<div class="Photo">
+					<img src="imgs/xc111.jpg" alt="">&nbsp;
 					<div class="Tc">
 						<p>臭臭班</p>
 						<p>创建人：王二</p>
 						<p>2018/5/8 下午4:16:41</p>
-						<input class="btn btn-default but" type="button" value="查看相册" onclick="location.href='f_album.html'">
-						<input class="btn btn-default but" type="button" data-toggle="modal"  data-target="#myModal" value="删除相册">
+						<input class="btn btn-default but" type="button" value="查看" onclick="location.href='f_album.html'">
+						<input class="btn btn-default but" type="button" data-toggle="modal"  data-target="#myModal" value="删除">
 					</div>
+				</div>
+
 
 			</div>
-			<div class="Photo" id="f_Photo4">
-				<img src="imgs/xc112.jpg" alt="">&nbsp;
+			<div class="col-xs-3" id="f_Photo4">
+				<div class="Photo">
+					<img src="imgs/xc112.jpg" alt="">&nbsp;
 					<div class="Tc">
 						<p>朵朵班</p>
 						<p>创建人：王二</p>
 						<p>2018/5/8 下午4:16:41</p>
-						<input class="btn btn-default but" type="button" value="查看相册" onclick="location.href='f_album.html'">
-						<input class="btn btn-default but" type="button" data-toggle="modal"  data-target="#myModal" value="删除相册">
+						<input class="btn btn-default but" type="button" value="查看" onclick="location.href='f_album.html'">
+						<input class="btn btn-default but" type="button" data-toggle="modal"  data-target="#myModal" value="删除">
 					</div>
+				</div>
+
 			</div>
 			<div id="f_j">
-				<div class="Photo text-center">
-					<div class="f_shizi" data-toggle="modal"  data-target="#f_myModal">
-						<div class="f_xia"></div>
-						<div class="f_zuo"></div>
+				<div class="col-xs-3 text-center">
+					<div class="Photo">
+						<div class="f_shizi" data-toggle="modal"  data-target="#f_myModal">
+							<div class="f_xia"></div>
+							<div class="f_zuo"></div>
+						</div>
 					</div>
+
 					<!--<input class="btn btn-default f_but" type="button" data-toggle="modal"  data-target="#f_myModal" value="添加相册">-->
 				</div>
 			</div>

@@ -23,20 +23,25 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 
 </head>
-
+<style>
+    .container{
+        margin-left: 0;
+        width: 100%;
+    }
+</style>
 <body>
 <!-- 要求img标签必须带上width和height属性 -->
 <div class="f_z">
-    <h2>照片墙/<small><a href="f_photo wall.html">相册/</a></small><small><a href="#">喵喵班</a></small><small><a class="btn btn-default" onclick="myBack()">返回</a></small></h2>
+    <h2><small><a href="f_photo wall.html">相册/</a></small><small><a href="#">喵喵班</a></small><small><a class="btn btn-default" onclick="myBack()">返回</a></small></h2>
     <div class="f_x"></div>
 </div>
 <div class="picbox container">
     <h2>喵喵班</h2>
     <p id="text">创建人：张三<br />2018/5/8 下午4:16:41</p>
     <div class="picshow picshow01">
-        <div class="piclist">   
+        <div class="piclist">
             <ul id="f_photo">
-                <li class="pic" id="tes f_Photo1">
+                <li class="pic col-xs-3" id="tes f_Photo1">
                 <div class="in">
                     <div class="imgdiv"><img src="imgs/xc1.jpg" alt="" width="1280" height="778"/>
                         <input type="button" class="btn btn-default" data-toggle="modal"  data-target="#Moda" value="删除" >
@@ -44,7 +49,7 @@
                     <span><b>喵喵</b>2018/5/8 下午4:16:41</span>
                 </div>   
                 </li>
-                <li class="pic" id="f_Photo2">
+                <li class="pic col-xs-3" id="f_Photo2">
                 <div class="in">
                     <div class="imgdiv"><img src="imgs/xc2.jpg" alt="" width="690" height="517" />
                         <input type="button" class="btn btn-default" value="删除" data-toggle="modal"  data-target="#Moda">
@@ -52,7 +57,7 @@
                     <span><b>喵喵</b>2018/5/8 下午4:16:41</span>
                 </div>    
                 </li>
-                <li class="pic" id="f_Photo3">
+                <li class="pic col-xs-3" id="f_Photo3">
                 <div class="in">
                     <div class="imgdiv"><img src="imgs/xz3.jpg" alt="" width="500" height="375" />
                         <input type="button" class="btn btn-default" value="删除" data-toggle="modal"  data-target="#Moda">
@@ -60,7 +65,7 @@
                     <span><b>喵喵</b>2018/5/8 下午4:16:41</span>
                 </div>    
                 </li>
-                <li class="pic" id="f_Photo4">
+                <li class="pic col-xs-3" id="f_Photo4">
                 <div class="in">
                     <div class="imgdiv"><img src="imgs/xc4.jpg" alt="" width="445" height="300" />
                         <input type="button" class="btn btn-default" value="删除" data-toggle="modal"  data-target="#Moda">
@@ -68,7 +73,7 @@
                     <span><b>喵喵</b>2018/5/8 下午4:16:41</span>
                 </div>   
                 </li>
-                <li class="pic" id="f_Photo5">
+                <li class="pic col-xs-3" id="f_Photo5">
                 <div class="in">
                     <div class="imgdiv"><img src="imgs/xc5.jpg" alt="" width="511" height="300" />
                         <input type="button" class="btn btn-default" value="删除" data-toggle="modal"  data-target="#Moda">
@@ -76,7 +81,7 @@
                     <span><b>喵喵</b>2018/5/8 下午4:16:41</span>
                 </div>   
                 </li>
-                <li class="pic" id="f_Photo6">
+                <li class="pic col-xs-3" id="f_Photo6">
                 <div class="in">
                     <div class="imgdiv"><img src="imgs/xc7.jpg" alt="" width="500px" height="373px" />
                         <input type="button" class="btn btn-default" value="删除" data-toggle="modal"  data-target="#Moda">
@@ -84,7 +89,7 @@
                     <span><b>喵喵</b>2018/5/8 下午4:16:41</span>
                 </div>   
                 </li>
-                <li id="picc" data-toggle="modal"  data-target="#f_myModal">
+                <li id="picc" class="col-xs-3" data-toggle="modal"  data-target="#f_myModal">
                     <div>
                         <div class="f_shizi">
                             <div class="f_xia"></div>
