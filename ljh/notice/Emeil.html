@@ -5,6 +5,9 @@
 	<link href="css/froala_editor.min.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <title>发送邮件</title>
+    <link rel="stylesheet" href="css/flowChart.css" />
+    <link rel="stylesheet" href="../../ycl/css/bootstrap.css">
+    <link rel="stylesheet" href="../../ycl/class/css/class.css">
     <style>
         body {
             text-align: center;
@@ -56,7 +59,7 @@
         }
         .remind{
             color: red;
-            line-height: 0;
+            line-height: 20px;
         }
     </style>
 </head>
@@ -70,8 +73,30 @@
           <span>&nbsp;</span>
       </div>
     </section>
-    <div id="cs" class="release">发布</div>
-
+    <div id="cs" class="release" data-toggle='modal' >发布</div>
+    <!-- 发送邮件按钮的模态框 -->
+    <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        发送邮件请稍等
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    邮件已成功发送
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success my_btn2 deleteNotice" id="btn_que" data-dismiss="modal">
+                        确定
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
   <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
   <script src="js/froala_editor.min.js"></script>
   <!--[if lt IE 9]>
@@ -95,13 +120,17 @@
           if (you.test($(".shouDiv").val())) {
               $(".shouDiv").next().html("");
               $("#cs").click(function () {
-                  alert("发送成功")
+                  $("#cs").attr('data-target','#myModal');
               });
           }else {
               $(".shouDiv").next().html("*请输入正确的邮箱");
+              $("#cs").click(function () {
+                  $("#cs").attr('data-target','');
+              });
           }
       });
 
   </script>
+    <script src="../../ycl/js/bootstrap.js"></script>
 </body>
 </html>

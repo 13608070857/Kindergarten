@@ -5,6 +5,9 @@
 	<link href="css/froala_editor.min.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <title>发布公告</title>
+    <link rel="stylesheet" href="css/flowChart.css" />
+    <link rel="stylesheet" href="../../ycl/css/bootstrap.css">
+    <link rel="stylesheet" href="../../ycl/class/css/class.css">
     <style>
         body {
             text-align: center;
@@ -57,8 +60,30 @@
           <span>&nbsp;</span>
       </div>
     </section>
-    <div id="cs" class="release">发布</div>
-
+    <div id="cs" class="release" data-toggle='modal' >发布</div>
+    <!-- 发布按钮的模态框 -->
+    <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        发送公告请稍等
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    公告已成功发布
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success my_btn2 deleteNotice" id="btn_que" data-dismiss="modal">
+                        确定
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
   <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
   <script src="js/froala_editor.min.js"></script>
   <!--[if lt IE 9]>
@@ -80,8 +105,11 @@
       $("#cs").click(function () {
           localStorage.titleVal = $(".titleDiv").get(0).value;
           localStorage.bodyVal = $("#edit>div:nth-of-type(2)").get(0).innerHTML;
-          console.log(localStorage.titleVal);
+          if (localStorage.titleVal.length>1) {
+              $("#cs").attr('data-target','#myModal')
+          }
       })
   </script>
+    <script src="../../ycl/js/bootstrap.js"></script>
 </body>
 </html>
