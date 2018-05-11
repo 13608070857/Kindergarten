@@ -7,7 +7,7 @@
 		<!--initial-scale=1：设置初始化缩放比例为1-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-		<title></title>
+		<title>相册</title>
 
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.css" rel="stylesheet">
@@ -22,54 +22,61 @@
 		<link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-	<div>
-		<div>
-			<h2 class="page-header">照片墙/<small>相册</small></h2>
+	<div class="f_z">
+		<h2>照片墙/<small><a href="#">相册</a></small></h2>
+		<div class="f_x"></div>
+	</div>
+	<div class="container">
+		<div id="f_xc">
 			<div class="Photo" id="f_Photo1">
 				<img src="imgs/xc1.jpg" alt="">&nbsp;
 					<div class="Tc">
 						<p>喵喵班</p>
 						<p>创建人：张三</p>
-						<p>2018/5/8</p>
-						<input class="btn btn-default but yb" type="button" value="查看相册">
-						<input class="btn btn-default but dd" data-toggle="modal"  data-target="#myModal" type="button" value="删除相册">
+						<p>2018/5/8 下午4:16:41</p>
+						<input class="btn btn-default but" type="button" value="查看相册" onclick="location.href='f_album.html'" >
+						<input class="btn btn-default but" data-toggle="modal"  data-target="#myModal" type="button" value="删除相册">
 					</div>
 			</div>
 			<div class="Photo" id="f_Photo2">
-				<img src="imgs/xc2.jpg" alt="">&nbsp;
+				<img src="imgs/xc110.jpg" alt="">&nbsp;
 					<div class="Tc">
 						<p>丫丫班</p>
 						<p>创建人：李四</p>
-						<p>2018/5/8</p>
-						<input class="btn btn-default but" type="button" value="查看相册">
+						<p>2018/5/8 下午4:16:41</p>
+						<input class="btn btn-default but" type="button" value="查看相册" onclick="location.href='f_album.html'">
 						<input class="btn btn-default but" type="button" data-toggle="modal"  data-target="#myModal" value="删除相册">
 					</div>
 
 			</div>
 			<div class="Photo" id="f_Photo3">
-				<img src="imgs/xz3.jpg" alt="">&nbsp;
+				<img src="imgs/xc111.jpg" alt="">&nbsp;
 					<div class="Tc">
 						<p>臭臭班</p>
 						<p>创建人：王二</p>
-						<p>2018/5/8</p>
-						<input class="btn btn-default but" type="button" value="查看相册">
+						<p>2018/5/8 下午4:16:41</p>
+						<input class="btn btn-default but" type="button" value="查看相册" onclick="location.href='f_album.html'">
 						<input class="btn btn-default but" type="button" data-toggle="modal"  data-target="#myModal" value="删除相册">
 					</div>
 
 			</div>
 			<div class="Photo" id="f_Photo4">
-				<img src="imgs/xc4.jpg" alt="">&nbsp;
+				<img src="imgs/xc112.jpg" alt="">&nbsp;
 					<div class="Tc">
 						<p>朵朵班</p>
 						<p>创建人：王二</p>
-						<p>2018/5/8</p>
-						<input class="btn btn-default but" type="button" value="查看相册">
+						<p>2018/5/8 下午4:16:41</p>
+						<input class="btn btn-default but" type="button" value="查看相册" onclick="location.href='f_album.html'">
 						<input class="btn btn-default but" type="button" data-toggle="modal"  data-target="#myModal" value="删除相册">
 					</div>
 			</div>
-			<div class="f_tj">
+			<div id="f_j">
 				<div class="Photo text-center">
-					<input class="btn btn-default f_but" type="button" data-toggle="modal"  data-target="#f_myModal" value="添加相册">
+					<div class="f_shizi" data-toggle="modal"  data-target="#f_myModal">
+						<div class="f_xia"></div>
+						<div class="f_zuo"></div>
+					</div>
+					<!--<input class="btn btn-default f_but" type="button" data-toggle="modal"  data-target="#f_myModal" value="添加相册">-->
 				</div>
 			</div>
 		</div>
@@ -106,11 +113,11 @@
 				<div class="modal-body">
 					<div class="form-group">
 						<label for="username">请输入相册名：</label>
-						<input type="text" id="username" class="form-control" autofocus/>
+						<input type="text" id="username" class="form-control mz" autofocus/>
 					</div>
 				</div>
 				<div class="modal-footer">
-					<input type="button" value="添加" class="btn btn-success"/>
+					<input type="button" value="添加" class="btn btn-success " data-dismiss="modal" id="f_Tj"/>
 					<input type="button" value="取消" class="btn btn-danger" data-dismiss="modal"/>
 				</div>
 			</div>

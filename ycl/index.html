@@ -41,7 +41,7 @@
                         <li><a href="#">设置</a></li>
                         <li><a href="../sxm/personalCenter.html">个人资料</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">退出</a></li>
+                        <li><a href="../sxm/login.html">退出</a></li>
                     </ul>
                 </div>
                 <div class="dropdown pull-right headPhoto"></div>
@@ -122,10 +122,7 @@
                                 </div>
                                 <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                                     <div class="panel-body">
-                                        <p><a href="main.html" target="iframepage">学生管理</a></p>
-                                        <p><a href="test.html" target="iframepage">班级管理</a></p>
-                                        <p><a href="test.html" target="iframepage">职工管理</a></p>
-                                        <p><a href="test.html" target="iframepage">部门管理</a></p>
+                                        <p><a href="../ljh/notice/Emeil.html" target="iframepage">发件箱</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -135,22 +132,22 @@
                                 </div>
                                 <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                                     <div class="panel-body">
-                                        <p><a href="main.html" target="iframepage">学生管理</a></p>
+                                        <p><a href="../fj/f_photo%20wall.html" target="iframepage">照片墙</a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-2" style="width: 20px;height: 800px;background-image: url('images/bian.png')"></div>
+                    <div id="tengTiao" class="col-xs-2" style="width: 20px;background-image: url('images/bian.png')"></div>
                 </div>
                 <!--浏览记录-->
                 <div class="col-xs-10" id="historyBox">
                     <div style="width: 100%;height: 20px;background-image: url('images/bianh.png')"></div>
-                    <div style="float: left" id="historyDiv"><i class="glyphicon glyphicon-pushpin"></i>当前位置</div>
+                    <div style="float: left;" id="historyDiv" class="my_historyDiv"><i class="glyphicon glyphicon-hand-right"></i>&nbsp;&nbsp;当前位置</div>
                 </div>
                 <!--主体内容-->
-                <div class="col-xs-10 separate">
-                    <iframe src="main.html" name="iframepage" id="iframepage" width="100%" frameborder="0" onload="iframeHeight()"></iframe>
+                <div class="col-xs-10 separate" id="my_if">
+                    <iframe src="main.html" name="iframepage" id="iframepage" width="100%" frameborder="0"></iframe>
                 </div>
             </div>
         </div>
@@ -179,13 +176,14 @@
         }
     }
     var ifHeight = document.documentElement.clientHeight-89;
-    function iframeHeight() {
-        var ifm= document.getElementById("iframepage");
-        ifm.style.height = ifHeight+"px";
-    }
+    var ifm= document.getElementById("iframepage");
+    var ifm2= document.getElementById("my_if");
+    ifm.style.height = (ifHeight-90)+"px";
+    ifm2.style.height = (ifHeight-90)+"px";
     var nav= document.getElementById("cnav_ul");
-    nav.style.height = ifHeight+"px";
-
+    nav.style.height = (ifHeight-20)+"px";
+    var tengTiao = document.getElementById("tengTiao");
+    tengTiao.style.height = (ifHeight-20)+"px";
     var historyBox = $("#historyBox");
     $(".panel-body p").click(function () {
         var history = ($(this).get(0).innerText);
@@ -214,7 +212,11 @@
             a="../ljh/notice/seeNotice.html";
             b="公告通知";
         }
-        $("#historyDiv").html('<i class="glyphicon glyphicon-pushpin"></i>'+'<div>'+b+'</div>'+'<a href='+'"'+a+'"'+'target="iframepage"><div class="historyT">'+'<i class="glyphicon glyphicon-menu-right">'+'</i>'+history+'</div></a>');
+        if (history=="发件箱"){
+            a="../ljh/notice/Emeil.html";
+            b="邮件中心";
+        }
+        $("#historyDiv").html('<i class="glyphicon glyphicon-hand-right"></i>'+'<div>&nbsp;&nbsp;'+b+'</div>'+'<a href='+'"'+a+'"'+'target="iframepage"><div class="historyT">'+'<i class="glyphicon glyphicon-menu-right">'+'</i>'+history+'</div></a>');
     });
 </script>
 </body>
