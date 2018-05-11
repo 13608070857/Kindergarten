@@ -132,10 +132,10 @@ function setAttr() {
     input.setAttribute("data-toggle","modal");
     input.setAttribute("data-target","#Moda");
     input.setAttribute("value","删除");
-    img.setAttribute("src","imgs/xc6.jpg");
+    img.setAttribute("src","imgs/xc111.jpg");
     img.setAttribute("alt","");
-    img.setAttribute("width","630px");
-    img.setAttribute("height","840px");
+    img.setAttribute("width","400px");
+    img.setAttribute("height","300px");
     var realWidth ;//原始宽度
     var realHeight ;//原始高度
     var vs ;//图片宽高比
@@ -150,4 +150,7 @@ function setAttr() {
     }
     console.log(mg.value);
     imgZoomInit()
+}
+function myBack() {
+    history.back();
 }

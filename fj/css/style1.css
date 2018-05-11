@@ -10,7 +10,7 @@ p{word-wrap:break-word;}
 
 .picbox{ width:100%;margin-top:50px ;font-family: "\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",serif;}
 .picbox h2{font-size:22px;line-height:36px;color:#d13a3e;text-align:center;}
-.picbox .text{font-size:16px;line-height:30px;color:#2a2d39;padding:10px 0 20px 0;text-align:center;}
+.picbox #text{font-size:16px;line-height:30px;color:#2a2d39;padding:10px 0 20px 0;text-align:center;}
 .piclist{margin-left:1px}
 .piclist:after{height:0;display:block;clear:both;visibility:hidden;content:'.';font-size:0}
 .piclist ul{ width:1000px;margin:0 auto;position:relative;}
@@ -21,7 +21,7 @@ p{word-wrap:break-word;}
 .piclist li .in .imgdiv{display:block;width:230px;height: 142px;margin:0 auto;margin-top:4px;overflow:hidden;}
 .piclist li span{ display:block;text-align: center;height:46px;padding:8px 3px 0 3px;font-size:14px;line-height:20px;color:#666;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
 .piclist li span b{display:block;color:#d13a3e}
-.piclist li.pic .original{display:none;padding:5px;padding-bottom:0;border: 1px solid #d13a3e;position:absolute;text-align: center;left:-16px; top:-59px; background: #fff;}
+.piclist li.pic .original{display:none;padding:5px;padding-bottom:0;position:absolute;text-align: center;left:-16px; top:-59px; background: #fff;}
 .piclist li.pic .original .imga{display:block;}
 .piclist li .original img{*height:250px;*width:auto;}
 .piclist li .original span {height:36px;padding-top:0}
@@ -71,6 +71,7 @@ li img{
 .f_z{
     width: 90%;
     margin-left: 5%;
+    /*float: left;*/
     margin-top: 1%;
 }
 .f_x{
@@ -81,4 +82,7 @@ li img{
 }
 h2,a{
     color: #26bb75;
+}
+h2 small:nth-child(3){
+    float: right;
 }

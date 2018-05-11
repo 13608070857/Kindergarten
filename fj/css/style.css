@@ -2,9 +2,6 @@
 body{
 	background:#f7f7f7 url(../imgs/pinstripe.gif) repeat top left;
 }
-.bg{
-	background-color: white;
-}
 h2,a{
 	color: #26bb75;
 }
@@ -23,7 +20,7 @@ h2,a{
 	width: 30%;
 	height: 280px;
 	border: 3px solid #26bb75;
-	border-radius: 300px;
+	border-radius: 50px;
 	float: left;
 	margin-left: 30px;
 	margin-top: 10px;

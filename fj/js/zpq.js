@@ -45,7 +45,7 @@ f_Tj.click(function () {
     img=document.createElement("img");
     p1=document.createElement("p");
     var text1=document.createTextNode(mz.value);
-    var text2=document.createTextNode("创建人:");
+    var text2=document.createTextNode("创建人:林家辉");
     var text3=document.createTextNode(d.toLocaleString());
     p2=document.createElement("p");
     p3=document.createElement("p");
@@ -67,9 +67,11 @@ f_Tj.click(function () {
 function setAttr() {
     div.setAttribute("class","Photo");
     div.setAttribute("id","f_Photo5");
-    img.setAttribute("class","bg");
+    img.setAttribute("src","imgs/tubiao.jpg");
+    img.setAttribute("alt","");
     div2.setAttribute("class","Tc");
     input1.setAttribute("class","btn btn-default but");
+    input1.setAttribute("onclick","location.href='f_empty album.html'");
     input2.setAttribute("class","btn btn-default but");
     input1.setAttribute("type","button");
     input2.setAttribute("type","button");
