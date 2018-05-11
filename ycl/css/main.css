@@ -78,6 +78,7 @@ body{
 .notice{
     background-color: #ffffff;
     margin-top: 2rem;
+    margin-left: 20px;
 }
 .my_notice{
     background-color: #F2F2F2;
@@ -103,6 +104,12 @@ body{
     font-weight: initial;
     background-color: #F2F2F2;
     border-left: 5px solid #079783;
+    margin-left: 25px;
+}
+@media (min-width: 768px){
+    .col-sm-5 {
+        width: 47.66666667%;
+    }
 }
 /*fonts*/
 @font-face {
