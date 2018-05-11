@@ -1,13 +1,6 @@
 /**
  * Created by Administrator on 2018/5/8/008.
  */
-var Photo=$(".Photo");
-var yd=$(".yb");
-yd.click(function () {
-    Photo.css({
-        "display":"none"
-    });
-});
 //删除
 var queren=$("#queren");
 // var hArr=[];
@@ -80,3 +73,4 @@ function setAttr() {
     input2.setAttribute("data-toggle","modal");
     input2.setAttribute("data-target","#myModal");
 }
+
