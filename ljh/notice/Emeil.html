@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
 	<link href="css/froala_editor.min.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
-    <title>发布公告</title>
+    <title>发送邮件</title>
     <link rel="stylesheet" href="css/flowChart.css" />
     <link rel="stylesheet" href="../../ycl/css/bootstrap.css">
     <link rel="stylesheet" href="../../ycl/class/css/class.css">
@@ -32,6 +32,13 @@
         .froala-editor .bttn-wrapper:not(.touch) button.fr-bttn:hover, .froala-editor .froala-popup button.fr-bttn:hover, .froala-editor .bttn-wrapper:not(.touch) button.fr-trigger:hover, .froala-editor .froala-popup button.fr-trigger:hover {
          background: #009789;
         }
+        .shouDiv{
+            width: 96%;
+            height: 20px;
+            border: 1px solid #009789;
+            margin: 0 auto;
+            font-size: 16px;
+        }
         .titleDiv{
             width: 96%;
             height: 40px;
@@ -50,10 +57,16 @@
             color: white;
             font-weight: bold;
         }
+        .remind{
+            color: red;
+            line-height: 20px;
+        }
     </style>
 </head>
 
 <body>
+    <input type="text" placeholder="请输入收件人邮箱" class="shouDiv"></input>
+    <p class="remind"></p>
     <input type="text" placeholder="请输入标题" class="titleDiv"></input>
     <section id="editor">
       <div id='edit' style="margin-top: 30px;">
@@ -61,7 +74,7 @@
       </div>
     </section>
     <div id="cs" class="release" data-toggle='modal' >发布</div>
-    <!-- 发布按钮的模态框 -->
+    <!-- 发送邮件按钮的模态框 -->
     <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
@@ -70,11 +83,11 @@
                         &times;
                     </button>
                     <h4 class="modal-title" id="myModalLabel">
-                        发送公告请稍等
+                        发送邮件请稍等
                     </h4>
                 </div>
                 <div class="modal-body">
-                    公告已成功发布
+                    邮件已成功发送
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success my_btn2 deleteNotice" id="btn_que" data-dismiss="modal">
@@ -102,13 +115,21 @@
       $(function(){
           $('#edit').editable({inlineMode: false, alwaysBlank: true})
       });
-      $("#cs").click(function () {
-          localStorage.titleVal = $(".titleDiv").get(0).value;
-          localStorage.bodyVal = $("#edit>div:nth-of-type(2)").get(0).innerHTML;
-          if (localStorage.titleVal.length>1) {
-              $("#cs").attr('data-target','#myModal')
+      $(".shouDiv").blur(function () {
+          var you = /\w+((-w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+/;
+          if (you.test($(".shouDiv").val())) {
+              $(".shouDiv").next().html("");
+              $("#cs").click(function () {
+                  $("#cs").attr('data-target','#myModal');
+              });
+          }else {
+              $(".shouDiv").next().html("*请输入正确的邮箱");
+              $("#cs").click(function () {
+                  $("#cs").attr('data-target','');
+              });
           }
-      })
+      });
+
   </script>
     <script src="../../ycl/js/bootstrap.js"></script>
 </body>
