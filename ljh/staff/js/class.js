@@ -107,6 +107,11 @@ $('body').on('click','#btn_que2', function () {
             linksList(myTeacher);
         }
     }
+    if (myTeacher.length>5){
+        $('#pagination').css("display","inline-block");
+    } else {
+        $('#pagination').css("display","none");
+    }
 });
 /*添加*/
 

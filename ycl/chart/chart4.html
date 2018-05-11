@@ -3,164 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
     <link rel="stylesheet" href="css/animsition.min.css" />
-    <link rel="stylesheet" href="css/rfm.css" />
     <link rel="stylesheet" href="css/drop-down.css" />
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/jquery-labelauty.css" />
+    <link rel="stylesheet" href="css/qk.css" />
 </head>
 <body>
-<div class="data_wrap" style="margin-top: 40px">
-
-    <header class="rfm_header">
-        <ul>
-            <li><a class="animsition-link" href="RFM_data.html" data-animsition-out="fade-out-left-sm">RFM模型分析</a></li>
-            <li><a class="animsition-link" href="R_data.html" data-animsition-out="fade-out-left-sm">R值分析</a></li>
-            <li><a class="animsition-link" href="F_data.html" data-animsition-out="fade-out-left-sm">F值分析</a></li>
-            <li class="active"><a class="animsition-link" href="M_data.html" data-animsition-out="fade-out-left-sm">M值分析</a></li>
-        </ul>
-    </header>
+<div class="data_wrap" style="background: #efeff5; width: 1020px; padding: 10px; overflow: hidden;margin-top: 40px">
     <div class="animsition">
-
-        <div class="data_time_set">
-            <div>最近付款时间在<span class="now_time">2017-1-20</span>前</div>
-            <select name="drop2" class="ui-select">
-                <option value="1">一年</option>
-                <option value="2">两年</option>
-                <option value="3">全部</option>
-            </select>
-
-            <div>的客户</div>
-        </div>
-
-        <div class="data_time_set" id="data_M_set">
-            <div style="margin-top: 5px;">M值</div>
-            <select name="drop2" class="ui-select">
-                <option value="1">客单价</option>
-                <option value="2">总金额</option>
-            </select>
+        <div class="qk_wrap" style=" margin-bottom: 10px;display: none">
             <div>
-                时隔选择：
-                <label>
-                    <input type="radio" checked name="date_radio" style="display: none;"/> 30元
-                </label>
-                <label>
-                    <input id="customize" type="radio" name="date_radio" style="display: none;"/> 自定义
-                </label>
-                <input type="text" class="date_set" value="0" disabled="disabled" /> 元
-                <button class="save">保存配置</button>
+                <div id="main1" class="my_main" style="width: 630px;"></div>
             </div>
-
-            <div class="right_radiobox">
-                指标选择：
-                <label>
-                    <input type="radio" checked name="rfm_radio" style="display: none;"/> R值指标
-                </label>
-                <label>
-                    <input type="radio" name="rfm_radio" style="display: none;"/> F值指标
-                </label>
-                <label>
-                    <input type="radio" name="rfm_radio" style="display: none;"/> 会员等级指标
-                </label>
-
+            <div>
+                <div id="main2" class="my_main" style="width: 380px;"></div>
             </div>
         </div>
-        <div class="data_jiage_set">
-            <table id="F_table" cellspacing="0" cellpadding="0">
-                <tr>
-                    <th>购买次数(F值)</th>
-                    <th style="min-width: 60px;">客户数</th>
-                    <th width="140">客户占比%</th>
-                    <th>累计占比%</th>
-                    <th>R &le; 45(%)</th>
-                    <th>45 &lt; R &le; 90(%)</th>
-                    <th>90 &lt; R &le; 180(%)</th>
-                    <th>180 &lt; R &le; 365(%)</th>
-                    <th>R &gt; 365(%)</th>
-                </tr>
-                <tr>
-                    <td>0</td>
-                    <td>1234</td>
-                    <td>1%</td>
-                    <td><span class="bar"></span></td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>1234</td>
-                    <td>1%</td>
-                    <td><span class="bar"></span></td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>1234</td>
-                    <td>1%</td>
-                    <td><span class="bar"></span></td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>1234</td>
-                    <td>1%</td>
-                    <td><span class="bar"></span></td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>1234</td>
-                    <td>1%</td>
-                    <td><span class="bar"></span></td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>1234</td>
-                    <td>1%</td>
-                    <td><span class="bar"></span></td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                    <td>1%</td>
-                </tr>
-            </table>
+        <!--职工数据-->
+        <div class="qk_wrap" style=" margin-bottom: 10px;">
+            <div>
+                <div id="main4" class="my_main" style="width: 1020px;"></div>
+            </div>
+        </div>
+        <div class="qk_wrap" style="display: none">
+            <div>
+                <div id="main3" class="my_main" style="width: 1020px;"></div>
+            </div>
         </div>
     </div>
 </div>
+</div>
+
 <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 <script src="http://www.jq22.com/jquery/jquery-ui-1.11.0.js"></script>
 <script src="js/select-widget-min.js"></script>
 <script src="js/jquery.animsition.min.js"></script>
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script src="js/macarons .js"></script>
 <script src="js/common.js"></script>
-<script src="js/jquery-labelauty.js"></script>
-<script src="js/jqbar.js"></script>
+
 <script>
     $(document).ready(function() {
-
-        //配置单选
-        $(":radio").labelauty({ label: false });
-
         //初始化切换
         $(".animsition").animsition({
 
@@ -186,24 +70,138 @@
             overlayParentElement  :   'body'
         });
 
-        //初始化累计占比
-        $('.bar').jqbar({ label: '', value: 55.55, barColor: '#d9edf7' });
+        //虚拟数据
+        var date = ['2016/11/1','2016/11/2','2016/11/3','2016/11/4','2016/11/5','2016/11/6','2016/11/7','2016/11/8','2016/11/9','2016/11/10',
+            '2016/11/11','2016/11/12','2016/11/13','2016/11/14','2016/11/15','2016/11/16','2016/11/17','2016/11/18'
+            ,'2016/11/19','2016/11/20','2016/11/21','2016/11/22','2016/11/23','2016/11/24','2016/11/25','2016/11/26','2016/11/27'
+            ,'2016/11/28','2016/11/29','2016/11/30'];
 
-        //时隔选择
-        $('input[name=date_radio]').click(function(e){
-            if(e.target.id == 'customize'){
-                $('.date_set').attr('disabled',false);
+
+        function my_data(){
+            var data = [];
+            for( var i =0; i<30; i++){
+                data.push(Math.round(Math.random() * (500 - 100) + 100));
+            };
+            return data;
+        }
+        var num = my_data();
+        var bl = '30%';
+
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
             }
-            else{
-                $('.date_set').attr('disabled','disabled');
+        });
+
+        // 使用
+        require(
+            [
+                'echarts',
+                'echarts/chart/bar',
+                'echarts/chart/line',
+                'echarts/chart/pie'// 使用柱状图就加载bar模块，按需加载
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('main1'),'macarons');
+                var myChart2 = ec.init(document.getElementById('main2'),'macarons');
+                var myChart3 = ec.init(document.getElementById('main3'),'macarons');
+                var myChart4 = ec.init(document.getElementById('main4'),'macarons');
+
+                var option2 = {
+                    title:{
+                        text : '部门数据统计',
+                        y: '15'
+                    },
+                    backgroundColor:'white',
+                    tooltip : {
+                        trigger: 'axis',
+                        formatter : function(data){
+                            var str = data[1].name ;
+                            str += '</br>园长人数：' + data[1].value + ' 占比：' + bl;
+                            str += '</br>园长销售额：' + data[1].value + ' 占比：' + bl;
+                            str += '</br>园长成交笔数：' + data[1].value + ' 占比：' + bl;
+                            str += '</br>老师人数：' + data[1].value + ' 占比：' + bl;
+                            str += '</br>老师销售额：' + data[1].value + ' 占比：' + bl;
+                            str += '</br>老师成交笔数：' + data[1].value + ' 占比：' + bl;
+
+                            return str;
+                        }
+                    },
+                    legend: {
+                        selectedMode : false,
+                        data:['园长办公室','教学部'],
+                        y:'20'
+                    },
+                    grid:{
+                        y:'100'
+                    },
+                    toolbox: {
+                        show : false,
+                        y:'20',
+                        feature : {
+                            mark : {show: false},
+                            dataView : {show: true, readOnly: false},
+                            magicType : {show: true, type: ['line', 'bar']},
+                            restore : {show: true},
+                            saveAsImage : {show: true}
+                        }
+                    },
+                    dataZoom : {
+                        show : true,
+                        realtime : true,
+                        y: 320,
+                        height: 20,
+                        start : 70,
+                        end : 100
+                    },
+                    calculable : true,
+                    xAxis : [
+                        {
+                            type : 'category',
+                            boundaryGap : true,
+                            data : date
+                        }
+                    ],
+                    yAxis : [
+                        {
+                            name : '人数',
+                            type : 'value'
+                        }
+                    ],
+                    series : [
+                        {
+                            name:'园长办公室',
+                            type:'bar',
+                            //stack: '总量',
+                            barMaxWidth : 15,
+                            itemStyle:{
+                                normal:{
+                                    borderWidth : 3
+                                }
+                            },
+                            data:my_data()
+                        },
+                        {
+                            name:'教学部',
+                            type:'bar',
+                            //stack: '总量',
+                            barMaxWidth : 15,
+                            itemStyle:{
+                                normal:{
+                                    borderWidth : 3
+                                }
+                            },
+                            data:my_data()
+                        }
+                    ]
+                };
+                // 为echarts对象加载数据
+                myChart4.setOption(option2);
+
             }
-        })
-
-
-        /*$('.ui-select').next().find('.select-list li').on('click',function(){
-             $('.ui-select').next().find('.select-set').html('123')
-        })*/
-
+        );
     });
 </script>
 </body>
