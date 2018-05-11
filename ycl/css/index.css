@@ -129,6 +129,10 @@ p {
 html{
     min-width:740px;
 }
+#historyDiv{
+    margin-top: 10px;
+    margin-left: 10px;
+}
 #historyBox div{
     line-height: 15px;
     float: left;
