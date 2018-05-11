@@ -39,3 +39,6 @@ html,body {
     font-size: 1.3em;
     opacity: 0;
 }
+.forget {
+    cursor: pointer;
+}
