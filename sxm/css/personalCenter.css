@@ -3,9 +3,6 @@
 	width: 100px;
 	border-radius: 50%;
 }
-.line {
-    /*border: 1px solid #f00;*/
-}
 .info {
     line-height: 30px;
 }
@@ -24,6 +21,9 @@
 }
 .textLi span {
 	cursor: pointer;
+}
+.active {
+	background: #079783;
 }
 .baseLine {
 	border-bottom: 1px solid #5eb978;
