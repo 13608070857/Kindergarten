@@ -17,7 +17,6 @@ function linksList(that){
         }else{
             currData = that.concat().splice(curr*nums-nums, nums);
         }
-        console.log(currData)
         var dataHtml = '';
         for(var i=0;i<currData.length;i++){
             dataHtml += '<tr>'
@@ -30,7 +29,7 @@ function linksList(that){
                 "<a class='query iconfont' id='"+currData[i].id+"' title='查看' data-toggle='modal' data-target='#myModal3'>&#xe62c;</a>"+
                 "<a class='alter iconfont' id='"+currData[i].id+"' title='修改' data-toggle='modal' data-target='#myModal2'>&#xe608;</a>"+
                 "<a class='delete iconfont' id='"+currData[i].id+"' title='删除' data-toggle='modal' data-target='#myModal'>&#xe61c;</a>"+
-                "<a class='go_up iconfont' id='"+currData[i].id+"' title='升班' data-toggle='modal' data-target='#myModa4'>升班</a>"
+                "<a class='go_up iconfont' id='"+currData[i].id+"' title='升班' data-toggle='modal' data-target='#myModa4'>&#xe750;</a>"
                 +'</td>'
                 +'</tr>';
         }
@@ -85,6 +84,7 @@ $('body').on('click','.query', function () {
             $("#exampleInputName4").val(myclass[i].c_address);
             $("#exampleInputName5").val(myclass[i].c_teacher);
             $("#exampleInputName6").val(myclass[i].c_teacher2);
+            $("#exampleInputName60").val(myclass[i].c_teacher3);
         }
     }
 });
@@ -99,6 +99,7 @@ $('body').on('click','.alter', function () {
             $("#exampleInputName10").val(myclass[i].c_address);
             $("#exampleInputName11").val(myclass[i].c_teacher);
             $("#exampleInputName12").val(myclass[i].c_teacher2);
+            $("#exampleInputName120").val(myclass[i].c_teacher3);
         }
     }
 });
@@ -110,6 +111,7 @@ $('body').on('click','#btn_que2', function () {
             myclass[i].c_address=$("#exampleInputName10").val();
             myclass[i].c_teacher=$("#exampleInputName11").val();
             myclass[i].c_teacher2=$("#exampleInputName12").val();
+            myclass[i].c_teacher3=$("#exampleInputName120").val();
             linksList(myclass);
         }
     }
@@ -166,7 +168,7 @@ $('body').on('click','#search_btn', function () {
         }
     }
     if (newArry.length>10){
-        $('#pagination').css("display","block");
+        $('#pagination').css("display","inline-block");
     } else {
         $('#pagination').css("display","none");
     }
@@ -182,12 +184,14 @@ $('body').on('click','#btn_que5', function () {
     myclass.c_address=$("#exampleInputName100").val();
     myclass.c_teacher=$("#exampleInputName111").val();
     myclass.c_teacher2=$("#exampleInputName122").val();
+    myclass.c_teacher3=$("#exampleInputName1220").val();
     addList='{"id":"'+ myclass.id +'",';
     addList+= '"c_name":"'+ myclass.c_name +'",';
     addList+= '"c_num":"'+ myclass.c_num +'",';
     addList+= '"c_address":"'+ myclass.c_address +'",';
     addList+= '"c_teacher":"'+ myclass.c_teacher +'",';
-    addList += '"c_teacher2":"'+ myclass.c_teacher2 +'"}';
+    addList+= '"c_teacher2":"'+ myclass.c_teacher2 +'",';
+    addList += '"c_teacher3":"'+ myclass.c_teacher3 +'"}';
     myclass.push(JSON.parse(addList));
     linksList(myclass);
 });
