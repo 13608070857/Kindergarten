@@ -86,6 +86,7 @@ $('body').on('click','.query', function () {
             $("#exampleInputName00111").val(my_stuList[i].motherTel);
             $("#exampleInputName00").val(my_stuList[i].s_adderss);
             $("#exampleInputName33").val(my_stuList[i].s_state);
+            $("#exampleInputName333").val(my_stuList[i].s_ID);
         }
     }
 });
@@ -104,6 +105,7 @@ $('body').on('click','.alter', function () {
             $("#exampleInputName001611").val(my_stuList[i].motherTel);
             $("#exampleInputName000").val(my_stuList[i].s_adderss);
             $("#exampleInputName033").val(my_stuList[i].s_state);
+            $("#exampleInputName13333").val(my_stuList[i].s_ID);
         }
     }
 });
@@ -120,6 +122,7 @@ $('body').on('click','#btn_que2', function () {
             my_stuList[i].motherTel=$("#exampleInputName001611").val();
             my_stuList[i].s_adderss=$("#exampleInputName000").val();
             my_stuList[i].s_state=$("#exampleInputName033").val();
+            my_stuList[i].s_ID=$("#exampleInputName13333").val();
             linksList(my_stuList);
         }
     }
@@ -190,10 +193,12 @@ $('body').on('click','#btn_que5', function () {
     my_stuList.s_mother=$("#exampleInputName1111").val();
     my_stuList.motherTel=$("#exampleInputName1122").val();
     my_stuList.s_adderss=$("#exampleInputName133").val();
+    my_stuList.s_ID=$("#exampleInputName1333").val();
 
     addList='{"id":"'+ my_stuList.id +'",';
     addList+= '"s_name":"'+ my_stuList.s_name +'",';
     addList+= '"s_sex":"'+ my_stuList.s_sex +'",';
+    addList+= '"s_ID":"'+ my_stuList.s_ID +'",';
     addList+= '"s_class":"'+ my_stuList.s_class +'",';
     addList+= '"s_father":"'+ my_stuList.s_father +'",';
     addList+= '"s_mother":"'+ my_stuList.s_mother +'",';
