@@ -1,0 +1,41 @@
+.titleName {
+	font-size: 25px;
+	border-bottom: 2px solid #079783;
+}
+.row {
+	margin: 1% 0;
+} 
+.container-fluid {
+	padding: 0;
+}
+.btn {
+	background: rgb(94,185,122);
+	color: #fff;
+	padding: 5px;
+}
+.btn:hover {
+    background:rgb(94,185,122);
+    color: #fff;
+}
+.btn:focus {
+    background:rgb(94,185,122);
+    color: #fff;
+}
+.bgT {
+	background: #efefef;
+	line-height: 3em;
+	border-bottom: 2px solid #ddd;
+}
+.bgT a {
+	font-weight: bold;
+}
+.row a {
+	color: #333;
+}
+.col-lg-1,.col-lg-2,.col-lg-10 {
+	padding: 0 0 0 4px;
+}
+.cont {
+	border-bottom: 1px solid rgb(94,185,122);
+	line-height: 2.5em;
+}
