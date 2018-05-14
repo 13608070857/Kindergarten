@@ -53,6 +53,7 @@
 								<h4>橄榄树幼儿园-赵丹</h4>
 								<p class="release">发布公告</p>
 								<p class="deleteKey" data-toggle='modal' data-target='#myModal'>删除</p>
+								<p class="deleteKey" data-toggle='modal' data-target='#myModal2' onclick="bianji(this)">修改</p>
 							</div>
 						</div>
 						<!--中-->
@@ -88,6 +89,7 @@
 								<h4>橄榄树幼儿园-赵丹</h4>
 								<p class="release">发布公告</p>
 								<p class="deleteKey" data-toggle='modal' data-target='#myModal'>删除</p>
+								<p class="deleteKey" data-toggle='modal' data-target='#myModal2' onclick="bianji(this)">修改</p>
 							</div>
 						</div>
 						<!--中-->
@@ -130,6 +132,43 @@
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal -->
 		</div>
+	<!-- 修改按钮的模态框 -->
+	<div class="modal fade bs-example-modal-sm" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+					<h4 class="modal-title">
+						修改公告
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline">
+						<table class="table">
+							<tr>
+								<td style="width: 100px"><label for="exampleInputName9">修改公告标题</label></td>
+								<td><input style="width: 100%" type="text" class="form-control" id="exampleInputName9"></td>
+							</tr>
+							<tr>
+								<td><label for="exampleInputName120">修改公告内容</label></td>
+								<td><textarea style="width: 100%;height: 200px;" class="form-control" id="exampleInputName120"></textarea></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success my_btn" data-dismiss="modal">
+						取消
+					</button>
+					<button type="button" class="btn btn-success my_btn2" id="btn_que2" data-dismiss="modal">
+						保存
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
 	</body>
 	<script src="../../ycl/js/jquery-3.3.1.js"></script>
 	<script src="../../ycl/js/bootstrap.js"></script>
@@ -187,6 +226,14 @@
                     "\t\t\t\t</div>";
 			    $(".flowChart-right").prepend(newDiv);
 			}
-        })
+        });
+		function bianji(data) {
+		    let ba = data.parentNode.parentNode.parentNode;
+		    let xd = ba.getElementsByClassName("NodeDetail-content");
+		    let tit = xd[0].getElementsByTagName("h3");
+		    let bod = xd[0].getElementsByTagName("p");
+            document.getElementById("exampleInputName9").value = tit[0].innerHTML;
+            document.getElementById("exampleInputName120").value = bod[0].innerHTML;
+        }
 	</script>
 </html>

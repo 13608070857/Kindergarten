@@ -143,4 +143,5 @@
 }
 .NodeDetail:hover .deleteKey{
 	color: #717171;
+	margin-left: 10px;
 }
