@@ -203,8 +203,16 @@
             b="基础管理";
         }
         if (history=="部门管理"){
-            a="test.html";
+            a="../sxm/workerManagement.html";
             b="基础管理";
+        }
+        if (history=="管理权限"){
+            a="../sxm/permission.html";
+            b="权限管理";
+        }
+        if (history=="出勤管理"){
+            a="attendance/attend.html";
+            b="出勤管理";
         }
         if (history=="发布公告"){
             a="../ljh/notice/index.html";
@@ -217,6 +225,18 @@
         if (history=="发件箱"){
             a="../ljh/notice/Emeil.html";
             b="邮件中心";
+        }
+        if (history=="收件箱"){
+            a="../ljh/notice/inBox.html";
+            b="邮件中心";
+        }
+        if (history=="草稿箱"){
+            a="../ljh/notice/drafts.html";
+            b="邮件中心";
+        }
+        if (history=="照片墙"){
+            a="../fj/f_photo%20wall.html";
+            b="照片墙";
         }
         $("#historyDiv").html('<i class="glyphicon glyphicon-hand-right"></i>'+'<div>&nbsp;&nbsp;'+b+'</div>'+'<a href='+'"'+a+'"'+'target="iframepage"><div class="historyT">'+'<i class="glyphicon glyphicon-menu-right">'+'</i>'+history+'</div></a>');
     });
