@@ -29,3 +29,15 @@ input[type="button"]:hover {
 input[type="button"]:focus {
 	color: #fff;
 }
+.my_container{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.my_smana{
+	font-size: 25px;
+	border-bottom: 2px solid #079783;
+	/*margin-top: 20px;*/
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
