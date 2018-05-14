@@ -5,6 +5,7 @@ var myclass=[{
     "c_num" : "30",
     "c_teacher" : "张三",
     "c_teacher2" : "李老三",
+    "c_teacher3" : "华庭婷",
     "c_address" : "大班"
 },{
     "id" : "c_002",
@@ -12,6 +13,7 @@ var myclass=[{
     "c_num" : "35",
     "c_teacher" : "李四",
     "c_teacher2" : "秀老四",
+    "c_teacher3" : "华庭婷",
     "c_address" : "中班"
 },{
     "id" : "c_003",
@@ -19,6 +21,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "王二",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "小班"
 },{
     "id" : "c_004",
@@ -26,6 +29,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "麻子",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "大班"
 },{
     "id" : "c_005",
@@ -33,6 +37,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "秋五",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "中班"
 },{
     "id" : "c_006",
@@ -40,6 +45,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "春花",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "小班"
 },{
     "id" : "c_007",
@@ -47,6 +53,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "夏七",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "小班"
 },{
     "id" : "c_008",
@@ -54,6 +61,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "冬八",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "小班"
 },{
     "id" : "c_009",
@@ -61,6 +69,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "汪九",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "小班"
 },{
     "id" : "c_010",
@@ -68,6 +77,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "皮十",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "小班"
 },{
     "id" : "c_011",
@@ -75,6 +85,7 @@ var myclass=[{
     "c_num" : "30",
     "c_teacher" : "张三",
     "c_teacher2" : "李老三",
+    "c_teacher3" : "华庭婷",
     "c_address" : "大班"
 },{
     "id" : "c_012",
@@ -82,6 +93,7 @@ var myclass=[{
     "c_num" : "35",
     "c_teacher" : "李四",
     "c_teacher2" : "秀老四",
+    "c_teacher3" : "华庭婷",
     "c_address" : "中班"
 },{
     "id" : "c_013",
@@ -89,6 +101,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "王二",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "小班"
 },{
     "id" : "c_014",
@@ -96,6 +109,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "麻子",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "大班"
 },{
     "id" : "c_015",
@@ -103,6 +117,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "秋五",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "中班"
 },{
     "id" : "c_016",
@@ -110,6 +125,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "春花",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "小班"
 },{
     "id" : "c_017",
@@ -117,6 +133,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "夏七",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "小班"
 },{
     "id" : "c_018",
@@ -124,6 +141,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "冬八",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "小班"
 },{
     "id" : "c_019",
@@ -131,6 +149,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "汪九",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "小班"
 },{
     "id" : "c_020",
@@ -138,6 +157,7 @@ var myclass=[{
     "c_num" : "25",
     "c_teacher" : "皮十",
     "c_teacher2" : "麻小二",
+    "c_teacher3" : "华庭婷",
     "c_address" : "小班"
 }];
 //-----------颜春林   学生管理数据

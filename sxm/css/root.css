@@ -1,0 +1,31 @@
+.bgTitle {
+	background: #F2F2F2;
+	line-height: 3em;
+	font-weight: bold;
+	border-bottom: 2px solid #ddd;
+}
+.line {
+	height: 3em;
+	line-height: 3em;
+}
+label {
+	font-weight: normal;
+	margin-left: 1.5em;
+}
+.row:nth-of-type(even) {
+	background: rgba(93,255,185,0.15);
+}
+.btnGroup {
+	margin-top: 1%;
+}
+input[type="button"] {
+	background: #5eb978;
+	color: #fff;
+	width: 5%;
+}
+input[type="button"]:hover {
+	color: #fff;
+}
+input[type="button"]:focus {
+	color: #fff;
+}

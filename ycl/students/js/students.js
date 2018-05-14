@@ -167,7 +167,7 @@ $('body').on('click','#search_btn', function () {
             }
         }
         if (newArry.length>10){
-            $('#pagination').css("display","block");
+            $('#pagination').css("display","inline-block");
         } else {
             $('#pagination').css("display","none");
         }

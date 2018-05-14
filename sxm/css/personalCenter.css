@@ -3,9 +3,6 @@
 	width: 100px;
 	border-radius: 50%;
 }
-.line {
-    /*border: 1px solid #f00;*/
-}
 .info {
     line-height: 30px;
 }
@@ -25,6 +22,38 @@
 .textLi span {
 	cursor: pointer;
 }
+.active {
+	background: #079783;
+}
+.active:after{
+	border:6px solid transparent;
+	border-bottom: 12px solid #079783;
+	content: ' ';
+	left: 50%;
+	bottom: -15px;
+	position: absolute;
+}
+.active:before{
+	content: ' ';
+	position: absolute;
+	top: 54px;
+	width: 100%;
+	left: 0;
+	height: 2px;
+	background: #079783;
+}
+.solid{
+	margin-bottom: 20px;
+}
+.solid:before{
+	content: ' ';
+	position: relative;
+	top: 56px;
+	width: 100%;
+	left: 0;
+	height: 2px;
+	background: #dddddd;
+}
 .baseLine {
 	border-bottom: 1px solid #5eb978;
 	padding: 4% 0 1% 0;
@@ -39,7 +68,7 @@ input[type="text"],input[type="password"],select{
 	border: 1px solid #ddd;
 	padding-left: 1%;
 }
-input[type="text"]:focus,select:focus,,input[type="password"]:focus {
+input[type="text"]:focus,select:focus,input[type="password"]:focus {
 	outline-color: #5eb978;
 }
 .inputG {
