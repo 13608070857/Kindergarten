@@ -40,6 +40,20 @@
 	</div>
 	<script src="../../ycl/js/jquery-3.3.1.js"></script>
 	<script src="../../ycl/js/bootstrap.js"></script>
-	<script src="js/del.js"></script>
+	<!-- <script src="js/del.js"></script> -->
+	<script>
+		$(".checkboxC").click(function() {
+			$(this).attr("checked","checked");
+		});
+		$(".del").click(function() {
+			for(var i=0;i<$(".cont").length;i++) {
+				if($(".checkboxC[checked]")) {
+					$($(".cont")[$(".checkboxC[checked]").index()]).remove();
+				}
+
+			}
+		})
+		
+	</script>
 </body>
 </html>
