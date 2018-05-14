@@ -35,8 +35,8 @@ html,body {
     margin-bottom: 5%;
 }
 .errorInfo {
-    color: rgb(94,185,122);
-    font-size: 1.3em;
+    color: #f00;
+    font-size: 1.2em;
     opacity: 0;
 }
 .forget {
