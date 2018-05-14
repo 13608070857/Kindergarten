@@ -28,17 +28,17 @@
 					电话：
 					<span class="phone"></span>
 				</div>
-				<div class="row">
-		    		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 textLi baseInfo active">
+				<div class="row solid">
+		    		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 textLi baseInfo active" onclick="onck(this)">
 		    			<span class="center-block">基本信息</span>
 		    		</div>
 		    		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-		    			<div class="col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-11 col-xs-offset-1 textLi rePasswd">
+		    			<div class="col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-11 col-xs-offset-1 textLi rePasswd" onclick="onck(this)">
 		    				<span class="center-block">修改密码</span>
 		    			</div>
 		    		</div>
 		    		<div class="col-lg-4  col-md-4 col-sm-4 col-xs-4">
-		    			<div class="col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-11 col-xs-offset-1 textLi workD">
+		    			<div class="col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-11 col-xs-offset-1 textLi workD" onclick="onck(this)">
 		    				<span class="center-block">今日日程</span>
 		    			</div>
 		    		</div>
@@ -67,7 +67,10 @@
 	}else {
 		$(".phone").html(localStorage.phone);
 	}
-
+	function onck(data) {
+	    $(".textLi").removeClass("active");
+		$(data).addClass("active")
+    }
 </script>
 </body>
 </html>
