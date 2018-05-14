@@ -1,0 +1,16 @@
+.line {
+	border-left: 1px solid #333;
+	border-top: 1px solid #333;
+	height: 3em;
+	line-height: 3em;
+}
+.line:nth-of-type(3n) {
+	border-right: 1px solid #333;
+}
+label {
+	font-weight: normal;
+	margin-left: 1.5em;
+}
+.row:last-child {
+	border-bottom: 1px solid #333;
+}
