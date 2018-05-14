@@ -18,7 +18,8 @@ h2,a{
 	font-size:100%;
 	width: 30%;
 	height: 300px;
-	border: 3px solid #26bb75;
+	/*border: 1px solid #26bb75;*/
+	box-shadow: 0 2px 8px 8px #e5e5e5;
 	border-radius: 50px;
 	float: left;
 	margin-left: 30px;
@@ -65,16 +66,18 @@ h2,a{
 	height: 100%;
 	/*margin-top: 10%;*/
 	font-size: 100%;
-	background-color: rgba(17, 2, 21, 0.39);
+	background-color: rgba(17, 2, 21, 0.5);
 	overflow: hidden;
+	transition: all .3s linear;
 }
 .Photo:hover .Tc{
-	height: 100%;
+	background-color: rgba(17, 2, 21, 0.1);
 }
 .Tc p{
 	color: white;
 	text-align: center;
 	font-size: 100%;
+	margin-top: 3%;
 }
 .but{
 	display: none;
@@ -101,7 +104,7 @@ h2,a{
 }
 .f_xia{
 	width: 33%;
-	height: 5px;
+	height: 2px;
 	position: absolute;
 	background-color: #26bb75;;
 	top: 50%;
@@ -113,7 +116,7 @@ h2,a{
 	cursor: pointer;
 }
 .f_zuo{
-	width: 5px;
+	width: 2px;
 	height: 33%;
 	position: absolute;
 	background-color: #26bb75;
