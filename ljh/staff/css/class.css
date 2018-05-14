@@ -4,6 +4,9 @@
 .table-striped > thead > tr:nth-of-type(odd) {
     background-color: #F2F2F2;
 }
+.table-striped > tbody > tr:hover{
+    background-color: #F3F2F0;
+}
 th{
     text-align: center;
 }
