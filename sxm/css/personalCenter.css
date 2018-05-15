@@ -92,3 +92,7 @@ input[type="button"]:hover {
 input[type="button"]:focus {
 	color: #fff;
 }
+.val {
+	color: #f00;
+	display: none;
+}
